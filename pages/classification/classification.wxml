@@ -1,0 +1,36 @@
+<!--pages/classification/classification.wxml-->
+<!-- 搜索框 -->
+<view class="search marginTopBottom">
+  <view class="icon-search"></view>
+  <input placeholder="搜索你想听的节目"></input>
+</view>
+
+<!-- 分类索引 -->
+<view class="ification">
+    <!-- 左边部分 -->
+   
+    <scroll-view class="scroll-left" scroll-y scroll-with-animation style="height:{{phoneHeight}}rpx" scroll-top="{{VerticalNavTop}}">
+        <block wx:for="{{ificationTitle}}" wx:key="index">
+            <view class="leftTitle {{index === activeIndex ? 'active':''}}" data-index="{{index}}" data-id="{{index}}" bindtap="change">— {{item.title}}</view>
+        </block>
+    </scroll-view>
+    
+    <!-- 右边部分 -->
+    
+    <scroll-view class="scroll-right" scroll-y bindscroll="showActive" style="height:{{phoneHeight}}rpx" scroll-into-view="main-id-{{TabCur}}">
+        <view class="contentScroll-item" wx:for="{{ificationContent}}" wx:key="index"  data-index="{{index}}" id="main-id-{{index}}" >
+            <view class="top">
+                <view class="contentTitle">
+                    {{item.title}}
+                    <text class="icon-right"></text>
+                </view>
+            </view>
+            <view class="content">
+                <view class="contentText" wx:for="{{item.content}}" wx:key>
+                    {{item.text}}
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+    
+</view>

@@ -1,0 +1,187 @@
+/**index.wxss**/
+
+/* 轮播图 */
+.swiper-container{
+  width: 90%;
+  margin: 0rpx auto;
+  position: relative;
+}
+.swiper{
+  width: 100%;
+}
+.swiperItem{
+  width: 100%;
+  /* height: auto; */
+  border-radius: 15rpx;
+}
+.swiperItem>image{
+  width: 100%;
+  border-radius: 15rpx;
+}
+.dots{
+  width: auto;
+  height: 10rpx;
+  position: absolute;
+  bottom: 20rpx;
+  border-radius: 50rpx;
+  left: 240rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rpx 10rpx;
+}
+.dotsItem{
+  width: 8rpx;
+  height: 8rpx;
+  margin: 0rpx 8rpx;
+  border-radius: 50%;
+  background-color: #cdcdcd;
+  transition: all .3s;
+}
+.active{
+  width: 10rpx;
+  height: 10rpx;
+  background-color: #fff;
+}
+/* 宫格导航 */
+.nav{
+  width: 90%;
+  height: 132rpx;
+  margin: 0rpx auto;
+  margin-top: 40rpx;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.navItem{
+  width: 94rpx;
+  font-size: 20rpx;
+  text-align: center;
+  line-height: 35rpx;
+  color: #aaa;
+}
+.navIcon{
+  width: 84rpx;
+  height: 84rpx;
+}
+/* 猜你喜欢 */
+.like{
+  width: 90%;
+  margin: 0rpx auto;
+  margin-top: 40rpx;
+}
+.likeItemBox{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.likeItem{
+  width: 210rpx;
+  height: 310rpx;
+}
+.likeimg{
+  width: 210rpx;
+  height: 210rpx;
+  border-radius: 10rpx;
+  position: relative;
+}
+.likeItemIcon{
+  width: 100%;
+  height: 100%;
+  border-radius: 10rpx;
+}
+.likeText{
+  font-size: 28rpx;
+  color: #333;
+  padding: 20rpx 0rpx;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;/*行数n*/
+  -webkit-box-orient: vertical; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cover{
+  width: 190rpx;
+  height: 40rpx;
+  /* 透明背景层 */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 1));
+  /* opacity: 0.3; */
+  position: absolute;
+  bottom: 0rpx;
+  color: #fff;
+  font-size: 25rpx;
+  padding: 5rpx 10rpx;
+}
+/* 主要内容 */
+.contentList{
+  width:90%;
+  margin: 0rpx auto;
+  margin-top: 10rpx;
+}
+.content{
+  width: 100%;
+  height: auto;
+  padding: 20rpx 0rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #cdcdcd;
+}
+.contentImg{
+  width: 232rpx;
+  height: 232rpx;
+  border-radius: 15rpx;
+}
+.contentImg>image{
+  width: 100%;
+  height: 100%;
+  border-radius: 15rpx;
+}
+.content-right{
+  width: 530rpx;
+  height: 100%;
+  margin-left: 20rpx;
+}
+.title{
+  width: 100%;
+  height: 138rpx;
+  overflow: hidden;
+}
+.titleText{
+  font-size: 35rpx;
+  color: #333;
+  text-align: left;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;/*行数n*/
+  -webkit-box-orient: vertical; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.introduction{
+  font-size: 28rpx;
+  color: #cdcdcd;
+  text-align: left;
+  padding: 15rpx 0rpx;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;/*行数n*/
+  -webkit-box-orient: vertical; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.count{
+  width: 100%;
+  height: 50rpx;
+  display: flex;
+  justify-content: start;
+}
+.playcount{
+ font-size: 25rpx;
+ color: #cdcdcd;
+ margin-right: 30rpx;
+}
+.jicount{
+  font-size: 25rpx;
+  color: #cdcdcd;
+}

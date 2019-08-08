@@ -1,0 +1,12 @@
+
+<!-- logo -->
+<view class="logo" hover-class="none" hover-stop-propagation="false">
+    <image class="logoImg" src="/image/logo.png" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
+</view>
+
+<!-- 登录按钮 -->
+
+<view class="loginButton" hover-class="none" hover-stop-propagation="false">
+    <view class="wechatLogin"><button><text class="icon-github"></text>微信登录</button></view>
+    <view class="phoneLogin"><button>手机号登录</button></view>
+</view>
