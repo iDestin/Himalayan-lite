@@ -191,3 +191,15 @@
   font-size: 25rpx;
   color: #cdcdcd;
 }
+
+.dataNotip{
+  width: 100%;
+  height: 300rpx;
+  padding-top: 150rpx;
+}
+.tip{
+  width: auto;
+  height: 100rpx;
+  text-align: center;
+  margin: 0rpx auto;
+}

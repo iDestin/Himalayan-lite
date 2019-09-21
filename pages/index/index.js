@@ -40,11 +40,18 @@ Page({
       responseType: 'text',
       success: (result)=>{
         console.log(result);
-        that.setData({
-          xiaoshuocontent:result.data.hotRecommends.list[0].list,
-          xiangshengcontent:result.data.hotRecommends.list[2].list,
-          tuokocontent:result.data.hotRecommends.list[4].list
-        })
+        if(result.statusCode == 200){
+          that.setData({
+            showitem:true,
+            xiaoshuocontent:result.data.hotRecommends.list[0].list,
+            xiangshengcontent:result.data.hotRecommends.list[2].list,
+            tuokocontent:result.data.hotRecommends.list[4].list
+          })
+        }else{
+          that.setData({
+            showitem:false
+          })
+        }
       },
       fail: ()=>{},
       complete: ()=>{}

@@ -86,92 +86,95 @@
     </view>
   </view>
 </view>
-<!-- 有声小说 -->
-<view class="contentList">
-  <view class="barTitle">
-    <view class="Title-left">有声小说</view>
-    <view class="Title-right">查看全部></view>
-  </view>
-  <block wx:for="{{xiaoshuocontent}}" wx:key>
-    <view class="content">
-      <view class="contentImg">
-        <image src="{{item.albumCoverUrl290}}" mode="widthFix" lazy-load="false"></image>
-      </view>
-      <view class="content-right">
-        <view class="title">
-          <view class="titleText">{{item.title}}</view>
-          <view class="introduction">{{item.trackTitle}}</view>
-        </view>
-        <view class="count">
-          <text class="playcount">
-            <!-- <text class="icon-"></text> -->
-            126亿
-          </text>
-          <text class="jicount">
-            {{item.tracks}}集
-          </text>
-        </view>
-      </view>
-    </view>
-  </block>
-</view>
 
-<!-- 相声评书 -->
-<view class="contentList">
-  <view class="barTitle">
-    <view class="Title-left">相声评书</view>
-    <view class="Title-right">查看全部></view>
-  </view>
-  <block wx:for="{{xiangshengcontent}}" wx:key>
-    <view class="content">
-      <view class="contentImg">
-        <image src="{{item.albumCoverUrl290}}" mode="widthFix" lazy-load="false"></image>
-      </view>
-      <view class="content-right">
-        <view class="title">
-          <view class="titleText">{{item.title}}</view>
-          <view class="introduction">{{item.trackTitle}}</view>
-        </view>
-        <view class="count">
-          <text class="playcount">
-            <!-- <text class="icon-"></text> -->
-            126亿
-          </text>
-          <text class="jicount">
-            {{item.tracks}}集
-          </text>
-        </view>
-      </view>
+<!-- 有数据的时候显示 -->
+<block wx:if="{{showitem}}">
+  <!-- 有声小说 -->
+  <view class="contentList">
+    <view class="barTitle">
+      <view class="Title-left">有声小说</view>
+      <view class="Title-right">查看全部></view>
     </view>
-  </block>
-</view>
-
-<!-- 脱口秀 -->
-<view class="contentList">
-  <view class="barTitle">
-    <view class="Title-left">脱口秀</view>
-    <view class="Title-right">查看全部></view>
+    <block wx:for="{{xiaoshuocontent}}" wx:key>
+      <view class="content">
+        <view class="contentImg">
+          <image src="{{item.albumCoverUrl290}}" mode="widthFix" lazy-load="false"></image>
+        </view>
+        <view class="content-right">
+          <view class="title">
+            <view class="titleText">{{item.title}}</view>
+            <view class="introduction">{{item.trackTitle}}</view>
+          </view>
+          <view class="count">
+            <text class="playcount">
+              <!-- <text class="icon-"></text> -->
+              126亿
+            </text>
+            <text class="jicount">{{item.tracks}}集</text>
+          </view>
+        </view>
+      </view>
+    </block>
   </view>
-  <block wx:for="{{tuokocontent}}" wx:key>
-    <view class="content">
-      <view class="contentImg">
-        <image src="{{item.albumCoverUrl290}}" mode="widthFix" lazy-load="false"></image>
-      </view>
-      <view class="content-right">
-        <view class="title">
-          <view class="titleText">{{item.title}}</view>
-          <view class="introduction">{{item.trackTitle}}</view>
-        </view>
-        <view class="count">
-          <text class="playcount">
-            <!-- <text class="icon-"></text> -->
-            126亿
-          </text>
-          <text class="jicount">
-            {{item.tracks}}集
-          </text>
-        </view>
-      </view>
+  <!-- 相声评书 -->
+  <view class="contentList">
+    <view class="barTitle">
+      <view class="Title-left">相声评书</view>
+      <view class="Title-right">查看全部></view>
     </view>
-  </block>
-</view>
+    <block wx:for="{{xiangshengcontent}}" wx:key>
+      <view class="content">
+        <view class="contentImg">
+          <image src="{{item.albumCoverUrl290}}" mode="widthFix" lazy-load="false"></image>
+        </view>
+        <view class="content-right">
+          <view class="title">
+            <view class="titleText">{{item.title}}</view>
+            <view class="introduction">{{item.trackTitle}}</view>
+          </view>
+          <view class="count">
+            <text class="playcount">
+              <!-- <text class="icon-"></text> -->
+              126亿
+            </text>
+            <text class="jicount">{{item.tracks}}集</text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <!-- 脱口秀 -->
+  <view class="contentList">
+    <view class="barTitle">
+      <view class="Title-left">脱口秀</view>
+      <view class="Title-right">查看全部></view>
+    </view>
+    <block wx:for="{{tuokocontent}}" wx:key>
+      <view class="content">
+        <view class="contentImg">
+          <image src="{{item.albumCoverUrl290}}" mode="widthFix" lazy-load="false"></image>
+        </view>
+        <view class="content-right">
+          <view class="title">
+            <view class="titleText">{{item.title}}</view>
+            <view class="introduction">{{item.trackTitle}}</view>
+          </view>
+          <view class="count">
+            <text class="playcount">
+              <!-- <text class="icon-"></text> -->
+              126亿
+            </text>
+            <text class="jicount">{{item.tracks}}集</text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</block>
+<block wx:else>
+  <view class="dataNotip">
+    <view class="tip">
+      网络暂时走丢了，请稍后再试
+    </view>  
+  </view>
+</block>
