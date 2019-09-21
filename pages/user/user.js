@@ -44,15 +44,20 @@ Page({
   // 获取用户的头像和昵称信息
   bindGetUserInfo(e) {
     var that = this;
-    console.log(e.detail.userInfo)
-    that.setData({
-      login:true,
-      avatarUrl:e.detail.userInfo.avatarUrl,
-      nickName:e.detail.userInfo.nickName
+    
+    wx.getUserInfo({
+      success: function(res) {
+        console.log(e.detail.userInfo);
+        that.setData({
+          login:true,
+          avatarUrl:e.detail.userInfo.avatarUrl,
+          nickName:e.detail.userInfo.nickName
+        })
+      }
     })
     
   },
-
+  
   /**
    * 用户点击右上角分享
    */

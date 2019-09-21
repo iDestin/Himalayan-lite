@@ -1,12 +1,33 @@
-
-<!-- logo -->
-<view class="logo" hover-class="none" hover-stop-propagation="false">
-    <image class="logoImg" src="/image/logo.png" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
-</view>
-
-<!-- 登录按钮 -->
-
-<view class="loginButton" hover-class="none" hover-stop-propagation="false">
-    <view class="wechatLogin"><button><text class="icon-github"></text>微信登录</button></view>
-    <view class="phoneLogin"><button>手机号登录</button></view>
-</view>
+<!-- 若是没有登录就显示登录界面 -->
+<block wx:if="{{login}}">
+    <!-- logo -->
+    <view class="logo" hover-class="none" hover-stop-propagation="false">
+        <image class="logoImg" src="/image/logo.png" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
+    </view>
+    <!-- 登录按钮 -->
+    <view class="loginButton" hover-class="none" hover-stop-propagation="false">
+        <view class="wechatLogin">
+            <button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
+                <text class="icon-github"></text>
+                微信登录
+            </button>
+        </view>
+        <view class="phoneLogin">
+            <button>手机号登录</button>
+        </view>
+    </view>
+</block>
+<block wx:else>
+    <!-- 搜索框 -->
+    <view class="search marginTopBottom">
+        <view class="icon-search"></view>
+        <input placeholder="搜索你想听的节目"></input>
+    </view>
+    <view class="titleBar">
+      <view class="itemTitle" wx:for="{{content}}">
+          {{item.text}}
+          
+      </view>
+      
+    </view>
+</block>

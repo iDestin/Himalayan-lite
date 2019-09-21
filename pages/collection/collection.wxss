@@ -1,1 +1,26 @@
 /* pages/collection/collection.wxss */
+.titleBar{
+    width: 100%;
+    height: 80rpx;
+    /* 这个配色不对 */
+    border-bottom: 1rpx solid #aaaaaa;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 28rpx;
+    overflow: hidden;
+}
+.itemTitle{
+    width: auto;
+   
+}
+.currtline {
+    margin: -8rpx auto 0 auto;
+    width: 100rpx;
+    height: 1rpx;
+    border-radius: 4rpx;
+  }
+  .currtline.active {
+    background: #ff520f;
+    transition: all .3s;
+  }

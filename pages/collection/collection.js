@@ -5,21 +5,41 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    content: [
+      {
+        text: "我的收藏"
+      },
+      {
+        text: "我的已购"
+      },
+      {
+        text: "收听历史"
+      },
+      {
+        text: "我的礼包"
+      }
+    ]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+    var that = this;
+    wx.getSetting({
+      success(res) {
+        if (res.authSetting['scope.userInfo']) {
+          // 已经授权，可以直接调用 getUserInfo 获取头像昵称
+          that.setData({
+            login: false
+          })
+        } else {
+          that.setData({
+            login: true
+          })
+        }
+      }
+    })
   },
 
   /**
@@ -30,37 +50,36 @@ Page({
   },
 
   /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
 
-  }
+  },
+  bindGetUserInfo(e) {
+    var that = this;
+    wx.getUserInfo({
+      success: function (res) {
+        console.log(e.detail.userInfo);
+        that.setData({
+          login: false,
+        })
+        // 存缓存
+        wx.setStorage({
+          key: 'avatarUrl',
+          data: e.detail.userInfo.avatarUrl,
+          success: (result) => {
+            console.log('缓存成功');
+          },
+
+        });
+        wx.setStorage({
+          key: 'nickName',
+          data: e.detail.userInfo.nickName,
+          success: (result) => {
+            console.log('缓存成功');
+          },
+        });
+      }
+    })
+  },
 })

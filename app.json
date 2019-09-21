@@ -31,7 +31,7 @@
       "pagePath": "pages/collection/collection",
       "text": "收藏",
       "iconPath": "image/icon/collection-icon.png",
-      "selectedIconPath": "image/icon/collection-selectIcon.png"
+      "selectedIconPath": "image/icon/collection-selecticon.png"
     },
     {
       "pagePath": "pages/user/user",
