@@ -21,7 +21,7 @@
     
 }
 .active{
-    color: orange;
+    color: #ff520f;
 }
 .contentScroll-item{
     width: auto;

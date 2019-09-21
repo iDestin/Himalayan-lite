@@ -157,37 +157,60 @@ Page({
           {text:"历史"}
         ]
       },
+      {
+        title:"广播剧",
+        content:[
+          {text:"言情"},
+          {text:"悬疑"},
+          {text:"都市"},
+          {text:"幻想"},
+          {text:"武侠"},
+          {text:"历史"}
+        ]
+      },
+      {
+        title:"戏曲",
+        content:[
+          {text:"言情"},
+          {text:"悬疑"},
+          {text:"都市"},
+          {text:"幻想"},
+          {text:"武侠"},
+          {text:"历史"}
+        ]
+      },
     ]
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
+
   onLoad: function (options) {
     var that = this;
+    //调用getSystemInfo APi获取到用户的手机屏幕高度，动态设置scroll-view的高度
+
+    // 还有缺陷，代改进
     wx.getSystemInfo({
       success (res) {
-        console.log(res.screenHeight);
-        var height = (res.screenHeight*2);
+        console.log(res.windowHeight);
+        // var heightleft = (res.windowHeight*2);
+        var height = (res.windowHeight*2);
         console.log(height);
         that.setData({
-          phoneHeight:height
+          phoneHeight:height,
         })
       }
     })
   },
 
+  //随着滚动动态设置左侧边栏的选中态
   showActive:function (e) {
-    console.log(e);
-    if(e.target.offsetTop=== parseInt(281.4*e.target.dataset.index)){
-      that.setData({
-        activeIndex: e.target.dataset.index,
-      })
-    }
-    // this.setData({
-    //   activeIndex: e.detail
-    //  })
+    //方法欠佳，还需改进
+    console.log(parseInt( e.detail.scrollTop/125));
+    var index = parseInt( e.detail.scrollTop/125);
+    this.setData({
+      activeIndex: index
+     })
   },
+  // 侧边栏的点击事件
   change:function (e){
     var that = this;
     console.log(e)
@@ -197,52 +220,4 @@ Page({
       TabCur: e.currentTarget.dataset.id,
     })
   },
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
 })

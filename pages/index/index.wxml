@@ -10,7 +10,7 @@
     <!-- 轮播图图片 -->
     <swiper-item class="swiperItem" wx:for="{{imgList}}" wx:key>
       <!-- 加上widthFix可以使图片自适应 -->
-      <image src="{{item}}" mode="widthFix"></image>
+      <image src="{{item}}" ></image>
     </swiper-item>
   </swiper>
   <!-- 为了和喜马拉雅一致，自己需定制轮播图dots -->
@@ -23,11 +23,28 @@
 </view>
 <!-- 宫格导航 -->
 <view class="nav">
-  <block wx:for="{{navList}}" wx:key>
-    <view class="navItem">
+  <block>  
+  <!-- 因为每个宫格的导航都不一样所以没有使用循环 -->
+    <view class="navItem" bindtap="goToBangDan">
       <!-- 因为没有合适的图，所以全部使用的一样的 -->
-      <image class="navIcon" src="{{item.navIconImg}}" mode="widthFix" lazy-load="false"></image>
-      <text class="navText">{{item.navText}}</text>
+      <image class="navIcon" src="/image/nav-icon/bangdan.png" mode="widthFix" lazy-load="false"></image>
+      <text class="navText">榜单</text>
+    </view>
+     <view class="navItem" bindtap="">
+      <image class="navIcon" src="/image/nav-icon/bangdan.png" mode="widthFix" lazy-load="false"></image>
+      <text class="navText">听小说</text>
+    </view>
+     <view class="navItem" bindtap="">
+      <image class="navIcon" src="/image/nav-icon/bangdan.png" mode="widthFix" lazy-load="false"></image>
+      <text class="navText">情感电台</text>
+    </view>
+     <view class="navItem" bindtap="">
+      <image class="navIcon" src="/image/nav-icon/bangdan.png" mode="widthFix" lazy-load="false"></image>
+      <text class="navText">听相声</text>
+    </view>
+     <view class="navItem" bindtap="">
+      <image class="navIcon" src="/image/nav-icon/bangdan.png" mode="widthFix" lazy-load="false"></image>
+      <text class="navText">儿童故事</text>
     </view>
   </block>
 </view>

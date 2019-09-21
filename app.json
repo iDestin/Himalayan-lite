@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/classification/classification",
     "pages/collection/collection",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/index/bangdan/bangdan"
   ],
   "window": {
     "navigationBarTitleText": "喜马拉雅",
