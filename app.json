@@ -4,7 +4,8 @@
     "pages/classification/classification",
     "pages/collection/collection",
     "pages/user/user",
-    "pages/index/bangdan/bangdan"
+    "pages/index/bangdan/bangdan",
+    "pages/details/details"
   ],
   "window": {
     "navigationBarTitleText": "喜马拉雅",
