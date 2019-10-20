@@ -17,6 +17,13 @@ Page({
       '/image/ad6.jpg',
       '/image/ad7.jpg'
     ],
+    navList:[
+      {icon:'/image/nav-icon/diantai.png',events:'goToBangDan',text:'榜单'},
+      {icon:'/image/nav-icon/diantai.png',events:'goToBangDan',text:'听小说'},
+      {icon:'/image/nav-icon/diantai.png',events:'goToBangDan',text:'情感电台'},
+      {icon:'/image/nav-icon/diantai.png',events:'goToBangDan',text:'听相声'},
+      {icon:'/image/nav-icon/diantai.png',events:'goToBangDan',text:'儿童故事'},
+    ],
     swiperCurrent: 0,
   },
   //轮播图改变事件
@@ -43,6 +50,7 @@ Page({
         if(result.statusCode == 200){
           that.setData({
             showitem:true,
+            // guess:result.data.guess.list[0].list,
             xiaoshuocontent:result.data.hotRecommends.list[0].list,
             xiangshengcontent:result.data.hotRecommends.list[2].list,
             tuokocontent:result.data.hotRecommends.list[4].list
@@ -53,8 +61,6 @@ Page({
           })
         }
       },
-      fail: ()=>{},
-      complete: ()=>{}
     });
   },
   goToBangDan:function(){

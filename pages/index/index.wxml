@@ -24,27 +24,10 @@
 <!-- 宫格导航 -->
 <view class="nav">
   <block>  
-  <!-- 因为每个宫格的导航都不一样所以没有使用循环 -->
-    <view class="navItem" bindtap="goToBangDan">
+    <view class="navItem" bindtap="{{item.events}}" wx:for="{{navList}}"  wx:key="index">
       <!-- 因为没有合适的图，所以全部使用的一样的 -->
-      <image class="navIcon" src="/image/nav-icon/bangdan.png" mode="widthFix" lazy-load="false"></image>
-      <text class="navText">榜单</text>
-    </view>
-     <view class="navItem" bindtap="">
-      <image class="navIcon" src="/image/nav-icon/bangdan.png" mode="widthFix" lazy-load="false"></image>
-      <text class="navText">听小说</text>
-    </view>
-     <view class="navItem" bindtap="">
-      <image class="navIcon" src="/image/nav-icon/bangdan.png" mode="widthFix" lazy-load="false"></image>
-      <text class="navText">情感电台</text>
-    </view>
-     <view class="navItem" bindtap="">
-      <image class="navIcon" src="/image/nav-icon/bangdan.png" mode="widthFix" lazy-load="false"></image>
-      <text class="navText">听相声</text>
-    </view>
-     <view class="navItem" bindtap="">
-      <image class="navIcon" src="/image/nav-icon/bangdan.png" mode="widthFix" lazy-load="false"></image>
-      <text class="navText">儿童故事</text>
+      <image class="navIcon" src="{{item.icon}}" mode="widthFix" lazy-load="false"></image>
+      <text class="navText">{{item.text}}</text>
     </view>
   </block>
 </view>
@@ -106,11 +89,11 @@
             <view class="introduction">{{item.trackTitle}}</view>
           </view>
           <view class="count">
-            <text class="playcount">
+            <view class="playcount">
               <!-- <text class="icon-"></text> -->
               126亿
-            </text>
-            <text class="jicount">{{item.tracks}}集</text>
+            </view>
+            <view class="jicount">{{item.tracks}}集</view>
           </view>
         </view>
       </view>
@@ -133,11 +116,11 @@
             <view class="introduction">{{item.trackTitle}}</view>
           </view>
           <view class="count">
-            <text class="playcount">
+            <view class="playcount">
               <!-- <text class="icon-"></text> -->
               126亿
-            </text>
-            <text class="jicount">{{item.tracks}}集</text>
+            </view>
+            <view class="jicount">{{item.tracks}}集</view>
           </view>
         </view>
       </view>
@@ -160,11 +143,11 @@
             <view class="introduction">{{item.trackTitle}}</view>
           </view>
           <view class="count">
-            <text class="playcount">
-              <!-- <text class="icon-"></text> -->
+            <view class="playcount">
+              <!-- <view class="icon-"></view> -->
               126亿
-            </text>
-            <text class="jicount">{{item.tracks}}集</text>
+            </view>
+            <view class="jicount">{{item.tracks}}集</view>
           </view>
         </view>
       </view>

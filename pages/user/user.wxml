@@ -65,6 +65,7 @@
                 <view class="">
                     <text class="icon-creative text-gray"></text>
                     夜间模式
+                    <!-- <button class="switch"></button> -->
                 </view>
                 <text class="icon-right text-gray"></text>
             </view>

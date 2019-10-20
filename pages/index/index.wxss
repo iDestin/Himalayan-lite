@@ -181,6 +181,7 @@
   height: 50rpx;
   display: flex;
   justify-content: start;
+  align-items: center;
 }
 .playcount{
  font-size: 25rpx;
@@ -202,4 +203,6 @@
   height: 100rpx;
   text-align: center;
   margin: 0rpx auto;
+  color: red;
+  font-weight: 800;
 }

@@ -3,8 +3,6 @@
 /* 引入icon样式库 */
 @import 'icon.wxss';
 
-
-
 /* 登录样式 */
 .logo{
     width: 128rpx;
@@ -96,7 +94,8 @@
   .Title-left{
     float: left;
     font-size: 37rpx;
-    font-weight: 470;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
     color: #333;
   }
   .Title-right{
