@@ -1,5 +1,5 @@
 <!-- pages/user/user.wxml -->
-<block wx:if="{{!login}}">
+<block wx:if="{{login}}">
     <!-- logo -->
     <view class="logo">
         <image class="logoImg" src="/image/logo.png" mode="widthFix"></image>
@@ -13,7 +13,7 @@
                 微信登录
             </button>
         </view>
-        <view class="phoneLogin">
+        <view class="phoneLogin" bindtap="phoneLogin">
             <button>手机号登录</button>
         </view>
     </view>

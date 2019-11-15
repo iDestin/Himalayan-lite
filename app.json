@@ -5,7 +5,8 @@
     "pages/collection/collection",
     "pages/user/user",
     "pages/index/bangdan/bangdan",
-    "pages/details/details"
+    "pages/details/details",
+    "pages/user/phoneLogin/phoneLogin"
   ],
   "window": {
     "navigationBarTitleText": "喜马拉雅",
@@ -20,13 +21,13 @@
       "pagePath": "pages/index/index",
       "text": "首页",
       "iconPath": "image/icon/home-icon.png",
-      "selectedIconPath": "image/icon/home-selectIcon.png"
+      "selectedIconPath": "image/icon/home-selecticon.png"
     },
     {
       "pagePath": "pages/classification/classification",
       "text": "分类",
       "iconPath": "image/icon/fen-icon.png",
-      "selectedIconPath": "image/icon/fen-selectIcon.png"
+      "selectedIconPath": "image/icon/fen-selecticon.png"
     },
     {
       "pagePath": "pages/collection/collection",
@@ -38,7 +39,7 @@
       "pagePath": "pages/user/user",
       "text": "我的",
       "iconPath": "image/icon/user-icon.png",
-      "selectedIconPath": "image/icon/user-selectIcon.png"
+      "selectedIconPath": "image/icon/user-selecticon.png"
     }]
   },
   "debug":true,

@@ -1,6 +1,6 @@
 /* pages/user/user.wxss */
 .body{
-    background-color: #ece6e6;
+    background-color: #f3f0f0;
 }
 .topBar{
     width: 100%;

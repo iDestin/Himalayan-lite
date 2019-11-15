@@ -1,4 +1,7 @@
 // pages/user/user.js
+const app = getApp()
+let userInfo = app.globalData.userInfo;
+let login = app.globalData.login;
 Page({
 
   /**
@@ -23,39 +26,33 @@ Page({
       }
     })
     // 查看是否授权
-    wx.getSetting({
-      success(res) {
-        if (res.authSetting['scope.userInfo']) {
-          // 已经授权，可以直接调用 getUserInfo 获取头像昵称
-          wx.getUserInfo({
-            success: function (res) {
-              console.log(res.userInfo);
-              that.setData({
-                login:true,
-                avatarUrl:res.userInfo.avatarUrl,
-                nickName:res.userInfo.nickName
-              })
-            }
-          })
-        }
-      }
-    })
+    if (app.globalData.userInfo === null) {
+      that.setData({
+        login: login
+      })
+    } else {
+      that.setData({
+        login: app.globalData.login,
+        avatarUrl: app.globalData.userInfo.avatarUrl,
+        nickName: app.globalData.userInfo.nickName
+      })
+    }
   },
   // 获取用户的头像和昵称信息
   bindGetUserInfo(e) {
     var that = this;
-    
     wx.getUserInfo({
       success: function(res) {
         console.log(e.detail.userInfo);
+        app.globalData.userInfo = e.detail.userInfo;
+        app.globalData.login = false;
         that.setData({
-          login:true,
+          login: app.globalData.login,
           avatarUrl:e.detail.userInfo.avatarUrl,
           nickName:e.detail.userInfo.nickName
         })
       }
     })
-    
   },
   
   /**
@@ -63,5 +60,15 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  phoneLogin:function(){
+    wx.navigateTo({
+      url: './phoneLogin/phoneLogin',
+      success: (result)=>{
+        
+      },
+      fail: ()=>{},
+      complete: ()=>{}
+    });
   }
 })

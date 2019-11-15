@@ -8,7 +8,6 @@
 <!-- 分类索引 -->
 <view class="ification">
     <!-- 左边部分 -->
-    <!-- 刻度尺的样式未能实现 -->
     <scroll-view class="scroll-left" scroll-y scroll-with-animation style="height:{{phoneHeight}}rpx" scroll-top="{{VerticalNavTop}}">
         <block wx:for="{{ificationTitle}}" wx:key="index">
             <view class="leftTitle {{index === activeIndex ? 'active':''}}" data-index="{{index}}" data-id="{{index}}" bindtap="change">{{item.title}}</view>
@@ -32,5 +31,4 @@
             </view>
         </view>
     </scroll-view>
-    
 </view>

@@ -1,0 +1,114 @@
+/*  
+    96D655 
+    CCCCCC
+*/
+.main{
+   width: 100%; 
+}
+
+.content{
+    width: 80%;
+    margin: 0rpx auto;
+    margin-top: 100rpx;
+}
+.slogn{
+    width: 100%;
+    height: auto;
+    font-size: 25rpx;
+    color: #c3c3c3;
+    text-align: center;
+    /* word-spacing: 20rpx; */
+}
+.login{
+    width: 100%;
+    height: auto;
+    margin-top: 50rpx;
+    overflow: hidden;
+}
+.phoneNumber{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 20rpx;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 0.5rpx solid #cccccc;
+}
+.code{
+    width: 60rpx;
+    font-size: 27rpx;
+    line-height: 60rpx;
+    text-align: center;
+    padding-right: 20rpx;
+    border-right: 1rpx solid #cccccc;
+    /* box-sizing: border-box; */
+    margin-right: 20rpx;
+    color: #cccccc;
+}
+.yzm{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 20rpx;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 0.5rpx solid #cccccc;
+}
+.getcode{
+    width: 200rpx;
+    font-size: 35rpx;
+    line-height: 60rpx;
+    text-align: center;
+    padding-left: 20rpx;
+    border-left: 1rpx solid #cccccc;
+    /* box-sizing: border-box; */
+    /* margin-left: 20rpx; */
+    color: #cccccc;
+}
+.place{
+    font-size: 29rpx;
+}
+.submit{
+    width: 100%;
+    height: 100rpx;
+    margin-top: 50rpx;
+    border-radius: 50rpx;
+    border: 0rpx;
+}
+.submit button{
+    width: 100%;
+    height: 100rpx;
+    /* margin-top: 50rpx; */
+    border-radius: 50rpx;
+    border: 0rpx;
+    color: #ffffff;
+    background: #cccccc;
+    font-size: 38rpx;
+}
+.wechat{
+    width: 100%;
+    height: auto;
+    margin-top: 150rpx;
+    text-align: center;
+}
+.tips{
+    font-size: 32rpx;
+    color: #333333;
+}
+.wecahtlogin{
+    width: 100%;
+    height: 100rpx;
+    margin-top: 100rpx;
+    border-radius: 50rpx;
+    border: 0rpx;
+}
+.wecahtlogin button{
+    width: 100%;
+    height: 100rpx;
+    border-radius: 50rpx;
+    border: 0rpx;
+    background: #96D655;
+    color: #ffffff;
+    font-size: 38rpx;
+}

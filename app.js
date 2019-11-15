@@ -1,4 +1,5 @@
 //app.js
+let height = 0;
 App({
   onLaunch: function () {
     // 展示本地存储能力
@@ -20,8 +21,9 @@ App({
           wx.getUserInfo({
             success: res => {
               // 可以将 res 发送给后台解码出 unionId
+              console.log("app.js:"+res.userInfo)
               this.globalData.userInfo = res.userInfo
-
+              this.globalData.login = false
               // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
               // 所以此处加入 callback 以防止这种情况
               if (this.userInfoReadyCallback) {
@@ -32,8 +34,17 @@ App({
         }
       }
     })
+    //获取设备信息
+    wx.getSystemInfo({
+      success (res) {
+        console.log(res.windowHeight);
+        height = res.windowHeight;
+      }
+    })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    login:true,
+    phoneHeight:height
   }
 })

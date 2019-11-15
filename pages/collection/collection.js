@@ -1,4 +1,10 @@
 // pages/collection/collection.js
+
+const app = getApp()
+
+let userInfo = app.globalData.userInfo;
+let login = app.globalData.login
+
 Page({
 
   /**
@@ -26,20 +32,18 @@ Page({
    */
   onLoad: function (options) {
     var that = this;
-    wx.getSetting({
-      success(res) {
-        if (res.authSetting['scope.userInfo']) {
-          // 已经授权，可以直接调用 getUserInfo 获取头像昵称
-          that.setData({
-            login: false
-          })
-        } else {
-          that.setData({
-            login: true
-          })
-        }
-      }
-    })
+    // console.log(app)
+    // console.log("userInfo" +userInfo)
+    if (app.globalData.userInfo === null){
+      that.setData({
+        login:login
+      })
+    }else{
+      console.log("login:" + app.globalData.login)
+      that.setData({
+        login: app.globalData.login
+      })
+    }
   },
 
   /**
@@ -55,30 +59,18 @@ Page({
   onShareAppMessage: function () {
 
   },
+  
+  // 点击获取头像和昵称
   bindGetUserInfo(e) {
     var that = this;
     wx.getUserInfo({
       success: function (res) {
+        app.globalData.userInfo = e.detail.userInfo;
+        app.globalData.login = false;
         console.log(e.detail.userInfo);
         that.setData({
-          login: false,
+          login: app.globalData.login,
         })
-        // 存缓存
-        wx.setStorage({
-          key: 'avatarUrl',
-          data: e.detail.userInfo.avatarUrl,
-          success: (result) => {
-            console.log('缓存成功');
-          },
-
-        });
-        wx.setStorage({
-          key: 'nickName',
-          data: e.detail.userInfo.nickName,
-          success: (result) => {
-            console.log('缓存成功');
-          },
-        });
       }
     })
   },

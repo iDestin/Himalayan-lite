@@ -24,10 +24,8 @@
         <input placeholder="搜索你想听的节目"></input>
     </view>
     <view class="titleBar">
-      <view class="itemTitle" wx:for="{{content}}">
+      <view class="itemTitle" wx:for="{{content}}" wx:key>
           {{item.text}}
-          
       </view>
-      
     </view>
 </block>

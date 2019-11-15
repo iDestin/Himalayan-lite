@@ -190,10 +190,10 @@ Page({
     // 还有缺陷，代改进
     wx.getSystemInfo({
       success (res) {
-        console.log(res.windowHeight);
+        
         // var heightleft = (res.windowHeight*2);
         var height = (res.windowHeight*2);
-        console.log(height);
+       
         that.setData({
           phoneHeight:height,
         })
@@ -204,7 +204,7 @@ Page({
   //随着滚动动态设置左侧边栏的选中态
   showActive:function (e) {
     //方法欠佳，还需改进
-    console.log(parseInt( e.detail.scrollTop/125));
+    
     var index = parseInt( e.detail.scrollTop/125);
     this.setData({
       activeIndex: index
@@ -213,7 +213,7 @@ Page({
   // 侧边栏的点击事件
   change:function (e){
     var that = this;
-    console.log(e)
+    
     that.setData({
       VerticalNavTop: (e.currentTarget.dataset.index - 1) * 50,
       activeIndex: e.currentTarget.dataset.index,
