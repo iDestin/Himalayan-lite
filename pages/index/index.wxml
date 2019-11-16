@@ -10,7 +10,7 @@
     <!-- 轮播图图片 -->
     <swiper-item class="swiperItem" wx:for="{{imgList}}" wx:key>
       <!-- 加上widthFix可以使图片自适应 -->
-      <image src="{{item}}" mode="widthFix"></image>
+      <image src="{{item}}" ></image>
     </swiper-item>
   </swiper>
   <!-- 为了和喜马拉雅一致，自己需定制轮播图dots -->
@@ -23,11 +23,11 @@
 </view>
 <!-- 宫格导航 -->
 <view class="nav">
-  <block wx:for="{{navList}}" wx:key>
-    <view class="navItem">
+  <block>  
+    <view class="navItem" bindtap="{{item.events}}" wx:for="{{navList}}"  wx:key="index">
       <!-- 因为没有合适的图，所以全部使用的一样的 -->
-      <image class="navIcon" src="{{item.navIconImg}}" mode="widthFix" lazy-load="false"></image>
-      <text class="navText">{{item.navText}}</text>
+      <image class="navIcon" src="{{item.icon}}" mode="widthFix" lazy-load="false"></image>
+      <text class="navText">{{item.text}}</text>
     </view>
   </block>
 </view>
@@ -69,92 +69,95 @@
     </view>
   </view>
 </view>
-<!-- 有声小说 -->
-<view class="contentList">
-  <view class="barTitle">
-    <view class="Title-left">有声小说</view>
-    <view class="Title-right">查看全部></view>
-  </view>
-  <block wx:for="{{xiaoshuocontent}}" wx:key>
-    <view class="content">
-      <view class="contentImg">
-        <image src="{{item.albumCoverUrl290}}" mode="widthFix" lazy-load="false"></image>
-      </view>
-      <view class="content-right">
-        <view class="title">
-          <view class="titleText">{{item.title}}</view>
-          <view class="introduction">{{item.trackTitle}}</view>
-        </view>
-        <view class="count">
-          <text class="playcount">
-            <!-- <text class="icon-"></text> -->
-            126亿
-          </text>
-          <text class="jicount">
-            {{item.tracks}}集
-          </text>
-        </view>
-      </view>
-    </view>
-  </block>
-</view>
 
-<!-- 相声评书 -->
-<view class="contentList">
-  <view class="barTitle">
-    <view class="Title-left">相声评书</view>
-    <view class="Title-right">查看全部></view>
-  </view>
-  <block wx:for="{{xiangshengcontent}}" wx:key>
-    <view class="content">
-      <view class="contentImg">
-        <image src="{{item.albumCoverUrl290}}" mode="widthFix" lazy-load="false"></image>
-      </view>
-      <view class="content-right">
-        <view class="title">
-          <view class="titleText">{{item.title}}</view>
-          <view class="introduction">{{item.trackTitle}}</view>
-        </view>
-        <view class="count">
-          <text class="playcount">
-            <!-- <text class="icon-"></text> -->
-            126亿
-          </text>
-          <text class="jicount">
-            {{item.tracks}}集
-          </text>
-        </view>
-      </view>
+<!-- 有数据的时候显示 -->
+<block wx:if="{{showitem}}">
+  <!-- 有声小说 -->
+  <view class="contentList">
+    <view class="barTitle">
+      <view class="Title-left">有声小说</view>
+      <view class="Title-right">查看全部></view>
     </view>
-  </block>
-</view>
-
-<!-- 脱口秀 -->
-<view class="contentList">
-  <view class="barTitle">
-    <view class="Title-left">脱口秀</view>
-    <view class="Title-right">查看全部></view>
+    <block wx:for="{{xiaoshuocontent}}" wx:key>
+      <view class="content">
+        <view class="contentImg">
+          <image src="{{item.albumCoverUrl290}}" mode="widthFix" lazy-load="false"></image>
+        </view>
+        <view class="content-right">
+          <view class="title">
+            <view class="titleText">{{item.title}}</view>
+            <view class="introduction">{{item.trackTitle}}</view>
+          </view>
+          <view class="count">
+            <view class="playcount">
+              <!-- <text class="icon-"></text> -->
+              126亿
+            </view>
+            <view class="jicount">{{item.tracks}}集</view>
+          </view>
+        </view>
+      </view>
+    </block>
   </view>
-  <block wx:for="{{tuokocontent}}" wx:key>
-    <view class="content">
-      <view class="contentImg">
-        <image src="{{item.albumCoverUrl290}}" mode="widthFix" lazy-load="false"></image>
-      </view>
-      <view class="content-right">
-        <view class="title">
-          <view class="titleText">{{item.title}}</view>
-          <view class="introduction">{{item.trackTitle}}</view>
-        </view>
-        <view class="count">
-          <text class="playcount">
-            <!-- <text class="icon-"></text> -->
-            126亿
-          </text>
-          <text class="jicount">
-            {{item.tracks}}集
-          </text>
-        </view>
-      </view>
+  <!-- 相声评书 -->
+  <view class="contentList">
+    <view class="barTitle">
+      <view class="Title-left">相声评书</view>
+      <view class="Title-right">查看全部></view>
     </view>
-  </block>
-</view>
+    <block wx:for="{{xiangshengcontent}}" wx:key>
+      <view class="content">
+        <view class="contentImg">
+          <image src="{{item.albumCoverUrl290}}" mode="widthFix" lazy-load="false"></image>
+        </view>
+        <view class="content-right">
+          <view class="title">
+            <view class="titleText">{{item.title}}</view>
+            <view class="introduction">{{item.trackTitle}}</view>
+          </view>
+          <view class="count">
+            <view class="playcount">
+              <!-- <text class="icon-"></text> -->
+              126亿
+            </view>
+            <view class="jicount">{{item.tracks}}集</view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <!-- 脱口秀 -->
+  <view class="contentList">
+    <view class="barTitle">
+      <view class="Title-left">脱口秀</view>
+      <view class="Title-right">查看全部></view>
+    </view>
+    <block wx:for="{{tuokocontent}}" wx:key>
+      <view class="content">
+        <view class="contentImg">
+          <image src="{{item.albumCoverUrl290}}" mode="widthFix" lazy-load="false"></image>
+        </view>
+        <view class="content-right">
+          <view class="title">
+            <view class="titleText">{{item.title}}</view>
+            <view class="introduction">{{item.trackTitle}}</view>
+          </view>
+          <view class="count">
+            <view class="playcount">
+              <!-- <view class="icon-"></view> -->
+              126亿
+            </view>
+            <view class="jicount">{{item.tracks}}集</view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</block>
+<block wx:else>
+  <view class="dataNotip">
+    <view class="tip">
+      网络暂时走丢了，请稍后再试
+    </view>  
+  </view>
+</block>

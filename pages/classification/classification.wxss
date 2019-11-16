@@ -8,20 +8,25 @@
     justify-content: start;
 }
 .scroll-left{
-    width: 25%;
+    width: 22%;
     padding-top: 55rpx;
+    margin-right: 20rpx;
+    background-color: #fff;
     overflow: hidden;
 }
 .leftTitle{
+    text-align: center;
     font-size: 28rpx;
-    height: 130rpx;
+    height: 100rpx;
+    line-height: 100rpx;
 }
+
 .scroll-right{
     width: 75%;
-    
 }
 .active{
-    color: orange;
+    color: #ff520f;
+    background-color: rgb(243, 244, 246);
 }
 .contentScroll-item{
     width: auto;

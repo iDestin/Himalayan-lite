@@ -3,8 +3,6 @@
 /* 引入icon样式库 */
 @import 'icon.wxss';
 
-
-
 /* 登录样式 */
 .logo{
     width: 128rpx;
@@ -28,11 +26,14 @@
     width: 100%;
     height: 80rpx;
     border-radius: 50rpx;
+    border: 0rpx;
+    outline: none;
 }
 .wechatLogin button{
     background-color: #70E500;
     border-radius: 50rpx;
-    border: 1rpx solid #70E500;
+    /* border: 1rpx solid #70E500; */
+    border: none;
     color: #fff;
 }
 .phoneLogin{
@@ -93,11 +94,12 @@
   .Title-left{
     float: left;
     font-size: 37rpx;
-    font-weight: 470;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
     color: #333;
   }
   .Title-right{
     float: right;
-    font-size: 28rpx;
+    font-size: 26rpx;
     color: #aaa;
   }

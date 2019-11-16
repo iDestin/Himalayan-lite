@@ -8,10 +8,9 @@
 <!-- 分类索引 -->
 <view class="ification">
     <!-- 左边部分 -->
-   
     <scroll-view class="scroll-left" scroll-y scroll-with-animation style="height:{{phoneHeight}}rpx" scroll-top="{{VerticalNavTop}}">
         <block wx:for="{{ificationTitle}}" wx:key="index">
-            <view class="leftTitle {{index === activeIndex ? 'active':''}}" data-index="{{index}}" data-id="{{index}}" bindtap="change">— {{item.title}}</view>
+            <view class="leftTitle {{index === activeIndex ? 'active':''}}" data-index="{{index}}" data-id="{{index}}" bindtap="change">{{item.title}}</view>
         </block>
     </scroll-view>
     
@@ -32,5 +31,4 @@
             </view>
         </view>
     </scroll-view>
-    
 </view>

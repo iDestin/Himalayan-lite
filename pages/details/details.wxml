@@ -1,0 +1,33 @@
+<!-- title和背景 -->
+<view class="top-title-bar">
+    <view class="">
+        <view class="">
+            dsadsa
+        </view>
+        <view class="">
+            dsad
+        </view>
+    </view>
+    <view class="">
+        
+    </view>
+</view>
+<!-- 节目列表 -->
+<view class="Performance">
+    <view class="">
+        <view class="" wx:for="{{}}">
+            {{}}
+        </view>
+    </view>
+    <view class="">
+        
+    </view>
+    <view class="">
+        <view class="">
+            
+        </view>
+        <view class="">
+            
+        </view>
+    </view>
+</view>

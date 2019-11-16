@@ -18,11 +18,11 @@ Page({
       '/image/ad7.jpg'
     ],
     navList:[
-      {"navIconImg":'/image/nav-icon/bangdan.png',navText:"榜单"},
-      {"navIconImg":'/image/nav-icon/bangdan.png',navText:"听小说"},
-      {"navIconImg":'/image/nav-icon/bangdan.png',navText:"情感电台"},
-      {"navIconImg":'/image/nav-icon/bangdan.png',navText:"听相声"},
-      {"navIconImg":'/image/nav-icon/bangdan.png',navText:"儿童故事"},
+      {icon:'/image/nav-icon/diantai.png',events:'goToBangDan',text:'榜单'},
+      {icon:'/image/nav-icon/diantai.png',events:'goToBangDan',text:'听小说'},
+      {icon:'/image/nav-icon/diantai.png',events:'goToBangDan',text:'情感电台'},
+      {icon:'/image/nav-icon/diantai.png',events:'goToBangDan',text:'听相声'},
+      {icon:'/image/nav-icon/diantai.png',events:'goToBangDan',text:'儿童故事'},
     ],
     swiperCurrent: 0,
   },
@@ -47,63 +47,25 @@ Page({
       responseType: 'text',
       success: (result)=>{
         console.log(result);
-        that.setData({
-          xiaoshuocontent:result.data.hotRecommends.list[0].list,
-          xiangshengcontent:result.data.hotRecommends.list[2].list,
-          tuokocontent:result.data.hotRecommends.list[4].list
-        })
+        if(result.statusCode == 200){
+          that.setData({
+            showitem:true,
+            // guess:result.data.guess.list[0].list,
+            xiaoshuocontent:result.data.hotRecommends.list[0].list,
+            xiangshengcontent:result.data.hotRecommends.list[2].list,
+            tuokocontent:result.data.hotRecommends.list[4].list
+          })
+        }else{
+          that.setData({
+            showitem:false
+          })
+        }
       },
-      fail: ()=>{},
-      complete: ()=>{}
     });
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-    
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-    
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-    
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-    
+  goToBangDan:function(){
+    wx.navigateTo({
+      url: '/pages/index/bangdan/bangdan',
+    })
   }
 })

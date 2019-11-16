@@ -47,8 +47,12 @@
 			"currentL": -1,
 			"list": []
 		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
 		"miniprogram": {
-			"current": 1,
+			"current": 4,
 			"list": [
 				{
 					"id": -1,
@@ -61,6 +65,34 @@
 					"id": -1,
 					"name": "分类页",
 					"pathName": "pages/classification/classification",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "榜单页",
+					"pathName": "pages/index/bangdan/bangdan",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "user",
+					"pathName": "pages/user/user",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "details",
+					"pathName": "pages/details/details",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "phoneLogin",
+					"pathName": "pages/user/phoneLogin/phoneLogin",
 					"scene": null
 				}
 			]

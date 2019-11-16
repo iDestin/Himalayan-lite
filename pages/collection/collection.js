@@ -1,25 +1,49 @@
 // pages/collection/collection.js
+
+const app = getApp()
+
+let userInfo = app.globalData.userInfo;
+let login = app.globalData.login
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    content: [
+      {
+        text: "我的收藏"
+      },
+      {
+        text: "我的已购"
+      },
+      {
+        text: "收听历史"
+      },
+      {
+        text: "我的礼包"
+      }
+    ]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+    var that = this;
+    // console.log(app)
+    // console.log("userInfo" +userInfo)
+    if (app.globalData.userInfo === null){
+      that.setData({
+        login:login
+      })
+    }else{
+      console.log("login:" + app.globalData.login)
+      that.setData({
+        login: app.globalData.login
+      })
+    }
   },
 
   /**
@@ -30,37 +54,24 @@ Page({
   },
 
   /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
 
-  }
+  },
+  
+  // 点击获取头像和昵称
+  bindGetUserInfo(e) {
+    var that = this;
+    wx.getUserInfo({
+      success: function (res) {
+        app.globalData.userInfo = e.detail.userInfo;
+        app.globalData.login = false;
+        console.log(e.detail.userInfo);
+        that.setData({
+          login: app.globalData.login,
+        })
+      }
+    })
+  },
 })
