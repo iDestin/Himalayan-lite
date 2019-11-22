@@ -1,4 +1,4 @@
-# Himalayan-lite
+<center><h1>Himalayan-lite</h1></center>
 这是一个模仿喜马拉雅lite的微信小程序/会持续维护直到完美
 
 # 简单介绍
