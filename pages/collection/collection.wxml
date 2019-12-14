@@ -24,7 +24,8 @@
         <input placeholder="搜索你想听的节目"></input>
     </view>
     <view class="titleBar">
-      <view class="itemTitle" wx:for="{{content}}" wx:key>
+      <view class="itemTitle {{index == currentIndex ? 'active' : ' '}}" 
+        data-index="{{index}}" bindtap="checkItem" wx:for="{{content}}" wx:key="index">
           {{item.text}}
       </view>
     </view>

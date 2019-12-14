@@ -55,13 +55,17 @@ Page({
     })
   },
   
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  },
   phoneLogin:function(){
+    wx.navigateTo({
+      url: './phoneLogin/phoneLogin',
+      success: (result)=>{
+        
+      },
+      fail: ()=>{},
+      complete: ()=>{}
+    });
+  },
+  gotoLogin(){
     wx.navigateTo({
       url: './phoneLogin/phoneLogin',
       success: (result)=>{

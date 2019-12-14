@@ -76,7 +76,7 @@
                 </view>
                 <text class="icon-right text-gray"></text>
             </view>
-            <view class="choiceItem">
+            <view class="choiceItem" bindtap="gotoLogin">
                 <view class="">
                     <text class="icon-order text-gray"></text>
                     切换账号

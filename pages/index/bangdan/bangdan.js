@@ -7,6 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    showCover:false,
     currentTab:0,
     navTitle:[
       {title:'经典必听'},
@@ -52,6 +53,15 @@ Page({
     })
   },
   pullDown:function(){
-    
+    var that = this;
+    that.setData({
+      showCover:true
+    })
+  },
+  closeCover:function(){
+    var that = this;
+    that.setData({
+      showCover:false
+    })
   }
 })

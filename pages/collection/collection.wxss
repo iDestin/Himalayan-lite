@@ -3,24 +3,40 @@
     width: 100%;
     height: 80rpx;
     /* 这个配色不对 */
-    border-bottom: 1rpx solid #aaaaaa;
+    border-bottom: 1rpx solid #f1f1f1;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     font-size: 28rpx;
     overflow: hidden;
 }
 .itemTitle{
-    width: auto;
-   
+    width: 200rpx;
+    height: 100%;
+    text-align: center;
+    line-height: 80rpx;
+    position: relative;
+    color: #aaaaaa;
 }
-.currtline {
+.active:after{
+  content: '';
+  width: 40rpx;
+  height: 8rpx;
+  position: absolute;
+  bottom: 0rpx;
+  left: 70rpx;
+  border-radius: 15rpx;
+  background: #ff520f;
+}
+/* .currtline {
     margin: -8rpx auto 0 auto;
     width: 100rpx;
     height: 1rpx;
     border-radius: 4rpx;
-  }
-  .currtline.active {
-    background: #ff520f;
-    transition: all .3s;
-  }
+} */
+.active {
+  font-size: 32rpx;
+  font-weight: 700;
+  transition: all .3s;
+  color: #333333;
+}

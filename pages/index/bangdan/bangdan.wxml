@@ -1,21 +1,31 @@
-<view class="top-nav">
-  <scroll-view class="scroll-wrapper" scroll-x scroll-with-animation="true" scroll-into-view="item{{currentTab < 4 ? 0 : currentTab - 3}}" catchtouchmove="preventTouchMove" >
-    <view class="navigate-item" id="item{{index}}" wx:for="{{navTitle}}" wx:key="{{index}}" data-index="{{index}}" bindtap="handleClick">
-      <view class="names {{currentTab === index ? 'active' : ''}}">{{item.title}}</view>
-      <view class="currtline {{currentTab === index ? 'active' : ''}}"></view>
+<block wx:if="{{showCover}}">
+  <!-- 蒙板内容 要放在蒙板的外面-->
+  <view class="menu">
+    <view class="menuItem" wx:for="{{navTitle}}">{{item.title}}
+      <!-- <view class="currtline active"></view> -->
     </view>
-  </scroll-view>
-  <!-- 下拉按钮 -->
-  <view class="pull-down" bindtap="pullDown">
-    <view class="icon-right"></view>
+    
   </view>
-</view>
-<!-- 对应的内容区 -->
-<block wx:for="{{list}}" wx:key="{{index}}">
-  <view class="content">
+  <!-- 蒙板 -->
+  <view class="cover" bindtap="closeCover"></view>
+</block>
+<block>
+  <view class="top-nav">
+    <scroll-view class="scroll-wrapper" scroll-x scroll-with-animation="true" scroll-into-view="item{{currentTab < 4 ? 0 : currentTab - 3}}" catchtouchmove="preventTouchMove" >
+      <view class="navigate-item" id="item{{index}}" wx:for="{{navTitle}}" wx:key="{{index}}" data-index="{{index}}" bindtap="handleClick">
+        <view class="names {{currentTab === index ? 'active' : ''}}">{{item.title}}</view>
+        <view class="currtline {{currentTab === index ? 'active' : ''}}"></view>
+      </view>
+    </scroll-view>
+    <!-- 下拉按钮 -->
+    <view class="pull-down" bindtap="pullDown">
+      <view class="icon-right"></view>
+    </view>
+  </view>
+  <!-- 对应的内容区 -->
+  <view class="content"  wx:for="{{list}}" wx:key="{{index}}">
     <view class="indexNumber">
-    <!-- 此处写法不对，到了两位数的时候就不行了，并无好的方法，这里应该是后端给的数据 -->
-      <view>0{{index}}</view>
+      <view>{{index > 10 ? index : '0'+index}}</view>
     </view>
     <image src="{{item.albumCoverUrl290}}"></image>
     <view class="content-left">
@@ -35,12 +45,3 @@
     </view>
   </view>
 </block>
-
-<!-- 蒙布 -->
-<!-- <view class="cover">
-  <view class="">
-    <view class="">
-      撒大赛
-    </view>
-  </view>
-</view> -->
