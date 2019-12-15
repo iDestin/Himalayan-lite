@@ -67,5 +67,10 @@ Page({
     wx.navigateTo({
       url: '/pages/index/bangdan/bangdan',
     })
+  },
+  gotoDetails(){
+    wx.navigateTo({
+      url: '/pages/details/details',
+    })
   }
 })

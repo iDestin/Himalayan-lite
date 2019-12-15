@@ -2,7 +2,7 @@
 <block wx:if="{{login}}">
     <!-- logo -->
     <view class="logo" hover-class="none" hover-stop-propagation="false">
-        <image class="logoImg" src="/image/logo.png" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
+        <image class="logoImg" src="/image/logo.png" mode="widthFix" lazy-load="false"></image>
     </view>
     <!-- 登录按钮 -->
     <view class="loginButton" hover-class="none" hover-stop-propagation="false">

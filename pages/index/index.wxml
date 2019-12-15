@@ -10,13 +10,11 @@
     interval="3000" easing-function="easeOutCubic" 
     current="{{swiperCurren}}" 
     bindchange="swiperChange">
-
     <!-- 轮播图图片 -->
     <swiper-item class="swiperItem" wx:for="{{imgList}}" wx:key>
       <!-- 加上widthFix可以使图片自适应 -->
       <image src="{{item}}"></image>
     </swiper-item>
-
   </swiper>
   <!-- 为了和喜马拉雅一致，自己需定制轮播图dots -->
   <view class="dots">
@@ -46,7 +44,7 @@
   </view>
   <!-- 这没有没有使用数据绑定，因为是练手而且数据比较少 -->
   <view class="likeItemBox">
-    <view class="likeItem">
+    <view class="likeItem" bindtap="gotoDetails">
       <view class="likeimg">
         <image class="likeItemIcon" src="/image/guess1.jpg" mode="widthFix"></image>
         <view class="cover">
@@ -56,7 +54,7 @@
       </view>
       <view class="likeText">米小圈上学记:一二三年级</view>
     </view>
-    <view class="likeItem">
+    <view class="likeItem" bindtap="gotoDetails">
       <view class="likeimg">
         <image class="likeItemIcon" src="/image/guess2.jpg" mode="widthFix"></image>
         <view class="cover">
@@ -65,7 +63,7 @@
       </view>
       <view class="likeText">段子来了</view>
     </view>
-    <view class="likeItem">
+    <view class="likeItem" bindtap="gotoDetails">
       <view class="likeimg">
         <image class="likeItemIcon" src="/image/guess3.jpg" mode="widthFix"></image>
         <view class="cover">

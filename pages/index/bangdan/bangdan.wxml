@@ -4,7 +4,6 @@
     <view class="menuItem" wx:for="{{navTitle}}">{{item.title}}
       <!-- <view class="currtline active"></view> -->
     </view>
-    
   </view>
   <!-- 蒙板 -->
   <view class="cover" bindtap="closeCover"></view>

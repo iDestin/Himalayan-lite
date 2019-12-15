@@ -1,0 +1,164 @@
+.toptitlebar{
+  width: 100%;
+  height: 410rpx;
+  background: rgba(27, 123, 136, .5);
+  overflow: hidden;
+}
+.Performance{
+  width: 100%;
+  height: 500rpx;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  position: relative;
+  top: -10rpx;
+}
+.baritem{
+  width: 100%;
+  height: 400rpx;
+  margin-top: 50rpx;
+  padding: 20rpx 0rpx;
+}
+.baritemtop{
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.themebgimg{
+  width: 200rpx;
+  height: 200rpx;
+  margin-right: 30rpx;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.themeinfo{
+  width: 60%;
+  height: 200rpx;
+}
+.themetitle{
+  color: #fff;
+  font-size: 40rpx;
+}
+.themeauthor{
+  font-size: 25rpx;
+  color: #fff;
+  margin-top: 5rpx;
+}
+.viewinfo{
+  color: #fff;
+  font-size: 30rpx;
+  margin-top: 5rpx;
+  display: flex;
+  justify-content: flex-start;
+}
+.viewinfoleft{
+  margin-right: 5rpx;
+}
+.viewinforight{
+  margin-left: 5rpx;
+}
+.baritembottom{
+  width: 70%;
+  height: 100rpx;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 20rpx;
+  float: right;
+  margin-top: 15rpx;
+}
+.baritembottom button{
+  width: 210rpx;
+  height: 75rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #fff;
+  border-radius: 20rpx;
+}
+.sharebut{
+  background: orangered;
+  border: 1rpx solid #fff;
+  margin-left: 70rpx;
+}
+.collection{
+  background: orangered;
+}
+.selectbar{
+  width: 100%;
+  height: 100rpx;
+  padding: 20rpx 0rpx;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  box-sizing: border-box;
+  color: #aaaaaa;
+  border-radius: 15rpx;
+  border-bottom: 1rpx solid #f1f1f1;
+}
+.detail{
+  width: 50%;
+}
+.list{
+  width: 50%;
+}
+.play{
+  width: 100%;
+  height: 100rpx;
+  padding: 0rpx 40rpx;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #f1f1f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.playall{
+  width: auto;
+  text-align: center;
+  font-size: 30rpx;
+}
+.playselect{
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 30rpx;
+}
+.performanceContent{
+  width: 100%;
+  height: 150rpx;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1rpx solid #f1f1f1;
+  padding: 20rpx 20rpx;
+}
+.performanceIndex{
+  width: 15%;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  color:#aaaaaa;
+}
+.performanceInfo{
+  width: 85%;
+  height: 100%;
+}
+.performanceInfoTop{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 30rpx;
+}
+.performanceInfoBottom{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  color: #aaaaaa;
+  font-size: 25rpx;
+  margin-top: 20rpx;
+}
