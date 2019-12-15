@@ -47,19 +47,16 @@
 }
 
 /* 搜索框 */
-.search{
+/* .search{
     width: 90%;
     margin: 0rpx auto;
     height: 35rpx;
-    /* border: 1rpx solid #cdcdcd; */
     border-radius: 10rpx;
     font-size: 25rpx;
     padding: 10rpx 0rpx;
     display: flex;
     justify-content: start;
     background-color: rgb(240, 240, 240);
-    /* margin-top: 20rpx;
-    margin-bottom: 20rpx; */
   }
   .search-box{
     width: 95%;
@@ -77,8 +74,7 @@
     position: relative;
     top: -5rpx;
     left: 10rpx;
-    /* background-color: red */
-  }
+  } */
 
   /* 公共类 */
 .marginTopBottom{

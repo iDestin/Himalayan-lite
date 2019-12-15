@@ -1,0 +1,4 @@
+<view class="search marginTopBottom">
+  <view class="icon-search"></view>
+  <input placeholder="搜索你想听的节目"></input>
+</view>
