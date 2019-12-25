@@ -1,9 +1,5 @@
 <!-- index.wxml -->
 <!-- 搜索框 -->
-<!-- <view class="search marginTopBottom">
-  <view class="icon-search"></view>
-  <input placeholder="搜索你想听的节目"></input>
-</view> -->
 <search></search>
 <!-- 轮播图 -->
 <view class="swiper-container">
