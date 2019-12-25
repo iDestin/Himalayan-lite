@@ -4,102 +4,77 @@
 @import 'icon.wxss';
 
 /* 登录样式 */
-.logo{
-    width: 128rpx;
-    height: 128rpx;
-    margin: 0rpx auto;
-    /* background-color: aqua */
-    position: relative;
-    top:200rpx;
-}
-.logoImg{
-    width: 100%;
-    height: 100%;
-}
-.loginButton{
-    width: 80%;
-    margin: 0rpx auto;
-    position: relative;
-    top: 500rpx;
-}
-.wechatLogin,.phoneLogin{
-    width: 100%;
-    height: 80rpx;
-    border-radius: 50rpx;
-    border: 0rpx;
-    outline: none;
-}
-.wechatLogin button{
-    background-color: #70E500;
-    border-radius: 50rpx;
-    /* border: 1rpx solid #70E500; */
-    border: none;
-    color: #fff;
-}
-.phoneLogin{
-    margin-top: 40rpx;
-}
-.phoneLogin button{
-    border-radius: 50rpx;
-    border: 1rpx solid #70E500;
-    background-color: #fff;
-    color: #70E500;
+
+.logo {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 0rpx auto;
+  position: relative;
+  top: 200rpx;
 }
 
-/* 搜索框 */
-.search{
-    width: 90%;
-    margin: 0rpx auto;
-    height: 35rpx;
-    /* border: 1rpx solid #cdcdcd; */
-    border-radius: 10rpx;
-    font-size: 25rpx;
-    padding: 10rpx 0rpx;
-    display: flex;
-    justify-content: start;
-    background-color: rgb(240, 240, 240);
-    /* margin-top: 20rpx;
-    margin-bottom: 20rpx; */
-  }
-  .search-box{
-    width: 95%;
-    height: 25rpx;
-    margin-left: 10rpx;
-  }
-  .icon-search{
-    margin-left: 20rpx;
-    line-height: 35rpx;
-  }
-  .search>input{
-    width: 90%;
-    height: 25rpx;
-    font-size: 25rpx;
-    position: relative;
-    top: -5rpx;
-    left: 10rpx;
-    /* background-color: red */
-  }
+.logoImg {
+  width: 100%;
+  height: 100%;
+}
 
-  /* 公共类 */
-.marginTopBottom{
-    margin-top: 20rpx;
-    margin-bottom: 30rpx;
-  }
-  .barTitle{
-    width: 100%;
-    height: 56rpx;
-    padding: 20rpx 0rpx;
-    text-align: center;
-  }
-  .Title-left{
-    float: left;
-    font-size: 37rpx;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 800;
-    color: #333;
-  }
-  .Title-right{
-    float: right;
-    font-size: 26rpx;
-    color: #aaa;
-  }
+.loginButton {
+  width: 80%;
+  margin: 0rpx auto;
+  position: relative;
+  top: 500rpx;
+}
+
+.wechatLogin, .phoneLogin {
+  width: 100%;
+  height: 80rpx;
+  border-radius: 50rpx;
+  border: 0rpx;
+  outline: none;
+}
+
+.wechatLogin button {
+  background-color: #70e500;
+  border-radius: 50rpx;
+  border: none;
+  color: #fff;
+}
+
+.phoneLogin {
+  margin-top: 40rpx;
+}
+
+.phoneLogin button {
+  border-radius: 50rpx;
+  border: 1rpx solid #70e500;
+  background-color: #fff;
+  color: #70e500;
+}
+
+/* 公共类 */
+
+.marginTopBottom {
+  margin-top: 20rpx;
+  margin-bottom: 30rpx;
+}
+
+.barTitle {
+  width: 100%;
+  height: 56rpx;
+  padding: 20rpx 0rpx;
+  text-align: center;
+}
+
+.Title-left {
+  float: left;
+  font-size: 37rpx;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 800;
+  color: #333;
+}
+
+.Title-right {
+  float: right;
+  font-size: 26rpx;
+  color: #aaa;
+}
