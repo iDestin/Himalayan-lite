@@ -21,8 +21,8 @@ Page({
       {icon:'/image/nav-icon/diantai.png',events:'goToBangDan',text:'榜单'},
       {icon:'/image/nav-icon/diantai.png',events:'goToBangDan',text:'听小说'},
       {icon:'/image/nav-icon/diantai.png',events:'goToBangDan',text:'情感电台'},
-      {icon:'/image/nav-icon/diantai.png',events:'goToBangDan',text:'听相声'},
-      {icon:'/image/nav-icon/diantai.png',events:'goToBangDan',text:'儿童故事'},
+      {icon:'/image/nav-icon/diantai.png',events:'goToBangDan',text:'听知识'},
+      
     ],
     swiperCurrent: 0,
   },
@@ -66,6 +66,11 @@ Page({
   goToBangDan:function(){
     wx.navigateTo({
       url: '/pages/index/bangdan/bangdan',
+    })
+  },
+  gotoDetails(){
+    wx.navigateTo({
+      url: '/pages/details/details',
     })
   }
 })

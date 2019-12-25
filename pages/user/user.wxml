@@ -65,7 +65,6 @@
                 <view class="">
                     <text class="icon-creative text-gray"></text>
                     夜间模式
-                    <!-- <button class="switch"></button> -->
                 </view>
                 <text class="icon-right text-gray"></text>
             </view>
@@ -76,7 +75,7 @@
                 </view>
                 <text class="icon-right text-gray"></text>
             </view>
-            <view class="choiceItem">
+            <view class="choiceItem" bindtap="gotoLogin">
                 <view class="">
                     <text class="icon-order text-gray"></text>
                     切换账号

@@ -22,7 +22,7 @@
                 </view>
             </form>
         </view>
-
+        <!-- 其他登录方式 -->
         <view class="wechat" >
             <view class="tips" >其他账户登录</view>
             <view class="wecahtlogin" >

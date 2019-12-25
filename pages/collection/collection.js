@@ -11,19 +11,12 @@ Page({
    * 页面的初始数据
    */
   data: {
+    currentIndex:0,
     content: [
-      {
-        text: "我的收藏"
-      },
-      {
-        text: "我的已购"
-      },
-      {
-        text: "收听历史"
-      },
-      {
-        text: "我的礼包"
-      }
+      {text: "我的收藏"},
+      {text: "我的已购"},
+      {text: "收听历史"},
+      {text: "我的礼包"}
     ]
   },
 
@@ -74,4 +67,11 @@ Page({
       }
     })
   },
+  checkItem(e){
+    console.log(e)
+    var that = this;
+    that.setData({
+      currentIndex : e.target.dataset.index
+    })
+  }
 })

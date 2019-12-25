@@ -11,9 +11,6 @@ Page({
     
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad: function (options) {
     var that = this;
     //获得设备信息
@@ -21,7 +18,7 @@ Page({
       success (res) {
         console.log(res.windowHeight);
         that.setData({
-          phoneHeight:res.windowHeight,
+          phoneHeight: res.windowHeight,
         })
       }
     })
@@ -48,27 +45,20 @@ Page({
         app.globalData.login = false;
         that.setData({
           login: app.globalData.login,
-          avatarUrl:e.detail.userInfo.avatarUrl,
-          nickName:e.detail.userInfo.nickName
+          avatarUrl: e.detail.userInfo.avatarUrl,
+          nickName: e.detail.userInfo.nickName
         })
       }
     })
   },
-  
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  },
   phoneLogin:function(){
     wx.navigateTo({
       url: './phoneLogin/phoneLogin',
-      success: (result)=>{
-        
-      },
-      fail: ()=>{},
-      complete: ()=>{}
+    });
+  },
+  gotoLogin(){
+    wx.navigateTo({
+      url: './phoneLogin/phoneLogin',
     });
   }
 })
