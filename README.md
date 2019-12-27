@@ -1,4 +1,5 @@
 <h1 align="center">Himalayan-lite</h1>
+<p align="center">![](https://img.shields.io/badge/version-1.0-red.svg)</p>
 
 这是一个模仿喜马拉雅lite的微信小程序demo,完全使用微信小程序原生开发，没有使用组件。所以这是一个初级项目，非常的适合微信小程序开发新手，如果你有 html css js 前端基础那么你将很快上手<br/><br/>
 
