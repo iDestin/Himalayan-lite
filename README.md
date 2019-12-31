@@ -4,8 +4,8 @@
 这是一个模仿`喜马拉雅lite`的微信小程序`demo`,完全使用微信小程序原生开发，没有使用组件（使用了一个自己实现的搜索组件）。所以这是一个初级项目，非常的适合微信小程序开发新手，如果你有 `html` `css` `js` 前端基础那么你将很快上手，代码完全免费开源，看得上可以自取哦！（当然如果您能愉快的给一个Start就更好了❤😋）
 
 <p align="center">
- <img src="https://cdn.nlark.com/yuque/0/2019/jpeg/282518/1577452507652-assets/web-upload/15427243-b34d-4638-b6cc-8db2e0710760.jpeg?x-oss-process=image/resize,w_275"/>
-<img src="https://cdn.nlark.com/yuque/0/2019/png/282518/1577452507594-assets/web-upload/74797502-3828-4a27-8906-385d630f6dce.png?x-oss-process=image/resize,w_275"/>
+ <img src="https://cdn.nlark.com/yuque/0/2019/jpeg/282518/1577790030151-assets/web-upload/856d0239-48c1-4dfb-9ab5-dac2e4aaacc6.jpeg?x-oss-process=image/resize,w_275"/>
+<img src="https://cdn.nlark.com/yuque/0/2019/jpeg/282518/1577790019194-assets/web-upload/85607b1d-8028-4984-a70f-1b48250345e6.jpeg?x-oss-process=image/resize,w_275"/>
 </p>
 
 <br/><br/>
