@@ -1,3 +1,6 @@
+/**
+ * 本文件主要是工具类函数
+ */
 let myRequest = function(url,methods,data = {}){
     wx.request({
         url: url,

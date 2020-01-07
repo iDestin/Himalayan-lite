@@ -1,5 +1,8 @@
-<!-- title和背景 -->
-<view class="toptitlebar">
+<!-- 
+  title和背景 
+  注：这部分的背景色还没有处理好
+-->
+<view class="toptitlebar" style="background:url(../../image/guess1.jpg) no-repeat;background-size:100% 100%">
     <view class="baritem">
       <view class="baritemtop">
         <view class="themebgimg" style="background:url(../../image/guess1.jpg)"></view>
@@ -22,14 +25,14 @@
       </view>
     </view>
 </view>
-<!-- 节目列表 -->
+<!-- 顶部选项 -->
 <view class="Performance">
   <view class="selectbar">
     <view class="detail">详情</view>
-    <view class="list">
-      节目 <text class="">152</text>
+    <view class="list">节目<text>152</text>
     </view>
   </view>
+  <!-- 播放选项 -->
   <view class="play">
     <view class="playall">
       <text class="icon-video"></text> 播放全部
@@ -39,78 +42,20 @@
       <view><text class="icon-all"></text> 选集</view>
     </view>
   </view>
-  <view class="performanceContent">
+  <!-- 节目列表 -->
+  <view class="performanceContent" wx:for="{{performance}}" wx:key="index">
     <!-- 序号 -->
-    <view class="performanceIndex">1</view>
+    <view class="performanceIndex">{{index}}</view>
     <!-- 节目标题 -->
     <view class="performanceInfo">
       <view class="performanceInfoTop">
-        <view style="font-size:33rpx">《人在江湖》郭德纲 于谦</view>
-        <view style="color:#aaaaaa">2年前</view>
+        <view style="font-size:33rpx">{{item.name}}</view>
+        <view style="color:#aaaaaa">{{item.year}}</view>
       </view>
+      <!-- 播放次数和时间 -->
       <view class="performanceInfoBottom">
-        <view><text class="icon-video"></text> 5601.9万</view>
-        <view style="margin-left:20rpx"><text class="icon-time"></text> 34:36</view>
-      </view>
-    </view>
-  </view>
-  <view class="performanceContent">
-    <!-- 序号 -->
-    <view class="performanceIndex">1</view>
-    <!-- 节目标题 -->
-    <view class="performanceInfo">
-      <view class="performanceInfoTop">
-        <view style="font-size:33rpx">《人在江湖》郭德纲 于谦</view>
-        <view style="color:#aaaaaa">2年前</view>
-      </view>
-      <view class="performanceInfoBottom">
-        <view><text class="icon-video"></text> 5601.9万</view>
-        <view style="margin-left:20rpx"><text class="icon-time"></text> 34:36</view>
-      </view>
-    </view>
-  </view>
-  <view class="performanceContent">
-    <!-- 序号 -->
-    <view class="performanceIndex">1</view>
-    <!-- 节目标题 -->
-    <view class="performanceInfo">
-      <view class="performanceInfoTop">
-        <view style="font-size:33rpx">《人在江湖》郭德纲 于谦</view>
-        <view style="color:#aaaaaa">2年前</view>
-      </view>
-      <view class="performanceInfoBottom">
-        <view><text class="icon-video"></text> 5601.9万</view>
-        <view style="margin-left:20rpx"><text class="icon-time"></text> 34:36</view>
-      </view>
-    </view>
-  </view>
-  <view class="performanceContent">
-    <!-- 序号 -->
-    <view class="performanceIndex">1</view>
-    <!-- 节目标题 -->
-    <view class="performanceInfo">
-      <view class="performanceInfoTop">
-        <view style="font-size:33rpx">《人在江湖》郭德纲 于谦</view>
-        <view style="color:#aaaaaa">2年前</view>
-      </view>
-      <view class="performanceInfoBottom">
-        <view><text class="icon-video"></text> 5601.9万</view>
-        <view style="margin-left:20rpx"><text class="icon-time"></text> 34:36</view>
-      </view>
-    </view>
-  </view>
-  <view class="performanceContent">
-    <!-- 序号 -->
-    <view class="performanceIndex">1</view>
-    <!-- 节目标题 -->
-    <view class="performanceInfo">
-      <view class="performanceInfoTop">
-        <view style="font-size:33rpx">《人在江湖》郭德纲 于谦</view>
-        <view style="color:#aaaaaa">2年前</view>
-      </view>
-      <view class="performanceInfoBottom">
-        <view><text class="icon-video"></text> 5601.9万</view>
-        <view style="margin-left:20rpx"><text class="icon-time"></text> 34:36</view>
+        <view><text class="icon-video"></text>{{item.count}}</view>
+        <view style="margin-left:20rpx"><text class="icon-time"></text>{{item.time}}</view>
       </view>
     </view>
   </view>

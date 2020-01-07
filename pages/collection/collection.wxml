@@ -20,10 +20,14 @@
 <block wx:else>
     <!-- 搜索框 -->
     <search></search>
+    <!-- 功能栏 -->
     <view class="titleBar">
       <view class="itemTitle {{index == currentIndex ? 'active' : ' '}}" 
         data-index="{{index}}" bindtap="checkItem" wx:for="{{content}}" wx:key="index">
           {{item.text}}
       </view>
+    </view>
+    <view class="collectionContent">
+      暂无内容
     </view>
 </block>

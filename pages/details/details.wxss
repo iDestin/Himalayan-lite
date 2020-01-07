@@ -1,10 +1,10 @@
-.toptitlebar{
+.toptitlebar {
   width: 100%;
   height: 410rpx;
-  background: rgba(27, 123, 136, .5);
   overflow: hidden;
 }
-.Performance{
+
+.Performance {
   width: 100%;
   height: 500rpx;
   border-top-left-radius: 20rpx;
@@ -12,53 +12,63 @@
   position: relative;
   top: -10rpx;
 }
-.baritem{
+
+.baritem {
   width: 100%;
   height: 400rpx;
   margin-top: 50rpx;
   padding: 20rpx 0rpx;
 }
-.baritemtop{
+
+.baritemtop {
   width: 100%;
   height: 200rpx;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.themebgimg{
+
+.themebgimg {
   width: 200rpx;
   height: 200rpx;
   margin-right: 30rpx;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-.themeinfo{
+
+.themeinfo {
   width: 60%;
   height: 200rpx;
 }
-.themetitle{
+
+.themetitle {
   color: #fff;
   font-size: 40rpx;
 }
-.themeauthor{
+
+.themeauthor {
   font-size: 25rpx;
   color: #fff;
   margin-top: 5rpx;
 }
-.viewinfo{
+
+.viewinfo {
   color: #fff;
   font-size: 30rpx;
   margin-top: 5rpx;
   display: flex;
   justify-content: flex-start;
 }
-.viewinfoleft{
+
+.viewinfoleft {
   margin-right: 5rpx;
 }
-.viewinforight{
+
+.viewinforight {
   margin-left: 5rpx;
 }
-.baritembottom{
+
+.baritembottom {
   width: 70%;
   height: 100rpx;
   display: flex;
@@ -68,7 +78,8 @@
   float: right;
   margin-top: 15rpx;
 }
-.baritembottom button{
+
+.baritembottom button {
   width: 210rpx;
   height: 75rpx;
   text-align: center;
@@ -76,15 +87,18 @@
   color: #fff;
   border-radius: 20rpx;
 }
-.sharebut{
+
+.sharebut {
   background: orangered;
   border: 1rpx solid #fff;
   margin-left: 70rpx;
 }
-.collection{
+
+.collection {
   background: orangered;
 }
-.selectbar{
+
+.selectbar {
   width: 100%;
   height: 100rpx;
   padding: 20rpx 0rpx;
@@ -93,17 +107,20 @@
   justify-content: space-between;
   background: #fff;
   box-sizing: border-box;
-  color: #aaaaaa;
+  color: #aaa;
   border-radius: 15rpx;
   border-bottom: 1rpx solid #f1f1f1;
 }
-.detail{
+
+.detail {
   width: 50%;
 }
-.list{
+
+.list {
   width: 50%;
 }
-.play{
+
+.play {
   width: 100%;
   height: 100rpx;
   padding: 0rpx 40rpx;
@@ -113,19 +130,22 @@
   justify-content: space-between;
   align-items: center;
 }
-.playall{
+
+.playall {
   width: auto;
   text-align: center;
   font-size: 30rpx;
 }
-.playselect{
+
+.playselect {
   width: auto;
   display: flex;
   justify-content: space-between;
   text-align: center;
   font-size: 30rpx;
 }
-.performanceContent{
+
+.performanceContent {
   width: 100%;
   height: 150rpx;
   display: flex;
@@ -135,30 +155,34 @@
   border-bottom: 1rpx solid #f1f1f1;
   padding: 20rpx 20rpx;
 }
-.performanceIndex{
+
+.performanceIndex {
   width: 15%;
   height: 80rpx;
   text-align: center;
   line-height: 80rpx;
-  color:#aaaaaa;
+  color: #aaa;
 }
-.performanceInfo{
+
+.performanceInfo {
   width: 85%;
   height: 100%;
 }
-.performanceInfoTop{
+
+.performanceInfoTop {
   width: 100%;
   height: 50%;
   display: flex;
   justify-content: space-between;
   font-size: 30rpx;
 }
-.performanceInfoBottom{
+
+.performanceInfoBottom {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: flex-start;
-  color: #aaaaaa;
+  color: #aaa;
   font-size: 25rpx;
   margin-top: 20rpx;
 }

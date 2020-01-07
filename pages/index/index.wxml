@@ -8,14 +8,14 @@
     current="{{swiperCurren}}" 
     bindchange="swiperChange">
     <!-- 轮播图图片 -->
-    <swiper-item class="swiperItem" wx:for="{{imgList}}" wx:key>
+    <swiper-item class="swiperItem" wx:for="{{imgList}}" wx:key="index">
       <!-- 加上widthFix可以使图片自适应 -->
       <image src="{{item}}"></image>
     </swiper-item>
   </swiper>
   <!-- 为了和喜马拉雅一致，自己需定制轮播图dots -->
   <view class="dots">
-    <block wx:for="{{imgList.length}}" wx:key>
+    <block wx:for="{{imgList.length}}" wx:key="index">
       <!-- 根据index判断是否选中 -->
       <view class="dotsItem{{index == swiperCurrent ? ' active' : ''}}"></view>
     </block>
@@ -80,7 +80,7 @@
       <view class="Title-left">有声小说</view>
       <view class="Title-right">查看全部></view>
     </view>
-    <block wx:for="{{xiaoshuocontent}}" wx:key>
+    <block wx:for="{{xiaoshuocontent}}" wx:key="index">
       <view class="content">
         <view class="contentImg">
           <image src="{{item.albumCoverUrl290}}" mode="widthFix"></image>
@@ -107,7 +107,7 @@
       <view class="Title-left">相声评书</view>
       <view class="Title-right">查看全部></view>
     </view>
-    <block wx:for="{{xiangshengcontent}}" wx:key>
+    <block wx:for="{{xiangshengcontent}}" wx:key="index">
       <view class="content">
         <view class="contentImg">
           <image src="{{item.albumCoverUrl290}}" mode="widthFix"></image>
@@ -134,7 +134,7 @@
       <view class="Title-left">脱口秀</view>
       <view class="Title-right">查看全部></view>
     </view>
-    <block wx:for="{{tuokocontent}}" wx:key>
+    <block wx:for="{{tuokocontent}}" wx:key="index">
       <view class="content">
         <view class="contentImg">
           <image src="{{item.albumCoverUrl290}}" mode="widthFix" lazy-load="false"></image>

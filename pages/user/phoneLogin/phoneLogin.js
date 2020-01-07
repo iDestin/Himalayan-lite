@@ -15,4 +15,9 @@ Page({
   onLoad: function (options) {
     
   },
+  login: function () {
+    wx.showToast({
+      title: '成功',
+    })
+  }
 })
