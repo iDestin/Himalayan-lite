@@ -3,6 +3,8 @@
 
 这是一个模仿`喜马拉雅lite`的微信小程序`demo`,完全使用微信小程序原生开发，没有使用组件（使用了一个自己实现的搜索组件）。所以这是一个初级项目，非常的适合微信小程序开发新手，如果你有 `html` `css` `js` 前端基础那么你将很快上手，代码完全免费开源，看得上可以自取哦！（当然如果您能愉快的给一个Start就更好了❤😋）
 
+### 效果预览
+
 <p align="center">
  <img src="https://cdn.nlark.com/yuque/0/2019/jpeg/282518/1577790030151-assets/web-upload/856d0239-48c1-4dfb-9ab5-dac2e4aaacc6.jpeg?x-oss-process=image/resize,w_275"/>
  &nbsp;&nbsp;
@@ -11,27 +13,26 @@
 
 <br/><br/>
 
-> 在此项目中部分icon资源和ui使用了colorUI
+> 在此项目中部分icon资源和ui使用了小程序库 [colorUI](https://github.com/weilanwl/ColorUI)
 
-[colorUI](https://github.com/weilanwl/ColorUI)
-
-## 注意
+### 注意
 
 * 项目中使用的api数据在开发者工具上可以正常显示，但是在真机上无法显示，问题应该是API的问题（若需要请换api） 
 
-
-## 待改进
-
-1. 项目中的一些颜色还存在差距，需要修改
-2. 项目的分类页的侧边栏选择项的计算逻辑还存在问题，需要优化
-3. 详情页的背景色还没有实现根据图片的颜色改变而改变
-4. 榜单页面还有功能待实现....
+### TODO
+  - [ ] 修复与喜马拉雅Lite的颜色差距
+  - [ ] 修复分类页的侧边栏选择项的滑动计算逻辑
+  - [ ] 实现详情页的背景色根据图片的颜色改变而改变
+  - [ ] 实现搜索页
+  - [ ] 实现节目详情页面的一些小功能
+  - [ ] 实现榜单页面的下拉选项点击选择功能
 
 > 当然还有很多的bug......未完待续
 
-## 建议and联系
+###  建议and联系
 
 欢迎您的建议或者是提出Bug
 
   * 邮箱🤐：JCITXH@163.com
   * 提[issue](https://github.com/Notobey/Himalayan-lite/issues)
+  * [我的博客](http://www.zhiq.online)
