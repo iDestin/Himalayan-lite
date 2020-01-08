@@ -93,6 +93,13 @@
 					"id": -1,
 					"name": "phoneLogin",
 					"pathName": "pages/user/phoneLogin/phoneLogin",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "搜索页",
+					"pathName": "pages/search/search",
 					"scene": null
 				}
 			]

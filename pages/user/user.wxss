@@ -73,4 +73,5 @@
     height: 60rpx;
     padding: 20rpx 30rpx;
     justify-content: space-between;
+    align-items: center;
 }

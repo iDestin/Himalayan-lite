@@ -1,4 +1,4 @@
-<view class="search marginTopBottom">
+<view class="search marginTopBottom" bindtap="goToSearch">
+  <text class="icon-search"></text>
   <view class="search-item">搜索你想听的节目</view>
-  <!-- <input placeholder="搜索你想听的节目"></input> -->
 </view>

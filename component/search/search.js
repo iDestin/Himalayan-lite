@@ -11,7 +11,11 @@ Component({
 
     },
     methods: {
-        
+        goToSearch(){
+            wx.navigateTo({
+              url: '/pages/search/search',
+            })
+        }
     },
     created: function(){
 

@@ -1,0 +1,111 @@
+/* 
+  ======== 
+  搜索部分css 
+  ========
+*/
+.search{
+  width: 90%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  margin: 0rpx auto;
+}
+
+.search-left{
+  flex: 4;
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10rpx 20rpx;
+  border-radius: 15rpx;
+}
+
+.search input{
+  width: 90%;
+  height: 100%;
+  font-size: 29rpx;
+  margin-left: 20rpx;
+}
+.search-right{
+  flex: 0.5;
+  font-size:30rpx;
+  color: #aaa;
+  text-align: center;
+  margin-left: 30rpx;
+}
+/* 
+  ======== 
+  搜索历史和热门搜索部分css 
+  ========
+*/
+
+.history{
+  width: 90%;
+  height: auto;
+  margin: 0rpx auto;
+  margin-top: 80rpx;
+}
+.history-content{
+  width: 100%;
+  height: auto;
+  margin-top: 30rpx;
+}
+.content-item{
+  width: 150rpx;
+  font-size: 33rpx;
+  text-align: center;
+  padding: 10rpx 20rpx;
+  border-radius: 25rpx;
+  color: #333;
+  background-color: rgb(240, 240, 240);
+}
+
+.hot{
+  width: 90%;
+  height: auto;
+  margin: 0rpx auto;
+  margin-top: 80rpx;
+}
+.hot-content{
+  width: 100%;
+  height: auto;
+  margin-top: 30rpx;
+}
+.hot-items{
+  width: 100%;
+  height: 50rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+.item-left{
+  display: flex;
+  justify-content: flex-start;
+  font-size: 32rpx;
+}
+.itemTitle{
+  margin-left: 40rpx;
+}
+/* 公共样式 */
+
+.title{
+  width: 100%;
+  height: 50rpx;
+  /* padding-right: 20rpx; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+.title-text{
+  color: #000;
+  font-weight: 700;
+}
+.text-red{
+  color: #f00;
+}
+.text-orange{
+  color: orange;
+}

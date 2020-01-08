@@ -1,0 +1,38 @@
+<!-- 搜索框 -->
+<view class="search">
+  <view class="search-left">
+    <text class="icon-search"></text>
+    <input placeholder="搜索你想听的节目"></input>
+  </view>
+  <view class="search-right">
+    取消
+  </view> 
+</view>
+<!-- 搜索历史 -->
+<view class="history">
+  <!-- 提示标题 -->
+  <view class="title">
+    <view class="title-text">搜索历史</view>
+    <text class="icon-search"></text>
+  </view>
+  <!-- 内容 -->
+  <view class="history-content">
+    <view class="content-item">庆余年</view>
+  </view>
+</view>
+<!-- 热门搜索 -->
+<view class="hot">
+  <!-- 提示标题 -->
+  <view class="title">
+    <view class="title-text">热门搜索</view>
+  </view>
+  <view class="hot-content">
+    <view class="hot-items" wx:for="{{hotData}}" wx:key="index">
+      <view class="item-left">
+        <view class="text-red">{{index}}</view>
+        <view class="itemTitle">{{item.title}}</view>
+      </view>
+      <text class="{{item.icon}} itemIcon {{item.color}}"></text>
+    </view>
+  </view>
+</view>

@@ -3,6 +3,7 @@
     width: 90%;
     height: 50rpx;
     margin: 0rpx auto;
+    padding: 10rpx;
     border-radius: 10rpx;
     font-size: 25rpx;
     display: flex;
@@ -10,23 +11,6 @@
     align-items: center;
     background-color: rgb(240, 240, 240);
     margin-bottom: 20rpx;
-  }
-  .search-box{
-    width: 95%;
-    height: 25rpx;
-    margin-left: 10rpx;
-  }
-  .icon-search{
-    margin-left: 20rpx;
-    line-height: 35rpx;
-  }
-  .search>input{
-    width: 90%;
-    height: 25rpx;
-    font-size: 25rpx;
-    position: relative;
-    top: -5rpx;
-    left: 10rpx;
   }
   .search-item{
     width: 95%;
