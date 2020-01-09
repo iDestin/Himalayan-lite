@@ -8,8 +8,7 @@
     <view class="loginButton" hover-class="none" hover-stop-propagation="false">
         <view class="wechatLogin">
             <button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
-                <text class="icon-github"></text>
-                微信登录
+                <text class="icon-message"></text>  微信登录
             </button>
         </view>
         <view class="phoneLogin">

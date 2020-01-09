@@ -1,4 +1,3 @@
-<!--pages/classification/classification.wxml-->
 <!-- 搜索框 -->
 <search></search>
 
@@ -22,7 +21,7 @@
                 </view>
             </view>
             <view class="content">
-                <view class="contentText" wx:for="{{item.content}}" wx:key>
+                <view class="contentText" wx:for="{{item.content}}" wx:key="index">
                     {{item.text}}
                 </view>
             </view>

@@ -50,12 +50,17 @@
   width: 100%;
   height: auto;
   margin-top: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .content-item{
   width: 150rpx;
   font-size: 33rpx;
   text-align: center;
   padding: 10rpx 20rpx;
+  margin-bottom: 20rpx;
   border-radius: 25rpx;
   color: #333;
   background-color: rgb(240, 240, 240);
@@ -87,25 +92,4 @@
 }
 .itemTitle{
   margin-left: 40rpx;
-}
-/* 公共样式 */
-
-.title{
-  width: 100%;
-  height: 50rpx;
-  /* padding-right: 20rpx; */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-sizing: border-box;
-}
-.title-text{
-  color: #000;
-  font-weight: 700;
-}
-.text-red{
-  color: #f00;
-}
-.text-orange{
-  color: orange;
 }

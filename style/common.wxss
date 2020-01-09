@@ -1,0 +1,119 @@
+/* 公共样式 */
+
+/* 
+==========
+  bar相关 
+==========
+*/
+.marginTopBottom {
+  margin-top: 20rpx;
+  margin-bottom: 30rpx;
+}
+
+.barTitle {
+  width: 100%;
+  height: 56rpx;
+  padding: 20rpx 0rpx;
+  text-align: center;
+}
+
+.Title-left {
+  float: left;
+  font-size: 37rpx;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 800;
+  color: #333;
+}
+
+.Title-right {
+  float: right;
+  font-size: 26rpx;
+  color: #aaa;
+}
+/* 
+===========
+  登录样式 
+===========
+*/
+.logo {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 0rpx auto;
+  position: relative;
+  top: 200rpx;
+}
+
+.logoImg {
+  width: 100%;
+  height: 100%;
+}
+
+.loginButton {
+  width: 80%;
+  margin: 0rpx auto;
+  position: relative;
+  top: 500rpx;
+}
+
+.wechatLogin, .phoneLogin {
+  width: 100%;
+  height: 80rpx;
+  border-radius: 50rpx;
+  border: 0rpx;
+  outline: none;
+}
+
+.wechatLogin button {
+  background-color: #70e500;
+  border-radius: 50rpx;
+  border: none;
+  color: #fff;
+}
+
+.phoneLogin {
+  margin-top: 40rpx;
+}
+
+.phoneLogin button {
+  border-radius: 50rpx;
+  border: 1rpx solid #70e500;
+  background-color: #fff;
+  color: #70e500;
+}
+/* 
+===========
+  搜索部分
+===========
+*/
+.title{
+  width: 100%;
+  height: 50rpx;
+  /* padding-right: 20rpx; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+.title-text{
+  color: #000;
+  font-weight: 700;
+}
+/* 
+====================
+  tarbar选中后的样式
+====================
+*/
+
+
+/*
+==========
+  颜色类
+==========
+*/
+
+.text-red{
+  color: #f00;
+}
+.text-orange{
+  color: orange;
+}

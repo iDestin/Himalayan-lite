@@ -156,4 +156,21 @@
   font-size: 32rpx;
   padding: 20rpx 10rpx;
   margin: 0rpx 15rpx;
+  position: relative;
+}
+.menuItemactive {
+  font-size: 32rpx;
+  font-weight: 700;
+  transition: all .3s;
+  color: #333333;
+}
+.menuItemactive:after{
+  content: '';
+  width: 40rpx;
+  height: 8rpx;
+  position: absolute;
+  bottom: 0rpx;
+  left: 50rpx;
+  border-radius: 15rpx;
+  background: #ff520f;
 }

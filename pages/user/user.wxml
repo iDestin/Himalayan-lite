@@ -9,7 +9,7 @@
         <!-- 在本小程序中只实现了微信登录 -->
         <view class="wechatLogin">
             <button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
-                <text class="icon-github"></text>微信登录
+                <text class="icon-message"></text>  微信登录
             </button>
         </view>
         <view class="phoneLogin" bindtap="phoneLogin">
@@ -39,7 +39,8 @@
             <!-- 签到 -->
             <view class="qiandao">
                 <view class="qianText">
-                    <text class="icon-calendar text-gray"></text>签到
+                    <text class="icon-calendar text-gray"></text>
+                    <text style="margin-left:20rpx">签到</text>
                 </view>
                 <view class="icon_">
                     <text class="icon-right text-gray"></text>
@@ -51,25 +52,29 @@
             <!-- 选项卡item -->
             <view class="choiceItem">
                 <view class="">
-                    <text class="icon-time text-gray"></text>定时关闭
+                    <text class="icon-time text-gray"></text>
+                    <text style="margin-left:20rpx">定时关闭</text>
                 </view>
                 <text class="icon-right text-gray"></text>
             </view>
             <view class="choiceItem">
                 <view class="">
-                    <text class="icon-creative text-gray"></text>夜间模式
+                    <text class="icon-creative text-gray"></text>
+                    <text style="margin-left:20rpx">夜间模式</text>
                 </view>
                 <switch></switch>
             </view>
             <view class="choiceItem">
                 <view class="">
-                    <text class="icon-post text-gray"></text>意见反馈
+                    <text class="icon-post text-gray"></text>
+                    <text style="margin-left:20rpx">意见反馈</text>
                 </view>
                 <text class="icon-right text-gray"></text>
             </view>
             <view class="choiceItem" bindtap="gotoLogin">
                 <view class="">
-                    <text class="icon-order text-gray"></text>切换账号
+                    <text class="icon-order text-gray"></text>
+                    <text style="margin-left:20rpx">切换账号</text>
                 </view>
                 <text class="icon-right text-gray"></text>
             </view>
