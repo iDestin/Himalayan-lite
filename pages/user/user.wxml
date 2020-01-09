@@ -1,83 +1,101 @@
 <!-- pages/user/user.wxml -->
 <block wx:if="{{login}}">
-    <!-- logo -->
-    <view class="logo">
-        <image class="logoImg" src="/image/logo.png" mode="widthFix"></image>
-    </view>
-    <!-- 登录按钮 -->
-    <view class="loginButton">
-        <!-- 在本小程序中只实现了微信登录 -->
-        <view class="wechatLogin">
-            <button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
-                <text class="icon-message"></text>  微信登录
-            </button>
-        </view>
-        <view class="phoneLogin" bindtap="phoneLogin">
-            <button>手机号登录</button>
-        </view>
-    </view>
+	<!-- logo -->
+	<view class="logo">
+		<image class="logoImg" src="/image/logo.png" mode="widthFix"></image>
+	</view>
+	<!-- 登录按钮 -->
+	<view class="loginButton">
+		<!-- 在本小程序中只实现了微信登录 -->
+		<view class="wechatLogin">
+			<button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
+				<text class="icon-message"></text> 微信登录
+			</button>
+		</view>
+		<view class="phoneLogin" bindtap="phoneLogin">
+			<button>手机号登录</button>
+		</view>
+	</view>
 </block>
 <!-- 已经登录显示界面 -->
 <block wx:else>
-    <view class="body" style="height:{{phoneHeight}}px">
-        <!-- 头像昵称签到部分 -->
-        <view class="topBar">
-            <!-- 头像昵称 -->
-            <view class="userImg">
-                <view class="avatar_nickname">
-                    <view class="avatar">
-                        <image class="avatarImg" src="{{avatarUrl}}"></image>
-                    </view>
-                    <view class="nickname">
-                        <text class="#">{{nickName}}</text>
-                        <!-- vip勋章 -->
-                        <text class="icon-vip" style="margin-left:30rpx"></text>
-                    </view>
-                </view>
-                <view class="kefu"><text class="icon-service"></text>客服服务</view>
-            </view>
-            <!-- 签到 -->
-            <view class="qiandao">
-                <view class="qianText">
-                    <text class="icon-calendar text-gray"></text>
-                    <text style="margin-left:20rpx">签到</text>
-                </view>
-                <view class="icon_">
-                    <text class="icon-right text-gray"></text>
-                </view>
-            </view>
-        </view>
-        <!-- 选项卡部分 -->
-        <view class="chioce">
-            <!-- 选项卡item -->
-            <view class="choiceItem">
-                <view class="">
-                    <text class="icon-time text-gray"></text>
-                    <text style="margin-left:20rpx">定时关闭</text>
-                </view>
-                <text class="icon-right text-gray"></text>
-            </view>
-            <view class="choiceItem">
-                <view class="">
-                    <text class="icon-creative text-gray"></text>
-                    <text style="margin-left:20rpx">夜间模式</text>
-                </view>
-                <switch></switch>
-            </view>
-            <view class="choiceItem">
-                <view class="">
-                    <text class="icon-post text-gray"></text>
-                    <text style="margin-left:20rpx">意见反馈</text>
-                </view>
-                <text class="icon-right text-gray"></text>
-            </view>
-            <view class="choiceItem" bindtap="gotoLogin">
-                <view class="">
-                    <text class="icon-order text-gray"></text>
-                    <text style="margin-left:20rpx">切换账号</text>
-                </view>
-                <text class="icon-right text-gray"></text>
-            </view>
-        </view>
-    </view>
+	<view class="body" style="height:{{phoneHeight}}px">
+		<!-- 头像昵称签到部分 -->
+		<view class="topBar">
+			<!-- 头像昵称 -->
+			<view class="userImg">
+				<view class="avatar_nickname">
+					<view class="avatar">
+						<image class="avatarImg" src="{{avatarUrl}}"></image>
+					</view>
+					<view class="nickname">
+						<text class="#">{{nickName}}</text>
+						<!-- vip勋章 -->
+						<text class="icon-vip" style="margin-left:30rpx"></text>
+					</view>
+				</view>
+				<view class="kefu"><text class="icon-service"></text>客服服务</view>
+			</view>
+			<!-- 签到 -->
+			<view class="qiandao">
+				<view class="qianText">
+					<text class="icon-calendar text-gray"></text>
+					<text style="margin-left:20rpx">签到</text>
+				</view>
+				<view class="icon_">
+					<text class="icon-right text-gray"></text>
+				</view>
+			</view>
+		</view>
+		<!-- 选项卡部分 -->
+		<view class="chioce">
+			<!-- 选项卡item -->
+			<view class="choiceItem" bindtap="openSwitch">
+				<view class="">
+					<text class="icon-time text-gray"></text>
+					<text style="margin-left:20rpx">定时关闭</text>
+				</view>
+				<text class="icon-right text-gray"></text>
+			</view>
+			<view class="choiceItem">
+				<view class="">
+					<text class="icon-creative text-gray"></text>
+					<text style="margin-left:20rpx">夜间模式</text>
+				</view>
+				<switch></switch>
+			</view>
+			<view class="choiceItem">
+				<view class="">
+					<text class="icon-post text-gray"></text>
+					<text style="margin-left:20rpx">意见反馈</text>
+				</view>
+				<text class="icon-right text-gray"></text>
+			</view>
+			<view class="choiceItem" bindtap="gotoLogin">
+				<view class="">
+					<text class="icon-order text-gray"></text>
+					<text style="margin-left:20rpx">切换账号</text>
+				</view>
+				<text class="icon-right text-gray"></text>
+			</view>
+		</view>
+	</view>
+</block>
+
+<!-- 定时关闭部分 -->
+<block wx:if="{{show}}">
+	<view class="switch">
+		<scroll-view class="scroll-wrapper" scroll-y scroll-with-animation="true"  catchtouchmove="preventTouchMove">
+			<view class="switch-item">不开启</view>
+			<view class="switch-item">播放当前声音关闭</view>
+			<view class="switch-item">播放2首声音关闭</view>
+			<view class="switch-item">播放3首声音关闭</view>
+            <view class="switch-item">播放3首声音关闭</view>
+            <view class="switch-item">10分钟后</view>
+			<view class="switch-item">20分钟后</view>
+            <view class="switch-item">30分钟后</view>
+		</scroll-view>
+		<view class="close" bindtap="close">关闭</view>
+	</view>
+	<view class="cover"></view>
 </block>

@@ -68,9 +68,10 @@ Page({
       url: '/pages/index/bangdan/bangdan',
     })
   },
-  gotoDetails(){
+  gotoDetails(e){
+    var id = e.currentTarget.dataset.id;
     wx.navigateTo({
-      url: '/pages/details/details',
+      url: '/pages/details/details?value='+id,
     })
   }
 })

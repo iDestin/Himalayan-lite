@@ -41,29 +41,29 @@
   </view>
   <!-- 这没有没有使用数据绑定，因为是练手而且数据比较少 -->
   <view class="likeItemBox">
-    <view class="likeItem" bindtap="gotoDetails">
+    <view class="likeItem" bindtap="gotoDetails" data-id="1">
       <view class="likeimg">
         <image class="likeItemIcon" src="/image/guess1.jpg" mode="widthFix"></image>
-        <view class="cover">
+        <view class="likecover">
           <!-- text用来显示icon  暂无 -->
           <text class=""></text> 4.6亿
         </view>
       </view>
       <view class="likeText">米小圈上学记:一二三年级</view>
     </view>
-    <view class="likeItem" bindtap="gotoDetails">
+    <view class="likeItem" bindtap="gotoDetails" data-id="2">
       <view class="likeimg">
         <image class="likeItemIcon" src="/image/guess2.jpg" mode="widthFix"></image>
-        <view class="cover">
+        <view class="likecover">
           <text class=""></text> 4.6亿
         </view>
       </view>
       <view class="likeText">段子来了</view>
     </view>
-    <view class="likeItem" bindtap="gotoDetails">
+    <view class="likeItem" bindtap="gotoDetails" data-id="3">
       <view class="likeimg">
         <image class="likeItemIcon" src="/image/guess3.jpg" mode="widthFix"></image>
-        <view class="cover">
+        <view class="likecover">
           <text class=""></text> 4.6亿
         </view>
       </view>

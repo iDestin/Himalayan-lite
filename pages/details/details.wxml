@@ -2,20 +2,20 @@
   title和背景 
   注：这部分的背景色还没有处理好
 -->
-<view class="toptitlebar" style="background:url(../../image/guess1.jpg) no-repeat;background-size:100% 100%">
-    <view class="baritem">
+<view class="toptitlebar" style="background:url({{imgurl}}) no-repeat;background-size:100% 100%">
+    <view class="baritem" wx:for="{{performanceInfo}}" wx:key="index">
       <view class="baritemtop">
-        <view class="themebgimg" style="background:url(../../image/guess1.jpg)"></view>
+        <view class="themebgimg" style="background:url({{item.imgurl}}) background-size:100% 100%"></view>
         <view class="themeinfo">
-          <view class="themetitle">完 | 米小圈上学记：一二三年级</view>
+          <view class="themetitle">{{item.title}}</view>
           <view class="themeauthor">
             <!-- <image class="" src="" mode="widthFix"></image> -->
-            米小圈 <text class="icon-right"></text>
+            {{item.author}} <text class="icon-right"></text>
           </view>
           <view class="viewinfo">
-            <view class="viewinfoleft">167.6万人收藏</view>
+            <view class="viewinfoleft">{{item.num1}}人收藏</view>
             <text class="viewinfomid">|</text>
-            <view class="viewinforight">已更新257期</view>
+            <view class="viewinforight">已更新{{item.num2}}期</view>
           </view>
         </view>
       </view>

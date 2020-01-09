@@ -60,5 +60,17 @@ Page({
     wx.navigateTo({
       url: './phoneLogin/phoneLogin',
     });
+  },
+  openSwitch:function(){
+    var that = this;
+    that.setData({
+      show:true
+    })
+  },
+  close:function(){
+    var that = this;
+    that.setData({
+      show:false
+    })
   }
 })

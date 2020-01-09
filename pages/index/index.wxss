@@ -111,7 +111,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.cover{
+.likecover{
   width: 190rpx;
   height: 40rpx;
   /* 透明背景层 */
