@@ -2,22 +2,21 @@
   width: 100%;
   height: 410rpx;
   overflow: hidden;
-}
-
-.Performance {
-  width: 100%;
-  height: 500rpx;
-  border-top-left-radius: 20rpx;
-  border-top-right-radius: 20rpx;
   position: relative;
-  top: -10rpx;
 }
-
+/* 背景虚化层 */
+.bg{
+  width: 100%;
+  height: 410rpx;
+  filter: blur(15rpx);
+}
 .baritem {
   width: 100%;
   height: 400rpx;
   margin-top: 50rpx;
   padding: 20rpx 0rpx;
+  position: absolute;
+  top: 0rpx;
 }
 
 .baritemtop {
@@ -98,6 +97,14 @@
   background: orangered;
 }
 
+.Performance {
+  width: 100%;
+  height: 500rpx;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  position: relative;
+  top: -10rpx;
+}
 .selectbar {
   width: 100%;
   height: 100rpx;

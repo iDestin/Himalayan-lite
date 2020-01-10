@@ -2,10 +2,13 @@
   title和背景 
   注：这部分的背景色还没有处理好
 -->
-<view class="toptitlebar" style="background:url({{imgurl}}) no-repeat;background-size:100% 100%">
+<view class="toptitlebar">
+    <!-- 背景虚化层 -->
+    <view class="bg" style="background:url({{imgurl}}); background-size: 100% 100%; background-repeat: no-repeat;"></view>
+    <!-- 内容 -->
     <view class="baritem" wx:for="{{performanceInfo}}" wx:key="index">
       <view class="baritemtop">
-        <view class="themebgimg" style="background:url({{item.imgurl}}) background-size:100% 100%"></view>
+        <view class="themebgimg" style="background:url({{item.imgurl}}); background-size:100% 100%"></view>
         <view class="themeinfo">
           <view class="themetitle">{{item.title}}</view>
           <view class="themeauthor">
