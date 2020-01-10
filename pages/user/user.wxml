@@ -38,6 +38,7 @@
 			</view>
 			<!-- 签到 -->
 			<view class="qiandao">
+			<!-- 签到涉及canvas所以暂时搁置 -->
 				<view class="qianText">
 					<text class="icon-calendar text-gray"></text>
 					<text style="margin-left:20rpx">签到</text>
@@ -58,6 +59,12 @@
 				<text class="icon-right text-gray"></text>
 			</view>
 			<view class="choiceItem">
+				<!-- 
+					
+					因为切换为夜间模式需要使用自定义的tarbar，
+				  而这个小程序是一个初级学习项目，所以此功能暂时搁置 
+	
+				-->
 				<view class="">
 					<text class="icon-creative text-gray"></text>
 					<text style="margin-left:20rpx">夜间模式</text>
