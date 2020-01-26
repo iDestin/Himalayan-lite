@@ -1,9 +1,6 @@
 // pages/collection/collection.js
-
 const app = getApp()
-
 let userInfo = app.globalData.userInfo;
-let login = app.globalData.login
 
 Page({
 
@@ -25,16 +22,13 @@ Page({
    */
   onLoad: function (options) {
     var that = this;
-    // console.log(app)
-    // console.log("userInfo" +userInfo)
     if (app.globalData.userInfo === null){
       that.setData({
-        login:login
+        login:true
       })
     }else{
-      console.log("login:" + app.globalData.login)
       that.setData({
-        login: app.globalData.login
+        login: false
       })
     }
   },
@@ -59,10 +53,9 @@ Page({
     wx.getUserInfo({
       success: function (res) {
         app.globalData.userInfo = e.detail.userInfo;
-        app.globalData.login = false;
         console.log(e.detail.userInfo);
         that.setData({
-          login: app.globalData.login,
+          login: false,
         })
       }
     })

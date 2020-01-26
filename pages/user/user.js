@@ -1,7 +1,6 @@
 // pages/user/user.js
 const app = getApp()
 let userInfo = app.globalData.userInfo;
-let login = app.globalData.login;
 Page({
 
   /**
@@ -25,11 +24,11 @@ Page({
     // 查看是否授权
     if (app.globalData.userInfo === null) {
       that.setData({
-        login: login
+        login: true
       })
     } else {
       that.setData({
-        login: app.globalData.login,
+        login: false,
         avatarUrl: app.globalData.userInfo.avatarUrl,
         nickName: app.globalData.userInfo.nickName
       })
@@ -42,9 +41,8 @@ Page({
       success: function(res) {
         console.log(e.detail.userInfo);
         app.globalData.userInfo = e.detail.userInfo;
-        app.globalData.login = false;
         that.setData({
-          login: app.globalData.login,
+          login: false,
           avatarUrl: e.detail.userInfo.avatarUrl,
           nickName: e.detail.userInfo.nickName
         })

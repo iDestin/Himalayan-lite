@@ -44,7 +44,6 @@ App({
   },
   globalData: {
     userInfo: null,
-    login:true,
     phoneHeight:height
   }
 })
