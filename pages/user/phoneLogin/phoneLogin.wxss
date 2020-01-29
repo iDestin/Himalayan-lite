@@ -95,6 +95,19 @@
 .tips{
     font-size: 32rpx;
     color: #333333;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.left-line{
+    width: 100rpx;
+    height: 3rpx;
+    background: #aaa;
+}
+.right-line{
+    width: 100rpx;
+    height: 3rpx;
+    background: #aaa;
 }
 .wecahtlogin{
     width: 100%;
