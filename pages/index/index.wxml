@@ -26,7 +26,13 @@
 <view class="nav">
   <block>  
     <view class="navItem" bindtap="{{item.events}}" wx:for="{{navList}}"  wx:key="index">
-      <!-- 因为没有合适的图，所以全部使用的一样的 -->
+      <!-- 
+        
+        因为没有合适的图，所以全部使用的一样的 
+        并且因为界面都是一致的就是内容不同，这里为了简单，使用的都是统一界面
+
+        解决办法：你可以通过页面传参的方式来进行区分
+        -->
       <image class="navIcon" src="{{item.icon}}" mode="widthFix" lazy-load="false"></image>
       <text class="navText">{{item.text}}</text>
     </view>

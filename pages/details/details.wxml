@@ -32,7 +32,7 @@
 <view class="Performance">
   <view class="selectbar">
     <view class="detail">详情</view>
-    <view class="list">节目<text>152</text>
+    <view class="list active">节目<text>152</text>
     </view>
   </view>
   <!-- 播放选项 -->
@@ -48,7 +48,7 @@
   <!-- 节目列表 -->
   <view class="performanceContent" wx:for="{{performance}}" wx:key="index">
     <!-- 序号 -->
-    <view class="performanceIndex">{{index}}</view>
+    <view class="performanceIndex">{{index+1}}</view>
     <!-- 节目标题 -->
     <view class="performanceInfo">
       <view class="performanceInfoTop">

@@ -32,7 +32,7 @@
 	<view class="hot-content">
 		<view class="hot-items" wx:for="{{hotData}}" wx:key="index">
 			<view class="item-left">
-				<view class="text-red">{{index}}</view>
+				<view class="{{index < 3 ? 'text-red' : ''}}">{{index + 1}}</view>
 				<view class="itemTitle">{{item.title}}</view>
 			</view>
 			<text class="{{item.icon}} itemIcon {{item.color}}"></text>
