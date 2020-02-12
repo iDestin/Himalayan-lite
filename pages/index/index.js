@@ -50,7 +50,7 @@ Page({
         if(result.statusCode == 200){
           that.setData({
             showitem:true,
-            // guess:result.data.guess.list[0].list,
+            guess:result.data.paidArea.list,
             xiaoshuocontent:result.data.hotRecommends.list[0].list,
             xiangshengcontent:result.data.hotRecommends.list[2].list,
             tuokocontent:result.data.hotRecommends.list[4].list
@@ -69,9 +69,11 @@ Page({
     })
   },
   gotoDetails(e){
-    var id = e.currentTarget.dataset.id;
+    // console.log(e)
+    var url = e.currentTarget.dataset.coverimg;
+    var title = e.currentTarget.dataset.title;
     wx.navigateTo({
-      url: '/pages/details/details?value='+id,
+      url: '/pages/details/details?url='+url+'&title='+title,
     })
   }
 })

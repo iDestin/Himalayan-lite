@@ -43,6 +43,11 @@
 .themetitle {
   color: #fff;
   font-size: 40rpx;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;/*行数n*/
+  -webkit-box-orient: vertical; 
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .themeauthor {

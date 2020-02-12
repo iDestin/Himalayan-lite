@@ -104,7 +104,7 @@
 .likeText{
   font-size: 28rpx;
   color: #333;
-  padding: 20rpx 0rpx;
+  margin-top: 10rpx;
   display: -webkit-box;
   -webkit-line-clamp: 2;/*行数n*/
   -webkit-box-orient: vertical; 

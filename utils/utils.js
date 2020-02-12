@@ -12,9 +12,9 @@ let myRequest = function(url,methods,data = {}){
         success: (result)=>{
           console.log(result);
           if(result.statusCode == 200){
-              //
+              // TODO
           }else{
-            //
+            // TODO
           }
         },
     })
