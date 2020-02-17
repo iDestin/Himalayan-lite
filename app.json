@@ -23,25 +23,25 @@
         "pagePath": "pages/index/index",
         "text": "首页",
         "iconPath": "/image/icon/home-icon.png",
-        "selectedIconPath": "/image/icon/home-selecticon.png"
+        "selectedIconPath": "/image/icon/home-selectIcon.png"
       },
       {
         "pagePath": "pages/classification/classification",
         "text": "分类",
         "iconPath": "/image/icon/fen-icon.png",
-        "selectedIconPath": "/image/icon/fen-selecticon.png"
+        "selectedIconPath": "/image/icon/fen-selectIcon.png"
       },
       {
         "pagePath": "pages/collection/collection",
         "text": "收藏",
         "iconPath": "/image/icon/collection-icon.png",
-        "selectedIconPath": "/image/icon/collection-selecticon.png"
+        "selectedIconPath": "/image/icon/collection-selectIcon.png"
       },
       {
         "pagePath": "pages/user/user",
         "text": "我的",
         "iconPath": "/image/icon/user-icon.png",
-        "selectedIconPath": "/image/icon/user-selecticon.png"
+        "selectedIconPath": "/image/icon/user-selectIcon.png"
       }
     ]
   },
