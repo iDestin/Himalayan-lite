@@ -1,4 +1,5 @@
 const app = getApp();
+var utils = require('../../../utils/utils.js')
 // 定义一个全局变量保存从接口获取到的数据，以免重复请求接口
 var resut; 
 Page({
@@ -26,23 +27,21 @@ Page({
    */
   onLoad: function (options) {
     var that = this;
-    wx.request({
-      url: 'http://mobile.ximalaya.com/mobile/discovery/v3/recommend/hotAndGuess?code=43_310000_3100&device=android&version=5.4.45',
-      
-      header: {'content-type':'application/json'},
-      method: 'GET',
-      dataType: 'json',
-      responseType: 'text',
-      success: (res)=>{
-        resut = res;
+    var url = 'http://mobile.ximalaya.com/mobile/discovery/v3/recommend/hotAndGuess?code=43_310000_3100&device=android&version=5.4.45'
+    utils.myRequest({
+      url:url,
+      methods:'GET',
+      success:function(res){
         console.log(res);
+        resut = res;
         that.setData({
           list: res.data.hotRecommends.list[0].list
         })
       },
-      fail: ()=>{},
-      complete: ()=>{}
-    });
+      fail:function(){
+
+      }
+    })
   },
   handleClick(e) {
     let currentTab = e.currentTarget.dataset.index;

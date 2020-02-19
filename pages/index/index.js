@@ -1,6 +1,7 @@
 //index.js
 //获取应用实例
 const app = getApp()
+var utils = require('../../utils/utils.js');
 
 Page({
 
@@ -38,29 +39,27 @@ Page({
    */
   onLoad: function (options) {
     var that = this;
-    wx.request({
-      url: 'http://mobile.ximalaya.com/mobile/discovery/v3/recommend/hotAndGuess?code=43_310000_3100&device=android&version=5.4.45',
-      data: {},
-      header: {'content-type':'application/json'},
-      method: 'GET',
-      dataType: 'json',
-      responseType: 'text',
-      success: (result)=>{
-        console.log(result);
-        if(result.statusCode == 200){
-          that.setData({
-            showitem:true,
-            guess:result.data.paidArea.list,
-            xiaoshuocontent:result.data.hotRecommends.list[0].list,
-            xiangshengcontent:result.data.hotRecommends.list[2].list,
-            tuokocontent:result.data.hotRecommends.list[4].list
-          })
-        }else{
-          that.setData({
-            showitem:false
-          })
-        }
+    var url = 'http://mobile.ximalaya.com/mobile/discovery/v3/recommend/hotAndGuess?code=43_310000_3100&device=android&version=5.4.45';
+
+    // 调用的是自己封装的工具函数，在utils中
+    utils.myRequest({
+      url:url,
+      methods:'GET',
+      success:function(result){
+        console.log("我被执行了")
+        that.setData({
+          showitem:true,
+          guess:result.data.paidArea.list,
+          xiaoshuocontent:result.data.hotRecommends.list[0].list,
+          xiangshengcontent:result.data.hotRecommends.list[2].list,
+          tuokocontent:result.data.hotRecommends.list[4].list
+        })
       },
+      fail:function(){
+        that.setData({
+          showitem:false
+        })
+      }
     });
   },
   goToBangDan:function(){
