@@ -17,7 +17,9 @@
     font-size: 25rpx;
     color: #c3c3c3;
     text-align: center;
-    /* word-spacing: 20rpx; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .login{
     width: 100%;

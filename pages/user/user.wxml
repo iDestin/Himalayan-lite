@@ -72,6 +72,7 @@
 				<switch></switch>
 			</view>
 			<view class="choiceItem">
+			<!-- 意见反馈需要使用button的open-type属性 此处没有设置-->
 				<view class="">
 					<text class="icon-post text-gray"></text>
 					<text style="margin-left:20rpx">意见反馈</text>
