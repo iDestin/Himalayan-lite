@@ -43,6 +43,6 @@
 
 欢迎您的建议或者是提出Bug
 
-  * 邮箱🤐：JCITXH@163.com（可能不能及时回复）
+
   * 提[issue](https://github.com/Notobey/Himalayan-lite/issues)
-  * [我的博客](http://www.zhiq.online)
+  * [我的博客](http://www.zhiq.online) 你可以在这里联系我
