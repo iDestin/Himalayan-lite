@@ -27,7 +27,7 @@
   <!-- 对应的内容区 -->
   <view class="content"  wx:for="{{list}}" wx:key="index">
     <view class="indexNumber">
-      <view>{{index > 10 ? index : '0'+index}}</view>
+      <view>{{index > 10 ? index : '0'+(index+1)}}</view>
     </view>
     <image src="{{item.albumCoverUrl290}}"></image>
     <view class="content-left">
