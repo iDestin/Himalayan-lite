@@ -1,7 +1,7 @@
 // pages/collection/collection.js
 const app = getApp()
 let userInfo = app.globalData.userInfo;
-
+let height = app.globalData.phoneHeight
 Page({
 
   /**
@@ -9,6 +9,7 @@ Page({
    */
   data: {
     currentIndex:0,
+    height:height,
     content: [
       {text: "我的收藏"},
       {text: "我的已购"},
@@ -22,13 +23,21 @@ Page({
    */
   onLoad: function (options) {
     var that = this;
+    var height;
+    wx.getSystemInfo({
+      success (res) {
+        console.log(res.windowHeight);
+        height = res.windowHeight
+      }
+    })
     if (app.globalData.userInfo === null){
       that.setData({
         login:true
       })
     }else{
       that.setData({
-        login: false
+        login: false,
+        height:height
       })
     }
   },
@@ -55,10 +64,22 @@ Page({
     })
   },
   checkItem(e){
-    console.log(e)
     var that = this;
+    if (this.data.currentIndex === e.target.dataset.current) {
+      return false;
+    } else {
+      that.setData({
+        currentIndex: e.target.dataset.index
+      })
+    }
+  },
+  // 滑动切换tab
+
+  changeTab:function(e){
+    var that = this;
+    console.log(e.detail.current)
     that.setData({
-      currentIndex : e.target.dataset.index
+      currentIndex:e.detail.current
     })
   }
 })

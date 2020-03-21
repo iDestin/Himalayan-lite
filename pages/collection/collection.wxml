@@ -26,7 +26,50 @@
           {{item.text}}
       </view>
     </view>
-    <view class="collectionContent">
-      暂无内容
-    </view>
+    <swiper class="swiperbox" style="min-height:{{height}}px" duration="300" current="{{currentIndex}}" bindchange="changeTab">
+        <swiper-item class="swiper-box-item" >
+            <block>
+                <view class="NoContent">
+                    <image src="/image/noContent.png"></image>
+                    <view class="but-box">
+                        <text style="font-size:30rpx" class="text-gray">没有内容</text>
+                        <button class="but">看看推荐</button>
+                    </view>
+                </view>
+            </block>
+        </swiper-item>
+        <swiper-item>
+            <block>
+                <view class="NoContent">
+                    <image src="/image/noContent.png"></image>
+                    <view class="but-box">
+                        <text style="font-size:30rpx" class="text-gray">没有内容</text>
+                        <button class="but">看看推荐</button>
+                    </view>
+                </view>
+            </block>
+        </swiper-item>
+        <swiper-item>
+            <block>
+                <view class="NoContent">
+                    <image src="/image/noContent.png"></image>
+                    <view class="but-box">
+                        <text style="font-size:30rpx" class="text-gray">没有内容</text>
+                        <button class="but">看看推荐</button>
+                    </view>
+                </view>
+            </block>
+        </swiper-item>
+        <swiper-item>
+            <block>
+                <view class="NoContent">
+                    <image src="/image/noContent.png"></image>
+                    <view class="but-box">
+                        <text style="font-size:30rpx" class="text-gray">没有内容</text>
+                        <button class="but">更多礼包</button>
+                    </view>
+                </view>
+            </block>
+        </swiper-item>
+    </swiper>
 </block>

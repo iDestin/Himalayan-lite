@@ -7,7 +7,17 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    timeout:[
+      {text:"不开启"},
+      {text:"播放当前声音关闭"},
+      {text:"播放2首声音关闭"},
+      {text:"播放3首声音关闭"},
+      {text:"播放4首声音关闭"},
+      {text:"10分钟后"},
+      {text:"20分钟后"},
+      {text:"30分钟后"},
+    ],
+    activeIndex:0,
   },
 
   onLoad: function (options) {
@@ -69,6 +79,13 @@ Page({
     var that = this;
     that.setData({
       show:false
+    })
+  },
+  chooseTimeOut:function(e){
+    var that = this;
+    console.log(e)
+    that.setData({
+      activeIndex:e.currentTarget.dataset.activeindex
     })
   }
 })

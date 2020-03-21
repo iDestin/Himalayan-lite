@@ -16,7 +16,6 @@
   <!-- 为了和喜马拉雅一致，自己需定制轮播图dots -->
   <view class="dots">
     <block wx:for="{{imgList.length}}" wx:key="index">
-      <!-- 根据index判断是否选中 -->
       <view class="dotsItem{{index == swiperCurrent ? ' active' : ''}}"></view>
     </block>
   </view>

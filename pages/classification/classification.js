@@ -204,8 +204,7 @@ Page({
   //随着滚动动态设置左侧边栏的选中态
   showActive:function (e) {
     //方法欠佳，还需改进
-    
-    var index = parseInt( e.detail.scrollTop/125);
+    var index = parseInt( e.detail.scrollTop/116);
     this.setData({
       activeIndex: index
      })
@@ -213,7 +212,6 @@ Page({
   // 侧边栏的点击事件
   change:function (e){
     var that = this;
-    
     that.setData({
       VerticalNavTop: (e.currentTarget.dataset.index - 1) * 50,
       activeIndex: e.currentTarget.dataset.index,
