@@ -62,8 +62,6 @@
   padding: 10rpx 20rpx;
   margin-bottom: 20rpx;
   border-radius: 25rpx;
-  color: #333;
-  background-color: rgb(240, 240, 240);
 }
 
 .hot{

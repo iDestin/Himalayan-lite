@@ -4,11 +4,12 @@
 .swiper-container{
   width: 90%;
   height: 280rpx;
-  /* 居中作用 */
   margin: 0rpx auto;
   position: relative;
   border-radius: 15rpx;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .swiper{
@@ -32,11 +33,10 @@
   position: absolute;
   bottom: 20rpx;
   border-radius: 50rpx;
-  left: 240rpx;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3rpx 10rpx;
+  padding: 0rpx 10rpx;
 }
 .dotsItem{
   width: 8rpx;
