@@ -65,6 +65,8 @@ swiper{
   margin-top: 100rpx;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 .NoContent image{
   width: 400rpx;

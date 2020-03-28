@@ -22,13 +22,6 @@ App({
         }
       }
     })
-    //获取设备信息
-    wx.getSystemInfo({
-      success (res) {
-        console.log(res.windowHeight);
-        this.globalData.height = res.windowHeight;
-      }
-    })
   },
   globalData: {
     userInfo: null

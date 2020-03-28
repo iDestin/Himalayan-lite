@@ -30,7 +30,8 @@
         <swiper-item class="swiper-box-item" >
             <block>
                 <view class="NoContent">
-                    <image src="/image/noContent.png"></image>
+                    <text class="icon-empty text-gray" style="font-size:400rpx"></text>
+                    <!-- <image src="/image/noContent.png"></image> -->
                     <view class="but-box">
                         <text style="font-size:30rpx" class="text-gray">没有内容</text>
                         <button class="but">看看推荐</button>
@@ -41,7 +42,7 @@
         <swiper-item>
             <block>
                 <view class="NoContent">
-                    <image src="/image/noContent.png"></image>
+                    <text class="icon-empty text-gray" style="font-size:400rpx"></text>
                     <view class="but-box">
                         <text style="font-size:30rpx" class="text-gray">没有内容</text>
                         <button class="but">看看推荐</button>
@@ -52,7 +53,7 @@
         <swiper-item>
             <block>
                 <view class="NoContent">
-                    <image src="/image/noContent.png"></image>
+                    <text class="icon-empty text-gray" style="font-size:400rpx"></text>
                     <view class="but-box">
                         <text style="font-size:30rpx" class="text-gray">没有内容</text>
                         <button class="but">看看推荐</button>
@@ -63,7 +64,7 @@
         <swiper-item>
             <block>
                 <view class="NoContent">
-                    <image src="/image/noContent.png"></image>
+                    <text class="icon-empty text-gray" style="font-size:400rpx"></text>
                     <view class="but-box">
                         <text style="font-size:30rpx" class="text-gray">没有内容</text>
                         <button class="but">更多礼包</button>

@@ -10,6 +10,8 @@
     width: 80%;
     margin: 0rpx auto;
     margin-top: 100rpx;
+    display: flex;
+    flex-wrap: wrap
 }
 .slogn{
     width: 100%;
@@ -43,7 +45,6 @@
     text-align: center;
     padding-right: 20rpx;
     border-right: 1rpx solid #cccccc;
-    /* box-sizing: border-box; */
     margin-right: 20rpx;
     color: #cccccc;
 }
