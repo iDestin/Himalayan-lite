@@ -41,8 +41,8 @@
       <text class="icon-video"></text> 播放全部
     </view>
     <view class="playselect">
-      <view style="margin-right:20rpx"><text class="icon-all"></text> 正序</view>
-      <view><text class="icon-all"></text> 选集</view>
+      <view style="margin-right:20rpx"><text class="icon-order"></text> 正序</view>
+      <view><text class="icon-list"></text> 选集</view>
     </view>
   </view>
   <!-- 节目列表 -->

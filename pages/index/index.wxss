@@ -4,7 +4,6 @@
 .swiper-container{
   width: 90%;
   height: 280rpx;
-  /* 居中作用 */
   margin: 0rpx auto;
   position: relative;
   border-radius: 15rpx;

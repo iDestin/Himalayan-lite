@@ -44,3 +44,43 @@
   margin: 0rpx auto;
   margin-top: 10rpx;
 }
+.collectionContent{
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 300rpx;
+  color: #aaaaaa
+}
+swiper{
+  display: block;
+  width: 100%;
+}
+.swiper-box-item{
+  height: 400rpx;
+}
+.NoContent{
+  width: 90%;
+  height: auto;
+  margin: 0rpx auto;
+  margin-top: 100rpx;
+  display: flex;
+  flex-direction: column;
+}
+.NoContent image{
+  width: 400rpx;
+  height: 300rpx;
+  align-self: center;
+}
+.but-box{
+  width: 80%;
+  margin: 0rpx auto;
+  margin-top: 40rpx;
+  text-align: center;
+}
+.but{
+  width: 300rpx;
+  height: 80rpx;
+  font-size: 40rpx;
+  line-height: 80rpx;
+  margin-top: 10rpx;
+}

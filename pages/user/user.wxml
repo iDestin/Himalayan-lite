@@ -38,9 +38,9 @@
 			</view>
 			<!-- 签到 -->
 			<view class="qiandao">
-			<!-- 签到涉及canvas所以暂时搁置 -->
+				<!-- 签到涉及canvas所以暂时搁置 -->
 				<view class="qianText">
-					<text class="icon-calendar text-gray"></text>
+					<text class="icon-dateTable text-gray"></text>
 					<text style="margin-left:20rpx">签到</text>
 				</view>
 				<view class="icon_">
@@ -66,22 +66,22 @@
 	
 				-->
 				<view class="">
-					<text class="icon-creative text-gray"></text>
+					<text class="icon-tip text-gray"></text>
 					<text style="margin-left:20rpx">夜间模式</text>
 				</view>
 				<switch></switch>
 			</view>
 			<view class="choiceItem">
-			<!-- 意见反馈需要使用button的open-type属性 此处没有设置-->
+				<!-- 意见反馈需要使用button的open-type属性 此处没有设置-->
 				<view class="">
-					<text class="icon-post text-gray"></text>
+					<text class="icon-write text-gray"></text>
 					<text style="margin-left:20rpx">意见反馈</text>
 				</view>
 				<text class="icon-right text-gray"></text>
 			</view>
 			<view class="choiceItem" bindtap="gotoLogin">
 				<view class="">
-					<text class="icon-order text-gray"></text>
+					<text class="icon-changeCount text-gray"></text>
 					<text style="margin-left:20rpx">切换账号</text>
 				</view>
 				<text class="icon-right text-gray"></text>
@@ -93,15 +93,11 @@
 <!-- 定时关闭部分 -->
 <block wx:if="{{show}}">
 	<view class="switch">
-		<scroll-view class="scroll-wrapper" scroll-y scroll-with-animation="true"  catchtouchmove="preventTouchMove">
-			<view class="switch-item">不开启</view>
-			<view class="switch-item">播放当前声音关闭</view>
-			<view class="switch-item">播放2首声音关闭</view>
-			<view class="switch-item">播放3首声音关闭</view>
-            <view class="switch-item">播放3首声音关闭</view>
-            <view class="switch-item">10分钟后</view>
-			<view class="switch-item">20分钟后</view>
-            <view class="switch-item">30分钟后</view>
+		<scroll-view class="scroll-wrapper" scroll-y scroll-with-animation="true" catchtouchmove="preventTouchMove">
+			<view class="switch-item" wx:for="{{timeout}}" wx:key="{{index}}" bindtap="chooseTimeOut" data-activeIndex="{{index}}">
+				<view>{{item.text}}</view>
+				<view class="active" wx:if="{{index == activeIndex}}"></view>
+			</view>
 		</scroll-view>
 		<view class="close" bindtap="close">关闭</view>
 	</view>

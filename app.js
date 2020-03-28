@@ -1,5 +1,4 @@
 //app.js
-let height = 0;
 App({
   onLaunch: function () {
     // 获取用户信息
@@ -27,12 +26,11 @@ App({
     wx.getSystemInfo({
       success (res) {
         console.log(res.windowHeight);
-        height = res.windowHeight;
+        this.globalData.height = res.windowHeight;
       }
     })
   },
   globalData: {
-    userInfo: null,
-    phoneHeight:height
+    userInfo: null
   }
 })
