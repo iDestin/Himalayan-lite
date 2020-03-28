@@ -74,7 +74,7 @@
           <image src="{{item.albumCoverUrl290}}" mode="widthFix"></image>
         </view>
         <view class="content-right">
-          <view class="title">
+          <view class="content-title">
             <view class="titleText">{{item.title}}</view>
             <view class="introduction">{{item.trackTitle}}</view>
           </view>
@@ -101,7 +101,7 @@
           <image src="{{item.albumCoverUrl290}}" mode="widthFix"></image>
         </view>
         <view class="content-right">
-          <view class="title">
+          <view class="content-title">
             <view class="titleText">{{item.title}}</view>
             <view class="introduction">{{item.trackTitle}}</view>
           </view>
@@ -128,7 +128,7 @@
           <image src="{{item.albumCoverUrl290}}" mode="widthFix" lazy-load="false"></image>
         </view>
         <view class="content-right">
-          <view class="title">
+          <view class="content-title">
             <view class="titleText">{{item.title}}</view>
             <view class="introduction">{{item.trackTitle}}</view>
           </view>

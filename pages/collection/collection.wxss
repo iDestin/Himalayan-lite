@@ -1,24 +1,27 @@
 /* pages/collection/collection.wxss */
-.titleBar{
-    width: 100%;
-    height: 80rpx;
-    /* 这个配色不对 */
-    border-bottom: 1rpx solid #f1f1f1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 28rpx;
-    overflow: hidden;
+
+.titleBar {
+  width: 100%;
+  height: 80rpx;
+  /* 这个配色不对 */
+  border-bottom: 1rpx solid #f1f1f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 28rpx;
+  overflow: hidden;
 }
-.itemTitle{
-    width: 200rpx;
-    height: 100%;
-    text-align: center;
-    line-height: 80rpx;
-    position: relative;
-    color: #aaaaaa;
+
+.itemTitle {
+  width: 200rpx;
+  height: 100%;
+  text-align: center;
+  line-height: 80rpx;
+  position: relative;
+  color: #aaa;
 }
-.active:after{
+
+.active:after {
   content: '';
   width: 40rpx;
   height: 8rpx;
@@ -32,13 +35,12 @@
 .active {
   font-size: 32rpx;
   font-weight: 700;
-  transition: all .3s;
-  color: #333333;
+  transition: all 0.3s;
+  color: #333;
 }
-.collectionContent{
-  width: 100%;
-  text-align: center;
-  position: absolute;
-  top: 300rpx;
-  color: #aaaaaa
+
+.collectionContent {
+  width: 90%;
+  margin: 0rpx auto;
+  margin-top: 10rpx;
 }

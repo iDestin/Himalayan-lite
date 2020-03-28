@@ -26,7 +26,27 @@
           {{item.text}}
       </view>
     </view>
+    <!-- 这里就放一些静态数据 -->
     <view class="collectionContent">
-      暂无内容
+      <block>
+        <view class="content" bindtap="gotoDetails" data-coverImg="{{item.albumCoverUrl290}}" data-title="{{item.title}}">
+          <view class="contentImg">
+            <image src="http://imagev2.xmcdn.com/group71/M04/4C/11/wKgOz14Esw2SM9gQAAGQsBR1YeE034.jpg!op_type=5&upload_type=album&device_type=ios&name=medium&magick=png" mode="widthFix"></image>
+          </view>
+          <view class="content-right">
+            <view class="content-title">
+              <view class="titleText">郭德纲相声专场</view>
+              <view class="introduction">每天听个郭德纲，快乐永驻你身旁。相声专场在银川，喜马来把笑声传。 著名相声演...</view>
+            </view>
+            <view class="count">
+              <view class="playcount">
+                <!-- <text class="icon-"></text> -->
+                126亿
+              </view>
+              <view class="jicount">70集</view>
+            </view>
+          </view>
+        </view>
+      </block>
     </view>
 </block>
