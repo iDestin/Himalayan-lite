@@ -2,8 +2,14 @@
   这是一个简单的组件结构，没有使用插槽等复杂组件使用的属性
   可以通过一个简单的组件入门组件化
  -->
-
 <view class="search marginTopBottom" bindtap="goToSearch">
+	<view class="search-left">
+		<text class="icon-search"></text>
+		<input placeholder="搜索你想听的节目" disabled="{{disabled}}"></input>
+	</view>
+	<view class="search-right" wx:if="{{isshow}}">取消</view>
+</view>
+<!-- <view class="search marginTopBottom" bindtap="goToSearch">
   <text class="icon-search"></text>
   <view class="search-item">搜索你想听的节目</view>
-</view>
+</view> -->

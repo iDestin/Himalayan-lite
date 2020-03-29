@@ -1,5 +1,5 @@
 <view class="main bg-white" style="min-height:{{height}}px">
-    <view class="content">
+    <view class="content_">
         <!-- 提示标语 -->
         <view class="slogn">
             <!-- <view class="left-line" style="width:20rpx"></view> -->

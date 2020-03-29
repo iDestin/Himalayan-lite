@@ -29,7 +29,6 @@ Page({
   },
   //轮播图改变事件
   swiperChange: function(e){
-    //console.log(e.detail.current);
     this.setData({
      swiperCurrent: e.detail.current
     })
@@ -46,7 +45,6 @@ Page({
       url:url,
       methods:'GET',
       success:function(result){
-        console.log("我被执行了")
         that.setData({
           showitem:true,
           guess:result.data.paidArea.list,
@@ -68,7 +66,6 @@ Page({
     })
   },
   gotoDetails(e){
-    // console.log(e)
     var url = e.currentTarget.dataset.coverimg;
     var title = e.currentTarget.dataset.title;
     wx.navigateTo({

@@ -8,7 +8,8 @@ Component({
         },
     },
     data: {
-
+        disabled:true,
+        isshow:false,
     },
     methods: {
         goToSearch(){
@@ -16,20 +17,5 @@ Component({
               url: '/pages/search/search',
             })
         }
-    },
-    created: function(){
-
-    },
-    attached: function(){
-
-    },
-    ready: function(){
-
-    },
-    moved: function(){
-
-    },
-    detached: function(){
-
     },
 });

@@ -6,7 +6,7 @@
    width: 100%; 
 }
 
-.content{
+.content_{
     width: 80%;
     margin: 0rpx auto;
     margin-top: 100rpx;

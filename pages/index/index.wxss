@@ -1,55 +1,3 @@
-/**index.wxss**/
-
-/* 轮播图 */
-.swiper-container{
-  width: 90%;
-  height: 280rpx;
-  margin: 0rpx auto;
-  position: relative;
-  border-radius: 15rpx;
-  overflow: hidden;
-}
-
-.swiper{
-  width: 100%;
-  height: 100%;
-  border-radius: 15rpx;
-}
-.swiperItem{
-  width: 100%;
-  height: 100%;
-  border-radius: 15rpx;
-}
-.swiperItem>image{
-  width: 100%;
-  height: 100%;
-  border-radius: 15rpx;
-}
-.dots{
-  width: auto;
-  height: 10rpx;
-  position: absolute;
-  bottom: 20rpx;
-  border-radius: 50rpx;
-  left: 240rpx;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 3rpx 10rpx;
-}
-.dotsItem{
-  width: 8rpx;
-  height: 8rpx;
-  margin: 0rpx 8rpx;
-  border-radius: 50%;
-  background-color: #cdcdcd;
-  transition: all .3s;
-}
-.active{
-  width: 10rpx;
-  height: 10rpx;
-  background-color: #fff;
-}
 /* 宫格导航 */
 .nav{
   width: 90%;
@@ -124,8 +72,6 @@
   border-bottom-left-radius: 15rpx;
   border-bottom-right-radius: 15rpx;
 }
-
-
 .dataNotip{
   width: 100%;
   height: 300rpx;

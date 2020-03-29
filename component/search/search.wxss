@@ -1,20 +1,33 @@
 /* 搜索框 */
 .search{
-    width: 90%;
-    height: 50rpx;
-    margin: 0rpx auto;
-    padding: 10rpx;
-    border-radius: 10rpx;
-    font-size: 25rpx;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(240, 240, 240);
-    margin-bottom: 20rpx;
-  }
-  .search-item{
-    width: 95%;
-    height: 100%;
-    color: #aaa;
-    line-height: 50rpx;
-  }
+  width: 90%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  margin: 0rpx auto;
+  margin-bottom: 15rpx;
+}
+
+.search-left{
+  flex: 4;
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10rpx 20rpx;
+  border-radius: 15rpx;
+}
+
+.search input{
+  width: 90%;
+  height: 100%;
+  font-size: 29rpx;
+  margin-left: 20rpx;
+}
+.search-right{
+  flex: 0.5;
+  font-size:30rpx;
+  color: #aaa;
+  text-align: center;
+  margin-left: 30rpx;
+}

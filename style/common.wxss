@@ -1,6 +1,57 @@
 /* 公共样式 */
 
-/* 首页主要内容样式 */
+/* 轮播图 */
+
+.swiper-container{
+  width: 90%;
+  height: 280rpx;
+  margin: 0rpx auto;
+  position: relative;
+  border-radius: 15rpx;
+  overflow: hidden;
+}
+.swiper{
+  width: 100%;
+  height: 100%;
+  border-radius: 15rpx;
+}
+.swiperItem{
+  width: 100%;
+  height: 100%;
+  border-radius: 15rpx;
+}
+.swiperItem>image{
+  width: 100%;
+  height: 100%;
+  border-radius: 15rpx;
+}
+.dots{
+  width: auto;
+  height: 10rpx;
+  position: absolute;
+  bottom: 20rpx;
+  border-radius: 50rpx;
+  left: 240rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rpx 10rpx;
+}
+.dotsItem{
+  width: 8rpx;
+  height: 8rpx;
+  margin: 0rpx 8rpx;
+  border-radius: 50%;
+  background-color: #cdcdcd;
+  transition: all .3s;
+}
+.dotActive{
+  width: 10rpx;
+  height: 10rpx;
+  background-color: #fff;
+}
+
+/* 主要内容列表样式 */
 .contentList{
   width: 90%;
   margin: 0rpx auto;
@@ -77,41 +128,8 @@
   font-size: 25rpx;
   color: #cdcdcd;
 }
-/* 
-==========
-  bar相关 
-==========
-*/
-.marginTopBottom {
-  margin-top: 20rpx;
-  margin-bottom: 30rpx;
-}
 
-.barTitle {
-  width: 100%;
-  height: 56rpx;
-  padding: 20rpx 0rpx;
-  text-align: center;
-}
-
-.Title-left {
-  float: left;
-  font-size: 37rpx;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: 800;
-  color: #333;
-}
-
-.Title-right {
-  float: right;
-  font-size: 26rpx;
-  color: #aaa;
-}
-/* 
-===========
-  登录样式 
-===========
-*/
+/* 登录样式 */
 .logo {
   width: 128rpx;
   height: 128rpx;
@@ -157,28 +175,8 @@
   background-color: #fff;
   color: #70e500;
 }
-/* 
-===========
-  搜索部分
-===========
-*/
-.title{
-  width: 100%;
-  height: 50rpx;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-sizing: border-box;
-}
-.title-text{
-  color: #000;
-  font-weight: 700;
-}
-/* 
-==========
-  蒙板
-==========
-*/
+
+/*蒙板*/
 .cover{
   position: fixed;
   top: 0;
@@ -190,4 +188,32 @@
   z-index: 9000;
   background: rgba(0, 0, 0, 0.6);
   opacity: 0.7;
+}
+
+
+/* bar相关 */
+.marginTopBottom {
+  margin-top: 20rpx;
+  margin-bottom: 30rpx;
+}
+
+.barTitle {
+  width: 100%;
+  height: 56rpx;
+  padding: 20rpx 0rpx;
+  text-align: center;
+}
+
+.Title-left {
+  float: left;
+  font-size: 37rpx;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 800;
+  color: #333;
+}
+
+.Title-right {
+  float: right;
+  font-size: 26rpx;
+  color: #aaa;
 }
