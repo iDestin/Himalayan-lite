@@ -63,27 +63,28 @@
 }
 /* 内容区的代码 */
 
-.content {
+.content-item{
   width: 100%;
   display: flex;
   justify-content: space-around;
-  margin-top: 10rpx;
-  padding-top: 30rpx;
+  align-items: center;
+  padding: 20rpx 0rpx;
 }
 
 .indexNumber {
   width: 15%;
   height: auto;
-  padding: 20rpx 20rpx;
+  padding: 20rpx 0rpx;
   text-align: center;
   font-size: 50rpx;
   color: #ff520f;
 }
 
-.content image {
+.content-item image {
   width: 140rpx;
   height: 140rpx;
   margin-top: 10rpx;
+  border-radius: 15rpx;
 }
 
 .content-left {
@@ -91,7 +92,7 @@
   margin-left: 30rpx;
   width: 60%;
   height: auto;
-  border-bottom: 1rpx solid #ccc;
+  border-bottom: 1rpx solid #f1f1f1;
 }
 
 .content-title{

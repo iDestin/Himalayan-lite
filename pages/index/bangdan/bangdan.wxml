@@ -25,7 +25,7 @@
     </view>
   </view>
   <!-- 对应的内容区 -->
-  <view class="content"  wx:for="{{list}}" wx:key="index">
+  <view class="content-item"  wx:for="{{list}}" wx:key="index">
     <view class="indexNumber">
       <view>{{index > 10 ? index : '0'+(index+1)}}</view>
     </view>
@@ -36,7 +36,7 @@
       <view class="count">
         <view style="margin-right:25rpx;">
           <!-- 本例中33.2亿的单位是写死的，此处应该是后端返回数据吧 -->
-          <text class="icon"></text>
+          <text class="icon-video"></text>
           <text class="">33.2亿</text>
         </view>
         <view>
