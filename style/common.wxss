@@ -1,8 +1,16 @@
-/* 公共样式 */
+/* 
+  公共样式 
+  注：hmly为喜马拉雅的缩写
+*/
 
 /* 轮播图 */
+.hmly-swiper{
+  width: 100%;
+  height: 100%;
+  border-radius: 15rpx;
+}
 
-.swiper-container{
+.hmly-swiper-container{
   width: 90%;
   height: 280rpx;
   margin: 0rpx auto;
@@ -10,22 +18,20 @@
   border-radius: 15rpx;
   overflow: hidden;
 }
-.swiper{
+
+.hmly-swiper-item{
   width: 100%;
   height: 100%;
   border-radius: 15rpx;
 }
-.swiperItem{
+
+.hmly-swiper-item>image{
   width: 100%;
   height: 100%;
   border-radius: 15rpx;
 }
-.swiperItem>image{
-  width: 100%;
-  height: 100%;
-  border-radius: 15rpx;
-}
-.dots{
+
+.hmly-dots{
   width: auto;
   height: 10rpx;
   position: absolute;
@@ -37,7 +43,7 @@
   align-items: center;
   padding: 3rpx 10rpx;
 }
-.dotsItem{
+.hmly-dots-item{
   width: 8rpx;
   height: 8rpx;
   margin: 0rpx 8rpx;
@@ -45,7 +51,7 @@
   background-color: #cdcdcd;
   transition: all .3s;
 }
-.dotActive{
+.hmly-dot-active{
   width: 10rpx;
   height: 10rpx;
   background-color: #fff;

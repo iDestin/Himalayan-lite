@@ -1,22 +1,21 @@
-<!-- index.wxml -->
 <!-- 搜索框 -->
 <search></search>
 <!-- 轮播图 -->
-<view class="swiper-container">
-  <swiper class="swiper" autoplay="true" circular="true" 
+<view class="hmly-swiper-container">
+  <swiper class="hmly-swiper" autoplay="true" circular="true" 
     interval="3000" easing-function="easeOutCubic" 
     current="{{swiperCurren}}" 
     bindchange="swiperChange">
     <!-- 轮播图图片 -->
-    <swiper-item class="swiperItem" wx:for="{{imgList}}" wx:key="index">
+    <swiper-item class="hmly-swiper-item" wx:for="{{imgList}}" wx:key="index">
       <!-- 加上widthFix可以使图片自适应 -->
       <image src="{{item}}"></image>
     </swiper-item>
   </swiper>
   <!-- 为了和喜马拉雅一致，自己需定制轮播图dots -->
-  <view class="dots">
+  <view class="hmly-dots">
     <block wx:for="{{imgList.length}}" wx:key="index">
-      <view class="dotsItem{{index == swiperCurrent ? ' dotActive' : ''}}"></view>
+      <view class="hmly-dots-item{{index == swiperCurrent ? ' hmly-dot-active' : ''}}"></view>
     </block>
   </view>
 </view>
