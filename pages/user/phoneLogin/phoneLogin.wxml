@@ -1,37 +1,37 @@
-<view class="main bg-white" style="min-height:{{height}}px">
-    <view class="content_">
+<view class="hmly-main bg-white" style="min-height:{{height}}px">
+    <view class="hmly-content_">
         <!-- 提示标语 -->
-        <view class="slogn">
+        <view class="hmly-slogn">
             <!-- <view class="left-line" style="width:20rpx"></view> -->
             登录后即可收听你的收藏专辑哦
             <!-- <view class="right-line" style="width:20rpx"></view> -->
         </view>
         <!-- 表单输入部分 -->
-        <view class="login">
+        <view class="hmly-login">
             <form class="frombox" report-submit="false" bindsubmit="" bindreset="">
                 <!-- 输入手机号 -->
-                <view class="phoneNumber">
-                    <view class="code">+86</view>
-                    <input type="number" placeholder="请输入手机号" placeholder-class="place"></input>
+                <view class="hmly-phone-number">
+                    <view class="hmly-code">+86</view>
+                    <input type="number" placeholder="请输入手机号" placeholder-class="hmly-place"></input>
                 </view>      
                 <!-- 验证码 -->
-                <view class="yzm">
-                    <input type="number" placeholder="输入验证码" placeholder-class="place"></input>
-                    <view class="getcode">获取验证码</view>
+                <view class="hmly-yzm">
+                    <input type="number" placeholder="输入验证码" placeholder-class="hmly-place"></input>
+                    <view class="hmly-get-code">获取验证码</view>
                 </view>
-                <view class="submit" bindtap="login">
+                <view class="hmly-submit" bindtap="login">
                     <button><text class="icon-wechat"></text> 立即登录</button>
                 </view>
             </form>
         </view>
         <!-- 其他登录方式 -->
-        <view class="wechat" >
-            <view class="tips" >
-                <view class="left-line"></view>
+        <view class="hmly-wechat" >
+            <view class="hmly-tips" >
+                <view class="hmly-left-line"></view>
                 其他账户登录
-                <view class="right-line"></view>
+                <view class="hmly-right-line"></view>
             </view>
-            <view class="wecahtlogin" >
+            <view class="hmly-wecaht-login" >
                 <button><text class="icon-wechat"></text> 微信登陆</button>
             </view>
         </view>

@@ -1,11 +1,11 @@
-.top-nav{
+.hmly-top-nav{
   width: 100%;
   height: 80rpx;
   display: flex;
   justify-content: start;
 }
 
-.scroll-wrapper {
+.hmly-scroll-wrapper {
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
   background: #FFF;
@@ -21,7 +21,7 @@
   color: transparent;
 }
 
-.navigate-item {
+.hmly-navigate-item {
   display: inline-block;
   text-align: center;
   height: 90rpx;
@@ -29,30 +29,30 @@
   margin-right: 80rpx;
 }
 
-.names {
+.hmly-names {
   font-size: 28rpx;
   color: #3c3c3c;
 }
 
-.names.active {
+.hmly-names.active {
   color: #ff520f;
   font-weight: bold;
   font-size: 34rpx;
 }
 
-.currtline {
+.hmly-currtline {
   margin: -8rpx auto 0 auto;
   width: 100rpx;
   height: 1rpx;
   border-radius: 4rpx;
 }
 
-.currtline.active {
+.hmly-currtline.active {
   background: #ff520f;
   transition: all .3s;
 }
 
-.pull-down{
+.hmly-pull-down{
   width: 10%;
   height: 25rpx;
   padding: 30rpx 0rpx;
@@ -63,7 +63,7 @@
 }
 /* 内容区的代码 */
 
-.content-item{
+.hmly-content-item{
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -71,7 +71,7 @@
   padding: 20rpx 0rpx;
 }
 
-.indexNumber {
+.hmly-index-number {
   width: 15%;
   height: auto;
   padding: 20rpx 0rpx;
@@ -80,14 +80,14 @@
   color: #ff520f;
 }
 
-.content-item image {
+.hmly-content-item image {
   width: 140rpx;
   height: 140rpx;
   margin-top: 10rpx;
   border-radius: 15rpx;
 }
 
-.content-left {
+.hmly-content-left {
   padding: 10rpx 0rpx;
   margin-left: 30rpx;
   width: 60%;
@@ -95,7 +95,7 @@
   border-bottom: 1rpx solid #f1f1f1;
 }
 
-.content-title{
+.hmly-content-title{
   font-size: 35rpx;
   height: 40rpx;
   color: #000;
@@ -105,7 +105,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.content-text{
+.hmly-content-text{
   height: 40rpx;
   display: -webkit-box;
   -webkit-line-clamp: 1;/*行数n*/
@@ -117,7 +117,7 @@
   color: #ccc;
   margin-top: 15rpx;
 }
-.count{
+.hmly-count{
   font-size: 27rpx;
   color: #ccc;
   display: flex;
@@ -125,7 +125,7 @@
   margin-top: 15rpx;
 }
 
-.menu{ 
+.hmly-menu{ 
   width: 100%;
   height: 200rpx;
   position: fixed;
@@ -137,7 +137,7 @@
   flex-wrap: wrap;
   background: #fff;
 }
-.menuItem{
+.hmly-menu-item{
   color: #000;
   width: auto;
   font-size: 32rpx;
@@ -145,13 +145,13 @@
   margin: 0rpx 15rpx;
   position: relative;
 }
-.menuItemactive {
+.hmly-menu-item-active {
   font-size: 32rpx;
   font-weight: 700;
   transition: all .3s;
   color: #333333;
 }
-.menuItemactive:after{
+.hmly-menu-item-active:after{
   content: '';
   width: 40rpx;
   height: 8rpx;

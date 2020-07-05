@@ -58,12 +58,12 @@
 }
 
 /* 主要内容列表样式 */
-.contentList{
+.hmly-content-list{
   width: 90%;
   margin: 0rpx auto;
   margin-top: 10rpx;
 }
-.content{
+.hmly-content{
   width: 100%;
   height: auto;
   padding: 20rpx 0rpx;
@@ -71,31 +71,31 @@
   justify-content: space-between;
   border-bottom: 1rpx solid #f1f1f1;
 }
-.contentImg{
+.hmly-content-img{
   width: 232rpx;
   height: 232rpx;
   border-radius: 15rpx;
 }
-.contentImg>image{
+.hmly-content-img>image{
   width: 100%;
   height: 100%;
   border-radius: 15rpx;
 }
-.content-right{
+.hmly-content-right{
   width: 530rpx;
   height: 100%;
   margin-left: 20rpx;
   display: flex;
   flex-direction: column;
 }
-.content-title{
+.hmly-content-title{
   width: 100%;
   height: 138rpx;
   overflow: hidden;
   display: flex;
   flex-direction: column;
 }
-.titleText{
+.hmly-title-text{
   width: 100%;
   font-size: 35rpx;
   color: #333;
@@ -106,7 +106,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.introduction{
+.hmly-introduction{
   width: 100%;
   font-size: 28rpx;
   color: #cdcdcd;
@@ -118,25 +118,25 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.count{
+.hmly-count{
   width: 100%;
   height: 50rpx;
   display: flex;
   justify-content: start;
   align-items: center;
 }
-.playcount{
+.hmly-play-count{
  font-size: 25rpx;
  color: #cdcdcd;
  margin-right: 30rpx;
 }
-.jicount{
+.hmly-ji-count{
   font-size: 25rpx;
   color: #cdcdcd;
 }
 
 /* 登录样式 */
-.logo {
+.hmly-logo {
   width: 128rpx;
   height: 128rpx;
   margin: 0rpx auto;
@@ -144,19 +144,19 @@
   top: 200rpx;
 }
 
-.logoImg {
+.hmly-logo-img {
   width: 100%;
   height: 100%;
 }
 
-.loginButton {
+.hmly-login-button {
   width: 80%;
   margin: 0rpx auto;
   position: relative;
   top: 500rpx;
 }
 
-.wechatLogin, .phoneLogin {
+.hmly-wechat-login, .phone-login {
   width: 100%;
   height: 80rpx;
   border-radius: 50rpx;
@@ -164,18 +164,18 @@
   outline: none;
 }
 
-.wechatLogin button {
+.hmly-wechat-login button {
   background-color: #70e500;
   border-radius: 50rpx;
   border: none;
   color: #fff;
 }
 
-.phoneLogin {
+.hmly-phone-login {
   margin-top: 40rpx;
 }
 
-.phoneLogin button {
+.hmly-phone-login button {
   border-radius: 50rpx;
   border: 1rpx solid #70e500;
   background-color: #fff;
@@ -183,7 +183,7 @@
 }
 
 /*蒙板*/
-.cover{
+.hmly-cover{
   position: fixed;
   top: 0;
   right: 0;
@@ -198,19 +198,19 @@
 
 
 /* bar相关 */
-.marginTopBottom {
+.hmly-margin-top-bottom {
   margin-top: 20rpx;
   margin-bottom: 30rpx;
 }
 
-.barTitle {
+.hmly-bar-title {
   width: 100%;
   height: 56rpx;
   padding: 20rpx 0rpx;
   text-align: center;
 }
 
-.Title-left {
+.hmly-title-left {
   float: left;
   font-size: 37rpx;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -218,7 +218,7 @@
   color: #333;
 }
 
-.Title-right {
+.hmly-title-right {
   float: right;
   font-size: 26rpx;
   color: #aaa;

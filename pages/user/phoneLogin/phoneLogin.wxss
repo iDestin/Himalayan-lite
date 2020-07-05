@@ -2,18 +2,18 @@
     96D655 
     CCCCCC
 */
-.main{
+.hmly-main{
    width: 100%; 
 }
 
-.content_{
+.hmly-content_{
     width: 80%;
     margin: 0rpx auto;
     margin-top: 100rpx;
     display: flex;
     flex-wrap: wrap
 }
-.slogn{
+.hmly-slogn{
     width: 100%;
     height: auto;
     font-size: 25rpx;
@@ -23,13 +23,13 @@
     justify-content: space-evenly;
     align-items: center;
 }
-.login{
+.hmly-login{
     width: 100%;
     height: auto;
     margin-top: 50rpx;
     overflow: hidden;
 }
-.phoneNumber{
+.hmly-phone-number{
     width: 100%;
     height: auto;
     display: flex;
@@ -38,7 +38,7 @@
     align-items: center;
     border-bottom: 0.5rpx solid #cccccc;
 }
-.code{
+.hmly-code{
     width: 60rpx;
     font-size: 27rpx;
     line-height: 60rpx;
@@ -48,7 +48,7 @@
     margin-right: 20rpx;
     color: #cccccc;
 }
-.yzm{
+.hmly-yzm{
     width: 100%;
     height: auto;
     display: flex;
@@ -58,7 +58,7 @@
     box-sizing: border-box;
     border-bottom: 0.5rpx solid #cccccc;
 }
-.getcode{
+.hmly-get-code{
     width: 200rpx;
     font-size: 35rpx;
     line-height: 60rpx;
@@ -69,17 +69,17 @@
     /* margin-left: 20rpx; */
     color: #cccccc;
 }
-.place{
+.hmly-place{
     font-size: 29rpx;
 }
-.submit{
+.hmly-submit{
     width: 100%;
     height: 100rpx;
     margin-top: 50rpx;
     border-radius: 50rpx;
     border: 0rpx;
 }
-.submit button{
+.hmly-submit button{
     width: 100%;
     height: 100rpx;
     /* margin-top: 50rpx; */
@@ -89,37 +89,37 @@
     background: #cccccc;
     font-size: 38rpx;
 }
-.wechat{
+.hmly-wechat{
     width: 100%;
     height: auto;
     margin-top: 150rpx;
     text-align: center;
 }
-.tips{
+.hmly-tips{
     font-size: 32rpx;
     color: #333333;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.left-line{
+.hmly-left-line{
     width: 100rpx;
     height: 3rpx;
     background: #aaa;
 }
-.right-line{
+.hmly-right-line{
     width: 100rpx;
     height: 3rpx;
     background: #aaa;
 }
-.wecahtlogin{
+.hmly-wecaht-login{
     width: 100%;
     height: 100rpx;
     margin-top: 100rpx;
     border-radius: 50rpx;
     border: 0rpx;
 }
-.wecahtlogin button{
+.hmly-wecaht-login button{
     width: 100%;
     height: 100rpx;
     border-radius: 50rpx;

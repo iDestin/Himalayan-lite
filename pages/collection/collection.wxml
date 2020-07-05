@@ -2,16 +2,16 @@
 <block wx:if="{{login}}">
     <!-- logo -->
     <view class="logo" hover-class="none" hover-stop-propagation="false">
-        <image class="logoImg" src="/image/logo.png" mode="widthFix" lazy-load="false"></image>
+        <image class="logo-img" src="/image/logo.png" mode="widthFix" lazy-load="false"></image>
     </view>
     <!-- 登录按钮 -->
     <view class="loginButton" hover-class="none" hover-stop-propagation="false">
-        <view class="wechatLogin">
+        <view class="hmly-wechat-login">
             <button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
                 <text class="icon-message"></text>  微信登录
             </button>
         </view>
-        <view class="phoneLogin">
+        <view class="phone-login">
             <button>手机号登录</button>
         </view>
     </view>
@@ -20,54 +20,54 @@
     <!-- 搜索框 -->
     <search></search>
     <!-- 功能栏 -->
-    <view class="titleBar">
-      <view class="itemTitle {{index == currentIndex ? 'active' : ' '}}" 
+    <view class="hmly-title-bar">
+      <view class="hmly-item-title {{index == currentIndex ? 'hmly-active' : ' '}}" 
         data-index="{{index}}" bindtap="checkItem" wx:for="{{content}}" wx:key="index">
           {{item.text}}
       </view>
     </view>
-    <swiper class="swiperbox" style="min-height:{{height}}px" duration="300" current="{{currentIndex}}" bindchange="changeTab">
-        <swiper-item class="swiper-box-item" >
+    <swiper class="hmly-swiper-box" style="min-height:{{height}}px" duration="300" current="{{currentIndex}}" bindchange="changeTab">
+        <swiper-item class="hmly-swiper-box-item" >
             <block>
-                <view class="NoContent">
+                <view class="hmly-no-content">
                     <text class="icon-empty text-gray" style="font-size:400rpx"></text>
                     <!-- <image src="/image/noContent.png"></image> -->
-                    <view class="but-box">
+                    <view class="hmly-but-box">
                         <text style="font-size:30rpx" class="text-gray">没有内容</text>
-                        <button class="but">看看推荐</button>
+                        <button class="hmly-but">看看推荐</button>
                     </view>
                 </view>
             </block>
         </swiper-item>
         <swiper-item>
             <block>
-                <view class="NoContent">
+                <view class="hmly-no-content">
                     <text class="icon-empty text-gray" style="font-size:400rpx"></text>
-                    <view class="but-box">
+                    <view class="hmly-but-box">
                         <text style="font-size:30rpx" class="text-gray">没有内容</text>
-                        <button class="but">看看推荐</button>
+                        <button class="hmly-but">看看推荐</button>
                     </view>
                 </view>
             </block>
         </swiper-item>
         <swiper-item>
             <block>
-                <view class="NoContent">
+                <view class="hmly-no-content">
                     <text class="icon-empty text-gray" style="font-size:400rpx"></text>
-                    <view class="but-box">
+                    <view class="hmly-but-box">
                         <text style="font-size:30rpx" class="text-gray">没有内容</text>
-                        <button class="but">看看推荐</button>
+                        <button class="hmly-but">看看推荐</button>
                     </view>
                 </view>
             </block>
         </swiper-item>
         <swiper-item>
             <block>
-                <view class="NoContent">
+                <view class="hmly-no-content">
                     <text class="icon-empty text-gray" style="font-size:400rpx"></text>
-                    <view class="but-box">
+                    <view class="hmly-but-box">
                         <text style="font-size:30rpx" class="text-gray">没有内容</text>
-                        <button class="but">更多礼包</button>
+                        <button class="hmly-but">更多礼包</button>
                     </view>
                 </view>
             </block>

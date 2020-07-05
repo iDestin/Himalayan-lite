@@ -1,5 +1,5 @@
 /* 宫格导航 */
-.nav{
+.hmly-nav{
   width: 90%;
   height: 132rpx;
   margin: 0rpx auto;
@@ -9,46 +9,46 @@
   align-items: center;
   align-content: center;
 }
-.navItem{
+.hmly-nav-item{
   width: 94rpx;
   font-size: 20rpx;
   text-align: center;
   line-height: 35rpx;
   color: #aaa;
 }
-.navIcon{
+.hmly-nav-icon{
   width: 84rpx;
   height: 84rpx;
 }
 /* 猜你喜欢 */
-.like{
+.hmly-like{
   width: 90%;
   margin: 0rpx auto;
   margin-top: 40rpx;
 }
-.likeItemBox{
+.hmly-like-item-box{
   width: 100%;
   display: flex;
   justify-content: space-between;
   overflow: hidden;
 }
-.likeItem{
+.hmly-like-item{
   width: 210rpx;
   height: 310rpx;
   border-radius: 15rpx;
 }
-.likeimg{
+.hmly-like-img{
   width: 210rpx;
   height: 210rpx;
   border-radius: 15rpx;
   position: relative;
 }
-.likeItemIcon{
+.hmly-like-item-icon{
   width: 100%;
   height: 100%;
   border-radius: 15rpx;
 }
-.likeText{
+.hmly-like-text{
   font-size: 28rpx;
   color: #333;
   margin-top: 10rpx;
@@ -58,7 +58,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.likecover{
+.hmly-like-cover{
   width: 190rpx;
   height: 40rpx;
   /* 透明背景层 */
@@ -72,12 +72,12 @@
   border-bottom-left-radius: 15rpx;
   border-bottom-right-radius: 15rpx;
 }
-.dataNotip{
+.hmly-data-notip{
   width: 100%;
   height: 300rpx;
   padding-top: 150rpx;
 }
-.tip{
+.hmly-tip{
   width: auto;
   height: 100rpx;
   text-align: center;

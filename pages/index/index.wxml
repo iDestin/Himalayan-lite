@@ -21,9 +21,9 @@
 </view>
 
 <!-- 宫格导航 -->
-<view class="nav">
+<view class="hmly-nav">
   <block>  
-    <view class="navItem" bindtap="{{item.events}}" wx:for="{{navList}}"  wx:key="index">
+    <view class="hmly-nav-item" bindtap="{{item.events}}" wx:for="{{navList}}"  wx:key="index">
       <!-- 
         
         因为没有合适的图，所以全部使用的一样的 
@@ -31,29 +31,29 @@
 
         解决办法：你可以通过页面传参的方式来进行区分
         -->
-      <image class="navIcon" src="{{item.icon}}" mode="widthFix" lazy-load="false"></image>
-      <text class="navText">{{item.text}}</text>
+      <image class="hmly-nav-icon" src="{{item.icon}}" mode="widthFix" lazy-load="false"></image>
+      <text class="hmly-nav-text">{{item.text}}</text>
     </view>
   </block>
 </view>
 
 <!-- 猜你喜欢 -->
-<view class="like">
-  <view class="barTitle">
-    <view class="Title-left">猜你喜欢</view>
-    <view class="Title-right">查看全部 <text class="icon-right"></text> </view>
+<view class="hmly-like">
+  <view class="hmly-bar-title">
+    <view class="hmly-title-left">猜你喜欢</view>
+    <view class="hmly-title-right">查看全部 <text class="icon-right"></text> </view>
   </view>
   <!-- 这没有没有使用数据绑定，因为是练手而且数据比较少 -->
-  <view class="likeItemBox">
-    <view class="likeItem" bindtap="gotoDetails" data-coverImg="{{item.coverMiddle}}" data-title="{{item.intro}}" wx:for="{{guess}}" wx:key="{{index}}">
-      <view class="likeimg">
-        <image class="likeItemIcon" src="{{item.coverMiddle}}" mode="widthFix"></image>
-        <view class="likecover">
+  <view class="hmly-like-item-box">
+    <view class="hmly-like-item" bindtap="gotoDetails" data-coverImg="{{item.coverMiddle}}" data-title="{{item.intro}}" wx:for="{{guess}}" wx:key="{{index}}">
+      <view class="hmly-like-img">
+        <image class="hmly-like-item-icon" src="{{item.coverMiddle}}" mode="widthFix"></image>
+        <view class="hmly-like-cover">
           <!-- text用来显示icon  暂无 -->
           <text class=""></text> 4.6亿
         </view>
       </view>
-      <view class="likeText">{{item.intro}}</view>
+      <view class="hmly-like-text">{{item.intro}}</view>
     </view>
   </view>
 </view>
@@ -61,81 +61,81 @@
 <!-- 有数据的时候显示 -->
 <block wx:if="{{showitem}}">
   <!-- 有声小说 -->
-  <view class="contentList">
-    <view class="barTitle">
-      <view class="Title-left">有声小说</view>
-      <view class="Title-right">查看全部<text class="icon-right"></text></view>
+  <view class="hmly-content-list">
+    <view class="hmly-bar-title">
+      <view class="hmly-title-left">有声小说</view>
+      <view class="hmly-title-right">查看全部<text class="icon-right"></text></view>
     </view>
     <block wx:for="{{xiaoshuocontent}}" wx:key="index">
-      <view class="content" bindtap="gotoDetails" data-coverImg="{{item.albumCoverUrl290}}" data-title="{{item.title}}">
-        <view class="contentImg">
+      <view class="hmly-content" bindtap="gotoDetails" data-coverImg="{{item.albumCoverUrl290}}" data-title="{{item.title}}">
+        <view class="hmly-content-img">
           <image src="{{item.albumCoverUrl290}}" mode="widthFix"></image>
         </view>
-        <view class="content-right">
-          <view class="content-title">
-            <view class="titleText">{{item.title}}</view>
-            <view class="introduction">{{item.trackTitle}}</view>
+        <view class="hmly-content-right">
+          <view class="hmly-content-title">
+            <view class="hmly-title-text">{{item.title}}</view>
+            <view class="hmly-introduction">{{item.trackTitle}}</view>
           </view>
-          <view class="count">
-            <view class="playcount">
+          <view class="hmly-count">
+            <view class="hmly-play-count">
               <!-- <text class="icon-"></text> -->
               126亿
             </view>
-            <view class="jicount">{{item.tracks}}集</view>
+            <view class="hmly-ji-count">{{item.tracks}}集</view>
           </view>
         </view>
       </view>
     </block>
   </view>
   <!-- 相声评书 -->
-  <view class="contentList">
-    <view class="barTitle">
-      <view class="Title-left">相声评书</view>
-      <view class="Title-right">查看全部<text class="icon-right"></text></view>
+  <view class="hmly-content-list">
+    <view class="hmly-bar-title">
+      <view class="hmly-title-left">相声评书</view>
+      <view class="hmly-title-right">查看全部<text class="icon-right"></text></view>
     </view>
     <block wx:for="{{xiangshengcontent}}" wx:key="index">
-      <view class="content" bindtap="gotoDetails" data-coverImg="{{item.albumCoverUrl290}}" data-title="{{item.title}}">
-        <view class="contentImg">
+      <view class="hmly-content" bindtap="gotoDetails" data-coverImg="{{item.albumCoverUrl290}}" data-title="{{item.title}}">
+        <view class="hmly-content-img">
           <image src="{{item.albumCoverUrl290}}" mode="widthFix"></image>
         </view>
-        <view class="content-right">
-          <view class="content-title">
-            <view class="titleText">{{item.title}}</view>
-            <view class="introduction">{{item.trackTitle}}</view>
+        <view class="hmly-content-right">
+          <view class="hmly-content-title">
+            <view class="hmly-title-text">{{item.title}}</view>
+            <view class="hmly-introduction">{{item.trackTitle}}</view>
           </view>
-          <view class="count">
-            <view class="playcount">
+          <view class="hmly-count">
+            <view class="hmly-play-count">
               <!-- <text class="icon-"></text> -->
               126亿
             </view>
-            <view class="jicount">{{item.tracks}}集</view>
+            <view class="hmly-ji-count">{{item.tracks}}集</view>
           </view>
         </view>
       </view>
     </block>
   </view>
   <!-- 脱口秀 -->
-  <view class="contentList">
-    <view class="barTitle">
-      <view class="Title-left">脱口秀</view>
-      <view class="Title-right">查看全部<text class="icon-right"></text></view>
+  <view class="hmly-content-list">
+    <view class="hmly-bar-title">
+      <view class="hmly-title-left">脱口秀</view>
+      <view class="hmly-title-right">查看全部<text class="icon-right"></text></view>
     </view>
     <block wx:for="{{tuokocontent}}" wx:key="index">
-      <view class="content" bindtap="gotoDetails" data-coverImg="{{item.albumCoverUrl290}}" data-title="{{item.title}}">
-        <view class="contentImg">
+      <view class="hmly-content" bindtap="gotoDetails" data-coverImg="{{item.albumCoverUrl290}}" data-title="{{item.title}}">
+        <view class="hmly-content-img">
           <image src="{{item.albumCoverUrl290}}" mode="widthFix" lazy-load="false"></image>
         </view>
-        <view class="content-right">
-          <view class="content-title">
-            <view class="titleText">{{item.title}}</view>
-            <view class="introduction">{{item.trackTitle}}</view>
+        <view class="hmly-content-right">
+          <view class="hmly-content-title">
+            <view class="hmly-title-text">{{item.title}}</view>
+            <view class="hmly-introduction">{{item.trackTitle}}</view>
           </view>
-          <view class="count">
-            <view class="playcount">
+          <view class="hmly-count">
+            <view class="hmly-play-count">
               <!-- <view class="icon-"></view> -->
               126亿
             </view>
-            <view class="jicount">{{item.tracks}}集</view>
+            <view class="hmly-ji-count">{{item.tracks}}集</view>
           </view>
         </view>
       </view>
@@ -143,8 +143,8 @@
   </view>
 </block>
 <block wx:else>
-  <view class="dataNotip">
-    <view class="tip">
+  <view class="hmly-data-notip">
+    <view class="hmly-tip">
       网络暂时走丢了，请稍后再试
     </view>  
   </view>
