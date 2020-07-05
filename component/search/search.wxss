@@ -24,6 +24,7 @@
   font-size: 29rpx;
   margin-left: 20rpx;
 }
+
 .search-right{
   flex: 0.5;
   font-size:30rpx;

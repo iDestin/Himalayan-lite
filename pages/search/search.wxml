@@ -1,39 +1,39 @@
 <!-- 搜索框 -->
-<view class="search">
-	<view class="search-left">
+<view class="hmly-search">
+	<view class="hmly-search-left">
 		<text class="icon-search"></text>
 		<input placeholder="搜索你想听的节目"></input>
 	</view>
-	<view class="search-right">取消</view>
+	<view class="hmly-search-right">取消</view>
 </view>
 <!-- 搜索历史 -->
-<view class="history">
+<view class="hmly-history">
 	<!-- 提示标题 -->
-	<view class="title">
-		<view class="title-text">搜索历史</view>
+	<view class="hmly-title">
+		<view class="hmly-title-text">搜索历史</view>
 		<text class="icon-delete text-gray"></text>
 	</view>
 	<!-- 内容 -->
-	<view class="history-content">
-		<view class="content-item bg-gray text-black">庆余年</view>
-		<view class="content-item bg-gray text-black">德云社</view>
-		<view class="content-item bg-gray text-black">评书</view>
-		<view class="content-item bg-gray text-black">英语</view>
+	<view class="hmly-history-content">
+		<view class="hmly-content-item bg-gray text-black">庆余年</view>
+		<view class="hmly-content-item bg-gray text-black">德云社</view>
+		<view class="hmly-content-item bg-gray text-black">评书</view>
+		<view class="hmly-content-item bg-gray text-black">英语</view>
 	</view>
 </view>
 <!-- 热门搜索 -->
-<view class="hot">
+<view class="hmly-hot">
 	<!-- 提示标题 -->
-	<view class="title">
+	<view class="hmly-title">
 		<view class="title-text">热门搜索</view>
 	</view>
-	<view class="hot-content">
-		<view class="hot-items" wx:for="{{hotData}}" wx:key="index">
-			<view class="item-left">
+	<view class="hmly-hot-content">
+		<view class="hmly-hot-items" wx:for="{{hotData}}" wx:key="index">
+			<view class="hmly-item-left">
 				<view class="{{index < 3 ? 'text-red' : ''}}">{{index + 1}}</view>
-				<view class="itemTitle text-black">{{item.title}}</view>
+				<view class="hmly-item-title text-black">{{item.title}}</view>
 			</view>
-			<text class="{{item.icon}} itemIcon {{item.color}}"></text>
+			<text class="{{item.icon}} {{item.color}}"></text>
 		</view>
 	</view>
 </view>

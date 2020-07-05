@@ -1,39 +1,38 @@
 <!-- 因为其他几个页面和榜单是一样的所以其他3个页面就都用的这一个界面 -->
-
 <block wx:if="{{showCover}}">
   <!-- 蒙板内容 要放在蒙板的外面-->
-  <view class="menu">
-    <view class="menuItem {{currentTab === index ? 'menuItemactive' : ''}}" 
+  <view class="hmly-menu">
+    <view class="hmly-menu-item {{currentTab === index ? 'hmly-menu-item-active' : ''}}" 
     wx:for="{{navTitle}}" wx:key="index" data-index="{{index}}" bindtap="CoverCheck">
       {{item.title}}
     </view>
   </view>
   <!-- 蒙板 -->
-  <view class="cover" bindtap="closeCover"></view>
+  <view class="hmly-cover" bindtap="closeCover"></view>
 </block>
 <block>
-  <view class="top-nav">
-    <scroll-view class="scroll-wrapper" scroll-x scroll-with-animation="true" scroll-into-view="item{{currentTab < 4 ? 0 : currentTab - 3}}" catchtouchmove="preventTouchMove" >
-      <view class="navigate-item" id="item{{index}}" wx:for="{{navTitle}}" wx:key="index" data-index="{{index}}" bindtap="handleClick">
-        <view class="names {{currentTab === index ? 'active' : ''}}">{{item.title}}</view>
-        <view class="currtline {{currentTab === index ? 'active' : ''}}"></view>
+  <view class="hmly-top-nav">
+    <scroll-view class="hmly-scroll-wrapper" scroll-x scroll-with-animation="true" scroll-into-view="item{{currentTab < 4 ? 0 : currentTab - 3}}" catchtouchmove="preventTouchMove" >
+      <view class="hmly-navigate-item" id="item{{index}}" wx:for="{{navTitle}}" wx:key="index" data-index="{{index}}" bindtap="handleClick">
+        <view class="hmly-names {{currentTab === index ? 'active' : ''}}">{{item.title}}</view>
+        <view class="hmly-currtline {{currentTab === index ? 'active' : ''}}"></view>
       </view>
     </scroll-view>
     <!-- 下拉按钮 -->
-    <view class="pull-down" bindtap="pullDown">
+    <view class="hmly-pull-down" bindtap="pullDown">
       <view class="icon-right"></view>
     </view>
   </view>
   <!-- 对应的内容区 -->
-  <view class="content-item"  wx:for="{{list}}" wx:key="index">
-    <view class="indexNumber">
+  <view class="hmly-content-item"  wx:for="{{list}}" wx:key="index">
+    <view class="hmly-index-number">
       <view>{{index > 10 ? index : '0'+(index+1)}}</view>
     </view>
     <image src="{{item.albumCoverUrl290}}"></image>
-    <view class="content-left">
-      <view class="content-title">{{item.title}}</view>
-      <view class="content-text">{{item.trackTitle}}</view>
-      <view class="count">
+    <view class="hmly-content-left">
+      <view class="hmly-content-title">{{item.title}}</view>
+      <view class="hmly-content-text">{{item.trackTitle}}</view>
+      <view class="hmly-count">
         <view style="margin-right:25rpx;">
           <!-- 本例中33.2亿的单位是写死的，此处应该是后端返回数据吧 -->
           <text class="icon-video"></text>

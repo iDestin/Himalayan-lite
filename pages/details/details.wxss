@@ -1,16 +1,16 @@
-.toptitlebar {
+.hmly-top-title-bar {
   width: 100%;
   height: 410rpx;
   overflow: hidden;
   position: relative;
 }
 /* 背景虚化层 */
-.bg{
+.hmly-bg{
   width: 100%;
   height: 410rpx;
   filter: blur(15rpx);
 }
-.baritem {
+.hmly-bar-item {
   width: 100%;
   height: 400rpx;
   margin-top: 50rpx;
@@ -19,7 +19,7 @@
   top: 0rpx;
 }
 
-.baritemtop {
+.hmly-bar-item-top {
   width: 100%;
   height: 200rpx;
   display: flex;
@@ -27,7 +27,7 @@
   align-items: center;
 }
 
-.themebgimg {
+.hmly-theme-bg-img {
   width: 200rpx;
   height: 200rpx;
   margin-right: 30rpx;
@@ -35,12 +35,12 @@
   background-size: 100% 100%;
 }
 
-.themeinfo {
+.hmly-theme-info {
   width: 60%;
   height: 200rpx;
 }
 
-.themetitle {
+.hmly-theme-title {
   color: #fff;
   font-size: 40rpx;
   display: -webkit-box;
@@ -50,13 +50,13 @@
   text-overflow: ellipsis;
 }
 
-.themeauthor {
+.hmly-theme-author {
   font-size: 25rpx;
   color: #fff;
   margin-top: 5rpx;
 }
 
-.viewinfo {
+.hmly-view-info {
   color: #fff;
   font-size: 30rpx;
   margin-top: 5rpx;
@@ -64,15 +64,15 @@
   justify-content: flex-start;
 }
 
-.viewinfoleft {
+.hmly-view-info-left {
   margin-right: 5rpx;
 }
 
-.viewinforight {
+.hmly-view-info-right {
   margin-left: 5rpx;
 }
 
-.baritembottom {
+.hmly-bar-item-bottom {
   width: 70%;
   height: 100rpx;
   display: flex;
@@ -83,7 +83,7 @@
   margin-top: 15rpx;
 }
 
-.baritembottom button {
+.hmly-bar-item-bottom button {
   width: 210rpx;
   height: 75rpx;
   text-align: center;
@@ -92,17 +92,17 @@
   border-radius: 20rpx;
 }
 
-.sharebut {
+.hmly-share-but {
   background: orangered;
   border: 1rpx solid #fff;
   margin-left: 70rpx;
 }
 
-.collection {
+.hmly-collection {
   background: orangered;
 }
 
-.Performance {
+.hmly-performance {
   width: 100%;
   height: 500rpx;
   border-top-left-radius: 20rpx;
@@ -110,7 +110,7 @@
   position: relative;
   top: -10rpx;
 }
-.selectbar {
+.hmly-selectbar {
   width: 100%;
   height: 100rpx;
   line-height: 100rpx;
@@ -124,15 +124,15 @@
   border-bottom: 1rpx solid #f1f1f1;
 }
 
-.detail {
+.hmly-detail {
   width: 50%;
 }
 
-.list {
+.hmly-list {
   width: 50%;
 }
 
-.play {
+.hmly-play {
   width: 100%;
   height: 100rpx;
   padding: 0rpx 40rpx;
@@ -143,13 +143,13 @@
   align-items: center;
 }
 
-.playall {
+.hmly-play-all {
   width: auto;
   text-align: center;
   font-size: 30rpx;
 }
 
-.playselect {
+.hmly-play-select {
   width: auto;
   display: flex;
   justify-content: space-between;
@@ -157,7 +157,7 @@
   font-size: 30rpx;
 }
 
-.performanceContent {
+.hmly-performance-content {
   width: 100%;
   height: 150rpx;
   display: flex;
@@ -168,7 +168,7 @@
   padding: 20rpx 20rpx;
 }
 
-.performanceIndex {
+.hmly-performance-index {
   width: 15%;
   height: 80rpx;
   text-align: center;
@@ -176,12 +176,12 @@
   color: #aaa;
 }
 
-.performanceInfo {
+.hmly-performance-info {
   width: 85%;
   height: 100%;
 }
 
-.performanceInfoTop {
+.hmly-performance-info-top {
   width: 100%;
   height: 50%;
   display: flex;
@@ -189,7 +189,7 @@
   font-size: 30rpx;
 }
 
-.performanceInfoBottom {
+.hmly-performance-info-bottom {
   width: 100%;
   height: auto;
   display: flex;
@@ -198,11 +198,11 @@
   font-size: 25rpx;
   margin-top: 20rpx;
 }
-.active{
+.hmly-active{
   position: relative;
   color: #333;
 }
-.active::after{
+.hmly-active::after{
   content: '';
   width: 80rpx;
   height: 5rpx;

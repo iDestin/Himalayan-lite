@@ -3,7 +3,7 @@
   搜索部分css 
   ========
 */
-.search{
+.hmly-search{
   width: 90%;
   height: auto;
   display: flex;
@@ -11,7 +11,7 @@
   margin: 0rpx auto;
 }
 
-.search-left{
+.hmly-search-left{
   flex: 4;
   background-color: rgb(240, 240, 240);
   display: flex;
@@ -21,13 +21,13 @@
   border-radius: 15rpx;
 }
 
-.search input{
+.hmly-search input{
   width: 90%;
   height: 100%;
   font-size: 29rpx;
   margin-left: 20rpx;
 }
-.search-right{
+.hmly-search-right{
   flex: 0.5;
   font-size:30rpx;
   color: #aaa;
@@ -39,7 +39,7 @@
   搜索历史和热门搜索部分css 
   ========
 */
-.title{
+.hmly-title{
   width: 100%;
   height: 50rpx;
   display: flex;
@@ -47,17 +47,17 @@
   align-items: center;
   box-sizing: border-box;
 }
-.title-text{
+.hmly-title-text{
   color: #000;
   font-weight: 700;
 }
-.history{
+.hmly-history{
   width: 90%;
   height: auto;
   margin: 0rpx auto;
   margin-top: 80rpx;
 }
-.history-content{
+.hmly-history-content{
   width: 100%;
   height: auto;
   margin-top: 30rpx;
@@ -66,7 +66,7 @@
   flex-wrap: wrap;
   align-items: center;
 }
-.content-item{
+.hmly-content-item{
   width: 150rpx;
   font-size: 33rpx;
   text-align: center;
@@ -75,18 +75,18 @@
   border-radius: 25rpx;
 }
 
-.hot{
+.hmly-hot{
   width: 90%;
   height: auto;
   margin: 0rpx auto;
   margin-top: 80rpx;
 }
-.hot-content{
+.hmly-hot-content{
   width: 100%;
   height: auto;
   margin-top: 30rpx;
 }
-.hot-items{
+.hmly-hot-items{
   width: 100%;
   height: 50rpx;
   display: flex;
@@ -94,11 +94,11 @@
   align-items: center;
   margin-bottom: 20rpx;
 }
-.item-left{
+.hmly-item-left{
   display: flex;
   justify-content: flex-start;
   font-size: 32rpx;
 }
-.itemTitle{
+.hmly-item-title{
   margin-left: 40rpx;
 }
