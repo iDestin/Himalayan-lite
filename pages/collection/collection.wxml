@@ -1,17 +1,17 @@
 <!-- 若是没有登录就显示登录界面 -->
 <block wx:if="{{login}}">
     <!-- logo -->
-    <view class="logo" hover-class="none" hover-stop-propagation="false">
-        <image class="logo-img" src="/image/logo.png" mode="widthFix" lazy-load="false"></image>
+    <view class="hmly-logo" hover-class="none" hover-stop-propagation="false">
+        <image class="hmly-logo-img" src="/image/logo.png" mode="widthFix" lazy-load="false"></image>
     </view>
     <!-- 登录按钮 -->
-    <view class="loginButton" hover-class="none" hover-stop-propagation="false">
+    <view class="hmly-login-button" hover-class="none" hover-stop-propagation="false">
         <view class="hmly-wechat-login">
             <button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
                 <text class="icon-message"></text>  微信登录
             </button>
         </view>
-        <view class="phone-login">
+        <view class="hmly-phone-login">
             <button>手机号登录</button>
         </view>
     </view>
