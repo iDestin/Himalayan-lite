@@ -1,7 +1,6 @@
 // pages/collection/collection.js
 const app = getApp()
-let userInfo = app.globalData.userInfo;
-let height = app.globalData.phoneHeight
+
 Page({
 
   /**
@@ -9,13 +8,14 @@ Page({
    */
   data: {
     currentIndex:0,
-    height:height,
+    height:0,
     content: [
       {text: "我的收藏"},
       {text: "我的已购"},
       {text: "收听历史"},
       {text: "我的礼包"}
-    ]
+    ],
+    login: true
   },
 
   /**
@@ -23,23 +23,27 @@ Page({
    */
   onLoad: function (options) {
     var that = this;
-    var height;
     wx.getSystemInfo({
       success (res) {
-        console.log(res.windowHeight);
-        height = res.windowHeight
+        that.setData({
+          height :res.windowHeight
+        })
       }
     })
-    if (app.globalData.userInfo === null){
-      that.setData({
-        login:true
-      })
-    }else{
-      that.setData({
-        login: false,
-        height:height
-      })
-    }
+    wx.getStorage({
+      key: 'login',
+      success(res){
+        if(res.data === 200){
+          that.setData({
+            login: false,
+          })
+        }
+      },
+      fail(res){
+        console.log(res)
+      }
+    })
+
   },
 
 
@@ -56,13 +60,17 @@ Page({
     wx.getUserInfo({
       success: function (res) {
         app.globalData.userInfo = e.detail.userInfo;
-        console.log(e.detail.userInfo);
+        wx.setStorage({
+          key: "login",
+          data: 200
+        })
         that.setData({
           login: false,
         })
       }
     })
   },
+
   checkItem(e){
     var that = this;
     if (this.data.currentIndex === e.target.dataset.current) {

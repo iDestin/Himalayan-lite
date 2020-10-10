@@ -1,10 +1,8 @@
 //index.js
 //获取应用实例
 const app = getApp()
-var utils = require('../../utils/utils.js');
-
+const myRequest = require('../../api/index.js');
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -42,33 +40,26 @@ Page({
     ],
     swiperCurrent: 0,
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var that = this;
-    var url = 'http://mobile.ximalaya.com/mobile/discovery/v3/recommend/hotAndGuess?code=43_310000_3100&device=android&version=5.4.45';
-
-    // 调用的是自己封装的工具函数，在utils中
-    utils.myRequest({
-      url: url,
-      methods: 'GET',
-      success: function (result) {
-        that.setData({
-          showitem: true,
-          guess: result.data.paidArea.list,
-          xiaoshuocontent: result.data.hotRecommends.list[0].list,
-          xiangshengcontent: result.data.hotRecommends.list[2].list,
-          tuokocontent: result.data.hotRecommends.list[4].list
-        })
-      },
-      fail: function () {
-        that.setData({
-          showitem: false
-        })
-      }
-    });
+    var that = this
+    myRequest.getData().then(res => {
+      console.log('res',res);
+      that.setData({
+        showitem: true,
+        guess: res.data.guess.list.slice(0,3),
+        xiaoshuocontent: res.data.hotRecommends.list[0].list,
+        xiangshengcontent: res.data.hotRecommends.list[2].list,
+        tuokocontent: res.data.hotRecommends.list[4].list
+      })
+    }).catch(err => {
+      console.log(err);
+      that.setData({
+        showitem: false
+      })
+    })
   },
   //轮播图改变事件
   swiperChange: function (e) {
@@ -85,6 +76,7 @@ Page({
     var url = e.currentTarget.dataset.coverimg;
     var title = e.currentTarget.dataset.title;
     wx.navigateTo({
+      // 页面传参
       url: '/pages/details/details?url=' + url + '&title=' + title,
     })
   }

@@ -1,7 +1,7 @@
 const app = getApp();
-var utils = require('../../../utils/utils.js')
+let myRequest = require('../../../api/index.js')
 // 定义一个全局变量保存从接口获取到的数据，以免重复请求接口
-var resut; 
+let resut; 
 Page({
 
   /**
@@ -26,21 +26,14 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var that = this;
-    var url = 'http://mobile.ximalaya.com/mobile/discovery/v3/recommend/hotAndGuess?code=43_310000_3100&device=android&version=5.4.45'
-    utils.myRequest({
-      url:url,
-      methods:'GET',
-      success:function(res){
-        console.log(res);
-        resut = res;
-        that.setData({
-          list: res.data.hotRecommends.list[0].list
-        })
-      },
-      fail:function(){
-
-      }
+    let that = this;
+    myRequest.getData().then(res => {
+      resut = res;
+      that.setData({
+        list: res.data.hotRecommends.list[0].list
+      })
+    }).catch(err => {
+      console.log(err);
     })
   },
   handleClick(e) {
@@ -52,13 +45,13 @@ Page({
     })
   },
   pullDown:function(){
-    var that = this;
+    let that = this;
     that.setData({
       showCover:true
     })
   },
   closeCover:function(){
-    var that = this;
+    let that = this;
     that.setData({
       showCover:false
     })

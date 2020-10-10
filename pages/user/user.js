@@ -18,6 +18,9 @@ Page({
       {text:"30分钟后"},
     ],
     activeIndex:0,
+    login: true,
+    avatarUrl:"",
+    nickName:""
   },
 
   onLoad: function (options) {
@@ -32,25 +35,32 @@ Page({
       }
     })
     // 查看是否授权
-    if (app.globalData.userInfo === null) {
-      that.setData({
-        login: true
-      })
-    } else {
-      that.setData({
-        login: false,
-        avatarUrl: app.globalData.userInfo.avatarUrl,
-        nickName: app.globalData.userInfo.nickName
-      })
-    }
+    wx.getStorage({
+      key: 'login',
+      success(res){
+        if (res.data === 200) {
+          that.setData({
+            login: false
+          })
+        } else {
+          that.setData({
+            login: true
+          })
+        }
+      }
+    })
+    
   },
   // 获取用户的头像和昵称信息
   bindGetUserInfo(e) {
     var that = this;
     wx.getUserInfo({
       success: function(res) {
-        console.log(e.detail.userInfo);
         app.globalData.userInfo = e.detail.userInfo;
+        wx.setStorage({
+          key: "login",
+          data: 200
+        })
         that.setData({
           login: false,
           avatarUrl: e.detail.userInfo.avatarUrl,
