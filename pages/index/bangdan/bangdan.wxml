@@ -3,7 +3,7 @@
   <!-- 蒙板内容 要放在蒙板的外面-->
   <view class="hmly-menu">
     <view class="hmly-menu-item {{currentTab === index ? 'hmly-menu-item-active' : ''}}" 
-    wx:for="{{navTitle}}" wx:key="index" data-index="{{index}}" bindtap="CoverCheck">
+    wx:for="{{navTitle}}" wx:key="index" data-index="{{index}}" bindtap="coverCheck">
       {{item.title}}
     </view>
   </view>

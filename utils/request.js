@@ -1,6 +1,7 @@
 // 定义全局常量baseUrl用来存储前缀
 const baseURL = 'http://mobile.ximalaya.com/mobile/discovery/v3/recommend/hotAndGuess?code=43_310000_3100&device=android&version=5.4.45';
 
+
 function request(params = {method, url, data}) {
   return new Promise(function (resolve, reject) {
     let header = {    //定义请求头

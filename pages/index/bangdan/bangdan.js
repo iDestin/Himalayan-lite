@@ -56,7 +56,7 @@ Page({
       showCover:false
     })
   },
-  CoverCheck:function(e){
+  coverCheck:function(e){
     let currentTab = e.currentTarget.dataset.index;
     // 实现每一个tabbar切换对应内容的原理，根据每一个tabbar的index对应数组中的数据
     this.setData({
