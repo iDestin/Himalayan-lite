@@ -43,6 +43,10 @@
 	height: 40rpx;
 	padding: 20rpx 0rpx;
 	margin: 0rpx auto;
+	font-size: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .hmly-content-title {

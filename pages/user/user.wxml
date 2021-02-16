@@ -1,5 +1,5 @@
 <!-- pages/user/user.wxml -->
-<block wx:if="{{login}}">
+<block wx:if="{{!login}}">
 	<!-- logo -->
 	<view class="hmly-logo">
 		<image class="hmly-logo-img" src="/image/logo.png" mode="widthFix"></image>

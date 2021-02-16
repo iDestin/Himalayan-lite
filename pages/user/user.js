@@ -1,11 +1,6 @@
-// pages/user/user.js
 const app = getApp()
 let userInfo = app.globalData.userInfo;
 Page({
-
-	/**
-	 * 页面的初始数据
-	 */
 	data: {
 		timeout: [
 			{ text: "不开启" },
@@ -18,13 +13,13 @@ Page({
 			{ text: "30分钟后" },
 		],
 		activeIndex: 0,
-		login: true,
+		login: false,
 		avatarUrl: "",
 		nickName: ""
 	},
 
-	onLoad(options) {
-		var that = this;
+	onLoad() {
+		const that = this;
 		//获得设备信息
 		wx.getSystemInfo({
 			success(res) {
@@ -33,37 +28,38 @@ Page({
 				})
 			}
 		})
-		// 查看是否授权
-		wx.getStorage({
-			key: 'login',
-			success(res) {
-				if (res.data === 200) {
-					that.setData({
-						login: false
-					})
-				} else {
-					that.setData({
-						login: true
-					})
-				}
-			}
-		})
-
 	},
+	onShow() {
+    const that = this
+    if (!that.login) {
+      wx.getStorage({
+				key: 'userinfo',
+				success(res) {
+					if (res.data) {
+						const userinfo = JSON.parse(res.data)
+						that.setData({
+							login: true,
+							avatarUrl: userinfo.avatarUrl,
+							nickName: userinfo.nickName
+						})
+					}
+				}
+			})
+    }
+  },
 	// 获取用户的头像和昵称信息
 	bindGetUserInfo(e) {
-		var that = this;
+		const that = this;
 		wx.getUserInfo({
 			success: function (res) {
-				app.globalData.userInfo = e.detail.userInfo;
 				wx.setStorage({
-					key: "login",
-					data: 200
+					key: "userinfo",
+					data: JSON.stringify(res.userInfo)
 				})
 				that.setData({
-					login: false,
-					avatarUrl: e.detail.userInfo.avatarUrl,
-					nickName: e.detail.userInfo.nickName
+					login: true,
+					avatarUrl: res.userInfo.avatarUrl,
+					nickName: res.userInfo.nickName
 				})
 			}
 		})
@@ -79,19 +75,19 @@ Page({
 		});
 	},
 	openSwitch() {
-		var that = this;
+		const that = this;
 		that.setData({
 			show: true
 		})
 	},
 	close() {
-		var that = this;
+		const that = this;
 		that.setData({
 			show: false
 		})
 	},
 	chooseTimeOut(e) {
-		var that = this;
+		const that = this;
 		that.setData({
 			activeIndex: e.currentTarget.dataset.activeindex
 		})

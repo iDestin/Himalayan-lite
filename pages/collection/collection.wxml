@@ -1,5 +1,5 @@
 <!-- 若是没有登录就显示登录界面 -->
-<block wx:if="{{login}}">
+<block wx:if="{{!login}}">
 	<!-- logo -->
 	<view class="hmly-logo" hover-class="none" hover-stop-propagation="false">
 		<image class="hmly-logo-img" src="/image/logo.png" mode="widthFix" lazy-load="false"></image>

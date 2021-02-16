@@ -3,15 +3,15 @@ Page({
   data: {
     currentIndex:0,
     height:0,
+    login: false,
     content: [
       {text: "我的收藏"},
       {text: "我的已购"},
       {text: "收听历史"},
       {text: "我的礼包"}
-    ],
-    login: true
+    ]
   },
-  onLoad(options) {
+  onLoad() {
     const that = this;
     wx.getSystemInfo({
       success (res) {
@@ -20,32 +20,34 @@ Page({
         })
       }
     })
-    wx.getStorage({
-      key: 'login',
-      success(res){
-        if(res.data === 200){
+  },
+  onShow() {
+    const that = this
+    if (!that.login) {
+      wx.getStorage({
+        key: 'userinfo',
+        success(res){
           that.setData({
-            login: false,
+            login: res.data ? true : false,
           })
         }
-      }
-    })
+      })
+    }
   },
   // 点击获取头像和昵称
   bindGetUserInfo(e) {
     const that = this;
-    wx.getUserInfo({
-      success: function (res) {
-        app.globalData.userInfo = e.detail.userInfo;
-        wx.setStorage({
-          key: "login",
-          data: 200
-        })
-        that.setData({
-          login: false,
-        })
-      }
-    })
+		wx.getUserInfo({
+			success: function (res) {
+				wx.setStorage({
+					key: "userinfo",
+					data: JSON.stringify(res.userInfo)
+				})
+				that.setData({
+					login: true
+				})
+			}
+		})
   },
   checkItem(e) {
     const that = this;
