@@ -47,5 +47,5 @@
 欢迎您的建议或者是提出Bug
 
   * 提[issue](https://github.com/Notobey/Himalayan-lite/issues)
-  * [我的博客](http://www.blog.zhiq.online) 你可以在这里联系我
+  * mail: wenqiang35@qq.com
   * wechat(微信): Taco035
