@@ -1,146 +1,147 @@
 /* pages/user/user.wxss */
 .hmly-body {
-    background-color: #f1f1f1;
+	background-color: #f1f1f1;
 }
 
 .hmly-top-bar {
-    width: 100%;
-    height: 270rpx;
-    background-color: #fff;
+	width: 100%;
+	height: 270rpx;
+	background-color: #fff;
 }
 
 .hmly-user-img {
-    width: 95%;
-    height: 200rpx;
-    margin: 0rpx auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+	width: 95%;
+	height: 200rpx;
+	margin: 0rpx auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 
 }
 
 .hmly-avatar-nickname {
-    width: 70%;
-    height: 100%;
-    display: flex;
-    justify-content: start;
-    align-items: center;
+	width: 70%;
+	height: 100%;
+	display: flex;
+	justify-content: start;
+	align-items: center;
 }
 
 .hmly-avatar {
-    width: 120rpx;
-    height: 120rpx;
-    border-radius: 50%;
+	width: 120rpx;
+	height: 120rpx;
+	border-radius: 50%;
 }
 
 .hmly-avatar-img {
-    width: 120rpx;
-    height: 120rpx;
-    border-radius: 50%;
+	width: 120rpx;
+	height: 120rpx;
+	border-radius: 50%;
 }
 
 .hmly-nickname {
-    margin-left: 20rpx;
+	margin-left: 20rpx;
 }
 
 .hmly-qian-dao {
-    width: 90%;
-    height: 70rpx;
-    padding: 0rpx 30rpx;
-    font-size: 32rpx;
+	width: 90%;
+	height: 70rpx;
+	padding: 0rpx 30rpx;
+	font-size: 32rpx;
 }
 
 .hmly-qian-text {
-    float: left;
+	float: left;
 }
 
 .hmly-icon_ {
-    float: right;
+	float: right;
 }
 
 .hmly-kefu {
-    width: 160rpx;
-    height: 50rpx;
-    font-size: 25rpx;
-    border-radius: 25rpx;
-    outline: none;
-    text-align: center;
-    line-height: 50rpx;
-    background-color: #f1f1f1;
+	width: 160rpx;
+	height: 50rpx;
+	font-size: 25rpx;
+	border-radius: 25rpx;
+	outline: none;
+	text-align: center;
+	line-height: 50rpx;
+	background-color: #f1f1f1;
 }
 
 /* 选项卡 */
 .hmly-chioce {
-    width: 100%;
-    height: auto;
-    background-color: #fff;
-    margin-top: 10rpx;
-    font-size: 32rpx;
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+	margin-top: 10rpx;
+	font-size: 32rpx;
 }
 
 .hmly-choice-item {
-    display: flex;
-    width: 90%;
-    height: 60rpx;
-    padding: 20rpx 30rpx;
-    justify-content: space-between;
-    align-items: center;
+	display: flex;
+	width: 90%;
+	height: 60rpx;
+	padding: 20rpx 30rpx;
+	justify-content: space-between;
+	align-items: center;
 }
 
 /* 定时关闭 */
 .hmly-switch {
-    width: 100%;
-    height: 500rpx;
-    position: fixed;
-    bottom: 0rpx;
-    z-index: 9999;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    background: #fff;
-    border-top-left-radius: 15rpx;
-    border-top-right-radius: 15rpx;
-    padding-top: 20rpx;
+	width: 100%;
+	height: 500rpx;
+	position: fixed;
+	bottom: 0rpx;
+	z-index: 9999;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	background: #fff;
+	border-top-left-radius: 15rpx;
+	border-top-right-radius: 15rpx;
+	padding-top: 20rpx;
 }
 
 .hmly-switch-item {
-    width: 100%;
-    height: 120rpx;
-    line-height: 120rpx;
-    border-bottom: 1rpx solid #f1f1f1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* padding: 0rpx 30rpx; */
+	width: 100%;
+	height: 120rpx;
+	line-height: 120rpx;
+	border-bottom: 1rpx solid #f1f1f1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* padding: 0rpx 30rpx; */
 }
 
 .hmly-close {
-    width: 100%;
-    height: 100rpx;
-    text-align: center;
-    line-height: 100rpx;
+	width: 100%;
+	height: 100rpx;
+	text-align: center;
+	line-height: 100rpx;
 }
 
 .hmly-scroll-wrapper {
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-    background: #FFF;
-    padding-left: 20rpx;
-    width: 100%;
-    height: 400rpx;
-    box-sizing: border-box;
+	white-space: nowrap;
+	-webkit-overflow-scrolling: touch;
+	background: #FFF;
+	padding-left: 20rpx;
+	width: 100%;
+	height: 400rpx;
+	box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-    color: transparent;
+	width: 0;
+	height: 0;
+	color: transparent;
 }
-.hmly-active{
-    width: 30rpx;
-    height: 30rpx;
-    background-color: red;
-    border-radius: 50%;
-    margin-right: 40rpx;
+
+.hmly-active {
+	width: 30rpx;
+	height: 30rpx;
+	background-color: red;
+	border-radius: 50%;
+	margin-right: 40rpx;
 }

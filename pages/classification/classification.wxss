@@ -1,67 +1,75 @@
 /* pages/classification/classification.wxss */
-.hmly-ification{
-    width: 100%;
-    height: 100%;
-    
-    background-color: rgb(243, 244, 246);
-    display: flex;
-    justify-content: start;
-}
-.hmly-scroll-left{
-    width: 22%;
-    padding-top: 55rpx;
-    margin-right: 20rpx;
-    background-color: #fff;
-    overflow: hidden;
-}
-.hmly-left-title{
-    text-align: center;
-    font-size: 28rpx;
-    height: 100rpx;
-    line-height: 100rpx;
+.hmly-ification {
+	width: 100%;
+	height: 100%;
+
+	background-color: rgb(243, 244, 246);
+	display: flex;
+	justify-content: start;
 }
 
-.hmly-scroll-right{
-    width: 75%;
+.hmly-scroll-left {
+	width: 22%;
+	padding-top: 55rpx;
+	margin-right: 20rpx;
+	background-color: #fff;
+	overflow: hidden;
 }
-.hmly-active{
-    color: #ff520f;
-    background-color: rgb(243, 244, 246);
+
+.hmly-left-title {
+	text-align: center;
+	font-size: 28rpx;
+	height: 100rpx;
+	line-height: 100rpx;
 }
-.hmly-content-scroll-item{
-    width: auto;
-    height: auto;
-    margin-bottom: 20rpx;
+
+.hmly-scroll-right {
+	width: 75%;
 }
-.hmly-top{
-    width: 100%;
-    height: 40rpx;
-    padding: 20rpx 0rpx;
-    margin: 0rpx auto;
+
+.hmly-active {
+	color: #ff520f;
+	background-color: rgb(243, 244, 246);
 }
-.hmly-content-title{
-    color: rgb(12, 11, 11);
-    font-size: 30rpx;
-    text-align: center;
-    margin: 0rpx auto;
+
+.hmly-content-scroll-item {
+	width: auto;
+	height: auto;
+	margin-bottom: 20rpx;
 }
-.hmly-content{
-    width: 100%;
-    height: 140rpx;
-    padding: 30rpx 0rpx;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: space-around;
-    justify-content: space-between;
-    background-color: #fff;
-    border-top-left-radius: 7rpx;
-    border-bottom-left-radius: 7rpx;
+
+.hmly-top {
+	width: 100%;
+	height: 40rpx;
+	padding: 20rpx 0rpx;
+	margin: 0rpx auto;
 }
-.hmly-content-text{
-    width: 130rpx;
-    height: 50rpx;
-    margin: 10rpx 20rpx;
-    font-size: 30rpx;
-    text-align: center;
+
+.hmly-content-title {
+	color: rgb(12, 11, 11);
+	font-size: 30rpx;
+	text-align: center;
+	margin: 0rpx auto;
+}
+
+.hmly-content {
+	width: 100%;
+	height: 140rpx;
+	padding: 30rpx 0rpx;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: space-around;
+	justify-content: space-between;
+	background-color: #fff;
+	border-top-left-radius: 7rpx;
+	border-bottom-left-radius: 7rpx;
+}
+
+.hmly-content-text {
+	width: 130rpx;
+	height: 50rpx;
+	margin: 10rpx 20rpx;
+	font-size: 30rpx;
+	text-align: center;
 }

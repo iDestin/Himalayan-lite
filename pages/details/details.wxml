@@ -3,63 +3,64 @@
   注：这部分的背景色还没有处理好
 -->
 <view class="hmly-top-title-bar">
-    <!-- 背景虚化层 -->
-    <view class="hmly-bg" style="background:url({{imgurl}}); background-size: 100% 100%; background-repeat: no-repeat;"></view>
-    <!-- 内容 -->
-    <view class="hmly-bar-item" wx:for="{{performanceInfo}}" wx:key="index">
-      <view class="hmly-bar-item-top">
-        <view class="hmly-theme-bg-img" style="background:url({{item.imgurl}}); background-size:100% 100%"></view>
-        <view class="hmly-theme-info">
-          <view class="hmly-theme-title">{{item.title}}</view>
-          <view class="hmly-theme-author">
-            <!-- <image class="" src="" mode="widthFix"></image> -->
-            {{item.author}} <text class="icon-right"></text>
-          </view>
-          <view class="hmly-view-info">
-            <view class="hmly-view-info-left">{{item.num1}}人收藏</view>
-            <text class="hmly-viewhmly-info-mid">|</text>
-            <view class="hmly-view-info-right">已更新{{item.num2}}期</view>
-          </view>
-        </view>
-      </view>
-      <view class="hmly-bar-item-bottom">
-        <button class="hmly-share-but"><text class="icon-share"></text> 分享</button>
-        <button class="hmly-collection"><text class="icon-add"></text> 收藏</button>
-      </view>
-    </view>
+	<!-- 背景虚化层 -->
+	<view class="hmly-bg" style="background:url({{imgurl}}); background-size: 100% 100%; background-repeat: no-repeat;">
+	</view>
+	<!-- 内容 -->
+	<view class="hmly-bar-item" wx:for="{{performanceInfo}}" wx:key="index">
+		<view class="hmly-bar-item-top">
+			<view class="hmly-theme-bg-img" style="background:url({{item.imgurl}}); background-size:100% 100%"></view>
+			<view class="hmly-theme-info">
+				<view class="hmly-theme-title">{{item.title}}</view>
+				<view class="hmly-theme-author">
+					<!-- <image class="" src="" mode="widthFix"></image> -->
+					{{item.author}} <text class="icon-right"></text>
+				</view>
+				<view class="hmly-view-info">
+					<view class="hmly-view-info-left">{{item.num1}}人收藏</view>
+					<text class="hmly-viewhmly-info-mid">|</text>
+					<view class="hmly-view-info-right">已更新{{item.num2}}期</view>
+				</view>
+			</view>
+		</view>
+		<view class="hmly-bar-item-bottom">
+			<button class="hmly-share-but"><text class="icon-share"></text> 分享</button>
+			<button class="hmly-collection"><text class="icon-add"></text> 收藏</button>
+		</view>
+	</view>
 </view>
 <!-- 顶部选项 -->
 <view class="hmly-performance">
-  <view class="hmly-selectbar">
-    <view class="hmly-detail">详情</view>
-    <view class="hmly-list hmly-active">节目<text>152</text>
-    </view>
-  </view>
-  <!-- 播放选项 -->
-  <view class="hmly-play">
-    <view class="hmly-play-all">
-      <text class="icon-video"></text> 播放全部
-    </view>
-    <view class="hmly-play-select">
-      <view style="margin-right:20rpx"><text class="icon-order"></text> 正序</view>
-      <view><text class="icon-list"></text> 选集</view>
-    </view>
-  </view>
-  <!-- 节目列表 -->
-  <view class="hmly-performance-content" wx:for="{{performance}}" wx:key="index">
-    <!-- 序号 -->
-    <view class="hmly-performance-index">{{index+1}}</view>
-    <!-- 节目标题 -->
-    <view class="hmly-performance-info">
-      <view class="hmly-performance-info-top">
-        <view style="font-size:33rpx">{{item.name}}</view>
-        <view style="color:#aaaaaa">{{item.year}}</view>
-      </view>
-      <!-- 播放次数和时间 -->
-      <view class="hmly-performance-info-bottom">
-        <view><text class="icon-video"></text>{{item.count}}</view>
-        <view style="margin-left:20rpx"><text class="icon-time"></text>{{item.time}}</view>
-      </view>
-    </view>
-  </view>
+	<view class="hmly-selectbar">
+		<view class="hmly-detail">详情</view>
+		<view class="hmly-list hmly-active">节目<text>152</text>
+		</view>
+	</view>
+	<!-- 播放选项 -->
+	<view class="hmly-play">
+		<view class="hmly-play-all">
+			<text class="icon-video"></text> 播放全部
+		</view>
+		<view class="hmly-play-select">
+			<view style="margin-right:20rpx"><text class="icon-order"></text> 正序</view>
+			<view><text class="icon-list"></text> 选集</view>
+		</view>
+	</view>
+	<!-- 节目列表 -->
+	<view class="hmly-performance-content" wx:for="{{performance}}" wx:key="index">
+		<!-- 序号 -->
+		<view class="hmly-performance-index">{{index+1}}</view>
+		<!-- 节目标题 -->
+		<view class="hmly-performance-info">
+			<view class="hmly-performance-info-top">
+				<view style="font-size:33rpx">{{item.name}}</view>
+				<view style="color:#aaaaaa">{{item.year}}</view>
+			</view>
+			<!-- 播放次数和时间 -->
+			<view class="hmly-performance-info-bottom">
+				<view><text class="icon-video"></text>{{item.count}}</view>
+				<view style="margin-left:20rpx"><text class="icon-time"></text>{{item.time}}</view>
+			</view>
+		</view>
+	</view>
 </view>

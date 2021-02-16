@@ -186,14 +186,11 @@ Page({
   onLoad: function (options) {
     var that = this;
     //调用getSystemInfo APi获取到用户的手机屏幕高度，动态设置scroll-view的高度
-
     // 还有缺陷，代改进
     wx.getSystemInfo({
       success (res) {
-        
         // var heightleft = (res.windowHeight*2);
         var height = (res.windowHeight*2);
-       
         that.setData({
           phoneHeight:height,
         })

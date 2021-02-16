@@ -9,7 +9,3 @@
 	</view>
 	<view class="search-right" wx:if="{{isshow}}">取消</view>
 </view>
-<!-- <view class="search marginTopBottom" bindtap="goToSearch">
-  <text class="icon-search"></text>
-  <view class="search-item">搜索你想听的节目</view>
-</view> -->

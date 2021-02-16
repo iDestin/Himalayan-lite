@@ -2,156 +2,152 @@
 <search></search>
 <!-- 轮播图 -->
 <view class="hmly-swiper-container">
-  <swiper class="hmly-swiper" autoplay="true" circular="true" 
-    interval="3000" easing-function="easeOutCubic" 
-    current="{{swiperCurren}}" 
-    bindchange="swiperChange">
-    <!-- 轮播图图片 -->
-    <swiper-item class="hmly-swiper-item" wx:for="{{imgList}}" wx:key="index">
-      <!-- 加上widthFix可以使图片自适应 -->
-      <image src="{{item}}"></image>
-    </swiper-item>
-  </swiper>
-  <!-- 为了和喜马拉雅一致，自己需定制轮播图dots -->
-  <view class="hmly-dots">
-    <block wx:for="{{imgList.length}}" wx:key="index">
-      <view class="hmly-dots-item{{index == swiperCurrent ? ' hmly-dot-active' : ''}}"></view>
-    </block>
-  </view>
+	<swiper class="hmly-swiper" autoplay="true" circular="true" interval="3000" easing-function="easeOutCubic"
+		current="{{swiperCurren}}" bindchange="swiperChange">
+		<!-- 轮播图图片 -->
+		<swiper-item class="hmly-swiper-item" wx:for="{{imgList}}" wx:key="index">
+			<!-- 加上widthFix可以使图片自适应 -->
+			<image src="{{item}}"></image>
+		</swiper-item>
+	</swiper>
+	<!-- 为了和喜马拉雅一致，自己需定制轮播图dots -->
+	<view class="hmly-dots">
+		<block wx:for="{{imgList.length}}" wx:key="index">
+			<view class="hmly-dots-item{{index == swiperCurrent ? ' hmly-dot-active' : ''}}"></view>
+		</block>
+	</view>
 </view>
 
 <!-- 宫格导航 -->
 <view class="hmly-nav">
-  <block>  
-    <view class="hmly-nav-item" bindtap="{{item.events}}" wx:for="{{navList}}"  wx:key="index">
-      <!-- 
+	<block>
+		<view class="hmly-nav-item" bindtap="{{item.events}}" wx:for="{{navList}}" wx:key="index">
+			<!-- 
         
         因为没有合适的图，所以全部使用的一样的 
         并且因为界面都是一致的就是内容不同，这里为了简单，使用的都是统一界面
 
         解决办法：你可以通过页面传参的方式来进行区分
         -->
-      <image class="hmly-nav-icon" src="{{item.icon}}" mode="widthFix" lazy-load="false"></image>
-      <text class="hmly-nav-text">{{item.text}}</text>
-    </view>
-  </block>
+			<image class="hmly-nav-icon" src="{{item.icon}}" mode="widthFix" lazy-load="false"></image>
+			<text class="hmly-nav-text">{{item.text}}</text>
+		</view>
+	</block>
 </view>
 
 <!-- 猜你喜欢 -->
 <view class="hmly-like">
-  <view class="hmly-bar-title">
-    <view class="hmly-title-left">猜你喜欢</view>
-    <view class="hmly-title-right">查看全部 <text class="icon-right"></text> </view>
-  </view>
-  <!-- 这没有使用数据绑定，因为是练手而且数据比较少 -->
-  <view class="hmly-like-item-box">
-    <view class="hmly-like-item"
-      bindtap="gotoDetails"
-      data-coverImg="{{item.coverMiddle}}"
-      data-title="{{item.intro}}"
-      wx:for="{{guess}}"
-      wx:key="{{index}}"
-    >
-      <view class="hmly-like-img">
-        <image class="hmly-like-item-icon" src="{{item.coverMiddle}}" mode="widthFix"></image>
-        <view class="hmly-like-cover">
-          <!-- text用来显示icon  暂无 -->
-          <text class=""></text> 4.6亿
-        </view>
-      </view>
-      <view class="hmly-like-text">{{item.intro}}</view>
-    </view>
-  </view>
+	<view class="hmly-bar-title">
+		<view class="hmly-title-left">猜你喜欢</view>
+		<view class="hmly-title-right">查看全部 <text class="icon-right"></text> </view>
+	</view>
+	<!-- 这没有使用数据绑定，因为是练手而且数据比较少 -->
+	<view class="hmly-like-item-box">
+		<view class="hmly-like-item" bindtap="gotoDetails" data-coverImg="{{item.coverMiddle}}" data-title="{{item.intro}}"
+			wx:for="{{guess}}" wx:key="{{index}}">
+			<view class="hmly-like-img">
+				<image class="hmly-like-item-icon" src="{{item.coverMiddle}}" mode="widthFix"></image>
+				<view class="hmly-like-cover">
+					<!-- text用来显示icon  暂无 -->
+					<text class=""></text> 4.6亿
+				</view>
+			</view>
+			<view class="hmly-like-text">{{item.intro}}</view>
+		</view>
+	</view>
 </view>
 
 <!-- 有数据的时候显示 -->
 <block wx:if="{{showitem}}">
-  <!-- 有声小说 -->
-  <view class="hmly-content-list">
-    <view class="hmly-bar-title">
-      <view class="hmly-title-left">有声小说</view>
-      <view class="hmly-title-right">查看全部<text class="icon-right"></text></view>
-    </view>
-    <block wx:for="{{xiaoshuocontent}}" wx:key="index">
-      <view class="hmly-content" bindtap="gotoDetails" data-coverImg="{{item.albumCoverUrl290}}" data-title="{{item.title}}">
-        <view class="hmly-content-img">
-          <image src="{{item.albumCoverUrl290}}" mode="widthFix"></image>
-        </view>
-        <view class="hmly-content-right">
-          <view class="hmly-content-title">
-            <view class="hmly-title-text">{{item.title}}</view>
-            <view class="hmly-introduction">{{item.trackTitle}}</view>
-          </view>
-          <view class="hmly-count">
-            <view class="hmly-play-count">
-              <!-- <text class="icon-"></text> -->
-              126亿
-            </view>
-            <view class="hmly-ji-count">{{item.tracks}}集</view>
-          </view>
-        </view>
-      </view>
-    </block>
-  </view>
-  <!-- 相声评书 -->
-  <view class="hmly-content-list">
-    <view class="hmly-bar-title">
-      <view class="hmly-title-left">相声评书</view>
-      <view class="hmly-title-right">查看全部<text class="icon-right"></text></view>
-    </view>
-    <block wx:for="{{xiangshengcontent}}" wx:key="index">
-      <view class="hmly-content" bindtap="gotoDetails" data-coverImg="{{item.albumCoverUrl290}}" data-title="{{item.title}}">
-        <view class="hmly-content-img">
-          <image src="{{item.albumCoverUrl290}}" mode="widthFix"></image>
-        </view>
-        <view class="hmly-content-right">
-          <view class="hmly-content-title">
-            <view class="hmly-title-text">{{item.title}}</view>
-            <view class="hmly-introduction">{{item.trackTitle}}</view>
-          </view>
-          <view class="hmly-count">
-            <view class="hmly-play-count">
-              <!-- <text class="icon-"></text> -->
-              126亿
-            </view>
-            <view class="hmly-ji-count">{{item.tracks}}集</view>
-          </view>
-        </view>
-      </view>
-    </block>
-  </view>
-  <!-- 脱口秀 -->
-  <view class="hmly-content-list">
-    <view class="hmly-bar-title">
-      <view class="hmly-title-left">脱口秀</view>
-      <view class="hmly-title-right">查看全部<text class="icon-right"></text></view>
-    </view>
-    <block wx:for="{{tuokocontent}}" wx:key="index">
-      <view class="hmly-content" bindtap="gotoDetails" data-coverImg="{{item.albumCoverUrl290}}" data-title="{{item.title}}">
-        <view class="hmly-content-img">
-          <image src="{{item.albumCoverUrl290}}" mode="widthFix" lazy-load="false"></image>
-        </view>
-        <view class="hmly-content-right">
-          <view class="hmly-content-title">
-            <view class="hmly-title-text">{{item.title}}</view>
-            <view class="hmly-introduction">{{item.trackTitle}}</view>
-          </view>
-          <view class="hmly-count">
-            <view class="hmly-play-count">
-              <!-- <view class="icon-"></view> -->
-              126亿
-            </view>
-            <view class="hmly-ji-count">{{item.tracks}}集</view>
-          </view>
-        </view>
-      </view>
-    </block>
-  </view>
+	<!-- 有声小说 -->
+	<view class="hmly-content-list">
+		<view class="hmly-bar-title">
+			<view class="hmly-title-left">有声小说</view>
+			<view class="hmly-title-right">查看全部<text class="icon-right"></text></view>
+		</view>
+		<block wx:for="{{xiaoshuocontent}}" wx:key="index">
+			<view class="hmly-content" bindtap="gotoDetails" data-coverImg="{{item.albumCoverUrl290}}"
+				data-title="{{item.title}}">
+				<view class="hmly-content-img">
+					<image src="{{item.albumCoverUrl290}}" mode="widthFix"></image>
+				</view>
+				<view class="hmly-content-right">
+					<view class="hmly-content-title">
+						<view class="hmly-title-text">{{item.title}}</view>
+						<view class="hmly-introduction">{{item.trackTitle}}</view>
+					</view>
+					<view class="hmly-count">
+						<view class="hmly-play-count">
+							<!-- <text class="icon-"></text> -->
+							126亿
+						</view>
+						<view class="hmly-ji-count">{{item.tracks}}集</view>
+					</view>
+				</view>
+			</view>
+		</block>
+	</view>
+	<!-- 相声评书 -->
+	<view class="hmly-content-list">
+		<view class="hmly-bar-title">
+			<view class="hmly-title-left">相声评书</view>
+			<view class="hmly-title-right">查看全部<text class="icon-right"></text></view>
+		</view>
+		<block wx:for="{{xiangshengcontent}}" wx:key="index">
+			<view class="hmly-content" bindtap="gotoDetails" data-coverImg="{{item.albumCoverUrl290}}"
+				data-title="{{item.title}}">
+				<view class="hmly-content-img">
+					<image src="{{item.albumCoverUrl290}}" mode="widthFix"></image>
+				</view>
+				<view class="hmly-content-right">
+					<view class="hmly-content-title">
+						<view class="hmly-title-text">{{item.title}}</view>
+						<view class="hmly-introduction">{{item.trackTitle}}</view>
+					</view>
+					<view class="hmly-count">
+						<view class="hmly-play-count">
+							<!-- <text class="icon-"></text> -->
+							126亿
+						</view>
+						<view class="hmly-ji-count">{{item.tracks}}集</view>
+					</view>
+				</view>
+			</view>
+		</block>
+	</view>
+	<!-- 脱口秀 -->
+	<view class="hmly-content-list">
+		<view class="hmly-bar-title">
+			<view class="hmly-title-left">脱口秀</view>
+			<view class="hmly-title-right">查看全部<text class="icon-right"></text></view>
+		</view>
+		<block wx:for="{{tuokocontent}}" wx:key="index">
+			<view class="hmly-content" bindtap="gotoDetails" data-coverImg="{{item.albumCoverUrl290}}"
+				data-title="{{item.title}}">
+				<view class="hmly-content-img">
+					<image src="{{item.albumCoverUrl290}}" mode="widthFix" lazy-load="false"></image>
+				</view>
+				<view class="hmly-content-right">
+					<view class="hmly-content-title">
+						<view class="hmly-title-text">{{item.title}}</view>
+						<view class="hmly-introduction">{{item.trackTitle}}</view>
+					</view>
+					<view class="hmly-count">
+						<view class="hmly-play-count">
+							<!-- <view class="icon-"></view> -->
+							126亿
+						</view>
+						<view class="hmly-ji-count">{{item.tracks}}集</view>
+					</view>
+				</view>
+			</view>
+		</block>
+	</view>
 </block>
 <block wx:else>
-  <view class="hmly-data-notip">
-    <view class="hmly-tip">
-      网络暂时走丢了，请稍后再试
-    </view>  
-  </view>
+	<view class="hmly-data-notip">
+		<view class="hmly-tip">
+			网络暂时走丢了，请稍后再试
+		</view>
+	</view>
 </block>

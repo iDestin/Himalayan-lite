@@ -1,11 +1,5 @@
-// pages/collection/collection.js
 const app = getApp()
-
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
     currentIndex:0,
     height:0,
@@ -17,12 +11,8 @@ Page({
     ],
     login: true
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-    var that = this;
+  onLoad(options) {
+    const that = this;
     wx.getSystemInfo({
       success (res) {
         that.setData({
@@ -38,25 +28,12 @@ Page({
             login: false,
           })
         }
-      },
-      fail(res){
-        console.log(res)
       }
     })
-
   },
-
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  },
-  
   // 点击获取头像和昵称
   bindGetUserInfo(e) {
-    var that = this;
+    const that = this;
     wx.getUserInfo({
       success: function (res) {
         app.globalData.userInfo = e.detail.userInfo;
@@ -70,9 +47,8 @@ Page({
       }
     })
   },
-
-  checkItem(e){
-    var that = this;
+  checkItem(e) {
+    const that = this;
     if (this.data.currentIndex === e.target.dataset.current) {
       return false;
     } else {
@@ -82,10 +58,8 @@ Page({
     }
   },
   // 滑动切换tab
-
-  changeTab:function(e){
-    var that = this;
-    console.log(e.detail.current)
+  changeTab(e) {
+    const that = this;
     that.setData({
       currentIndex:e.detail.current
     })

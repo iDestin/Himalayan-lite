@@ -1,213 +1,219 @@
 .hmly-top-title-bar {
-  width: 100%;
-  height: 410rpx;
-  overflow: hidden;
-  position: relative;
+	width: 100%;
+	height: 410rpx;
+	overflow: hidden;
+	position: relative;
 }
+
 /* 背景虚化层 */
-.hmly-bg{
-  width: 100%;
-  height: 410rpx;
-  filter: blur(15rpx);
+.hmly-bg {
+	width: 100%;
+	height: 410rpx;
+	filter: blur(15rpx);
 }
+
 .hmly-bar-item {
-  width: 100%;
-  height: 400rpx;
-  margin-top: 50rpx;
-  padding: 20rpx 0rpx;
-  position: absolute;
-  top: 0rpx;
+	width: 100%;
+	height: 400rpx;
+	margin-top: 50rpx;
+	padding: 20rpx 0rpx;
+	position: absolute;
+	top: 0rpx;
 }
 
 .hmly-bar-item-top {
-  width: 100%;
-  height: 200rpx;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	width: 100%;
+	height: 200rpx;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .hmly-theme-bg-img {
-  width: 200rpx;
-  height: 200rpx;
-  margin-right: 30rpx;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+	width: 200rpx;
+	height: 200rpx;
+	margin-right: 30rpx;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
 
 .hmly-theme-info {
-  width: 60%;
-  height: 200rpx;
+	width: 60%;
+	height: 200rpx;
 }
 
 .hmly-theme-title {
-  color: #fff;
-  font-size: 40rpx;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;/*行数n*/
-  -webkit-box-orient: vertical; 
-  overflow: hidden;
-  text-overflow: ellipsis;
+	color: #fff;
+	font-size: 40rpx;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	/*行数n*/
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .hmly-theme-author {
-  font-size: 25rpx;
-  color: #fff;
-  margin-top: 5rpx;
+	font-size: 25rpx;
+	color: #fff;
+	margin-top: 5rpx;
 }
 
 .hmly-view-info {
-  color: #fff;
-  font-size: 30rpx;
-  margin-top: 5rpx;
-  display: flex;
-  justify-content: flex-start;
+	color: #fff;
+	font-size: 30rpx;
+	margin-top: 5rpx;
+	display: flex;
+	justify-content: flex-start;
 }
 
 .hmly-view-info-left {
-  margin-right: 5rpx;
+	margin-right: 5rpx;
 }
 
 .hmly-view-info-right {
-  margin-left: 5rpx;
+	margin-left: 5rpx;
 }
 
 .hmly-bar-item-bottom {
-  width: 70%;
-  height: 100rpx;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  border-radius: 20rpx;
-  float: right;
-  margin-top: 15rpx;
+	width: 70%;
+	height: 100rpx;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	border-radius: 20rpx;
+	float: right;
+	margin-top: 15rpx;
 }
 
 .hmly-bar-item-bottom button {
-  width: 210rpx;
-  height: 75rpx;
-  text-align: center;
-  font-size: 30rpx;
-  color: #fff;
-  border-radius: 20rpx;
+	width: 210rpx;
+	height: 75rpx;
+	text-align: center;
+	font-size: 30rpx;
+	color: #fff;
+	border-radius: 20rpx;
 }
 
 .hmly-share-but {
-  background: orangered;
-  border: 1rpx solid #fff;
-  margin-left: 70rpx;
+	background: orangered;
+	border: 1rpx solid #fff;
+	margin-left: 70rpx;
 }
 
 .hmly-collection {
-  background: orangered;
+	background: orangered;
 }
 
 .hmly-performance {
-  width: 100%;
-  height: 500rpx;
-  border-top-left-radius: 20rpx;
-  border-top-right-radius: 20rpx;
-  position: relative;
-  top: -10rpx;
+	width: 100%;
+	height: 500rpx;
+	border-top-left-radius: 20rpx;
+	border-top-right-radius: 20rpx;
+	position: relative;
+	top: -10rpx;
 }
+
 .hmly-selectbar {
-  width: 100%;
-  height: 100rpx;
-  line-height: 100rpx;
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-  background: #fff;
-  box-sizing: border-box;
-  color: #aaa;
-  border-radius: 15rpx;
-  border-bottom: 1rpx solid #f1f1f1;
+	width: 100%;
+	height: 100rpx;
+	line-height: 100rpx;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	background: #fff;
+	box-sizing: border-box;
+	color: #aaa;
+	border-radius: 15rpx;
+	border-bottom: 1rpx solid #f1f1f1;
 }
 
 .hmly-detail {
-  width: 50%;
+	width: 50%;
 }
 
 .hmly-list {
-  width: 50%;
+	width: 50%;
 }
 
 .hmly-play {
-  width: 100%;
-  height: 100rpx;
-  padding: 0rpx 40rpx;
-  box-sizing: border-box;
-  border-bottom: 1rpx solid #f1f1f1;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	width: 100%;
+	height: 100rpx;
+	padding: 0rpx 40rpx;
+	box-sizing: border-box;
+	border-bottom: 1rpx solid #f1f1f1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .hmly-play-all {
-  width: auto;
-  text-align: center;
-  font-size: 30rpx;
+	width: auto;
+	text-align: center;
+	font-size: 30rpx;
 }
 
 .hmly-play-select {
-  width: auto;
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  font-size: 30rpx;
+	width: auto;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	font-size: 30rpx;
 }
 
 .hmly-performance-content {
-  width: 100%;
-  height: 150rpx;
-  display: flex;
-  box-sizing: border-box;
-  justify-content: flex-start;
-  align-items: center;
-  border-bottom: 1rpx solid #f1f1f1;
-  padding: 20rpx 20rpx;
+	width: 100%;
+	height: 150rpx;
+	display: flex;
+	box-sizing: border-box;
+	justify-content: flex-start;
+	align-items: center;
+	border-bottom: 1rpx solid #f1f1f1;
+	padding: 20rpx 20rpx;
 }
 
 .hmly-performance-index {
-  width: 15%;
-  height: 80rpx;
-  text-align: center;
-  line-height: 80rpx;
-  color: #aaa;
+	width: 15%;
+	height: 80rpx;
+	text-align: center;
+	line-height: 80rpx;
+	color: #aaa;
 }
 
 .hmly-performance-info {
-  width: 85%;
-  height: 100%;
+	width: 85%;
+	height: 100%;
 }
 
 .hmly-performance-info-top {
-  width: 100%;
-  height: 50%;
-  display: flex;
-  justify-content: space-between;
-  font-size: 30rpx;
+	width: 100%;
+	height: 50%;
+	display: flex;
+	justify-content: space-between;
+	font-size: 30rpx;
 }
 
 .hmly-performance-info-bottom {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: flex-start;
-  color: #aaa;
-  font-size: 25rpx;
-  margin-top: 20rpx;
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: flex-start;
+	color: #aaa;
+	font-size: 25rpx;
+	margin-top: 20rpx;
 }
-.hmly-active{
-  position: relative;
-  color: #333;
+
+.hmly-active {
+	position: relative;
+	color: #333;
 }
-.hmly-active::after{
-  content: '';
-  width: 80rpx;
-  height: 5rpx;
-  position: absolute;
-  bottom: 0rpx;
-  left: 150rpx;
-  background-color: orangered;
+
+.hmly-active::after {
+	content: '';
+	width: 80rpx;
+	height: 5rpx;
+	position: absolute;
+	bottom: 0rpx;
+	left: 150rpx;
+	background-color: orangered;
 }

@@ -1,5 +1,5 @@
 {
-  "usingComponents": {
-    "search":"/component/search/search"
-  }
+	"usingComponents": {
+		"search": "/component/search/search"
+	}
 }

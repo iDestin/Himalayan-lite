@@ -1,23 +1,25 @@
-
 /**
-*  color.wxss主要包含本程序主要的文本颜色，背景颜色
+*  color.wxss包含本程序主要的文本颜色，背景颜色
 */
 
 /* 背景颜色 */
-.bg-gray{
-  background-color: #eeeeee;
+.bg-gray {
+	background-color: #eeeeee;
 }
 
 /* 字体颜色 */
-.text-black{
-  color: #181818;
+.text-black {
+	color: #181818;
 }
-.text-red{
-  color: #f00;
+
+.text-red {
+	color: #f00;
 }
-.text-orange{
-  color: orange;
+
+.text-orange {
+	color: orange;
 }
-.text-gray{
-  color: #aaaaaa;
+
+.text-gray {
+	color: #aaaaaa;
 }

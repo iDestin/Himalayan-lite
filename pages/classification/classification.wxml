@@ -3,28 +3,31 @@
 
 <!-- 分类索引 -->
 <view class="hmly-ification">
-    <!-- 左边部分 -->
-    <scroll-view class="hmly-scroll-left" scroll-y scroll-with-animation style="height:{{phoneHeight}}rpx" scroll-top="{{VerticalNavTop}}">
-        <block wx:for="{{ificationTitle}}" wx:key="index">
-            <view class="hmly-left-title {{index === activeIndex ? 'hmly-active':''}}" data-index="{{index}}" data-id="{{index}}" bindtap="change">{{item.title}}</view>
-        </block>
-    </scroll-view>
-    
-    <!-- 右边部分 -->
-    
-    <scroll-view class="hmly-scroll-right" scroll-y bindscroll="showActive" style="height:{{phoneHeight}}rpx" scroll-into-view="main-id-{{TabCur}}">
-        <view class="hmly-content-scroll-item" wx:for="{{ificationContent}}" wx:key="index"  data-index="{{index}}" id="main-id-{{index}}" >
-            <view class="hmly-top">
-                <view class="hmly-content-title">
-                    {{item.title}}
-                    <text class="icon-right"></text>
-                </view>
-            </view>
-            <view class="hmly-content">
-                <view class="hmly-content-text" wx:for="{{item.content}}" wx:key="index">
-                    {{item.text}}
-                </view>
-            </view>
-        </view>
-    </scroll-view>
+	<!-- 左边部分 -->
+	<scroll-view class="hmly-scroll-left" scroll-y scroll-with-animation style="height:{{phoneHeight}}rpx"
+		scroll-top="{{VerticalNavTop}}">
+		<block wx:for="{{ificationTitle}}" wx:key="index">
+			<view class="hmly-left-title {{index === activeIndex ? 'hmly-active':''}}" data-index="{{index}}"
+				data-id="{{index}}" bindtap="change">{{item.title}}</view>
+		</block>
+	</scroll-view>
+
+	<!-- 右边部分 -->
+	<scroll-view class="hmly-scroll-right" scroll-y bindscroll="showActive" style="height:{{phoneHeight}}rpx"
+		scroll-into-view="main-id-{{TabCur}}">
+		<view class="hmly-content-scroll-item" wx:for="{{ificationContent}}" wx:key="index" data-index="{{index}}"
+			id="main-id-{{index}}">
+			<view class="hmly-top">
+				<view class="hmly-content-title">
+					{{item.title}}
+					<text class="icon-right"></text>
+				</view>
+			</view>
+			<view class="hmly-content">
+				<view class="hmly-content-text" wx:for="{{item.content}}" wx:key="index">
+					{{item.text}}
+				</view>
+			</view>
+		</view>
+	</scroll-view>
 </view>

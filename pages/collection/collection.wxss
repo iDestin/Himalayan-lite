@@ -1,88 +1,95 @@
 /* pages/collection/collection.wxss */
 
 .hmly-title-bar {
-  width: 100%;
-  height: 80rpx;
-  /* 这个配色不对 */
-  border-bottom: 1rpx solid #f1f1f1;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 28rpx;
-  overflow: hidden;
+	width: 100%;
+	height: 80rpx;
+	/* 这个配色不对 */
+	border-bottom: 1rpx solid #f1f1f1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 28rpx;
+	overflow: hidden;
 }
 
 .hmly-item-title {
-  width: 200rpx;
-  height: 100%;
-  text-align: center;
-  line-height: 80rpx;
-  position: relative;
-  color: #aaa;
+	width: 200rpx;
+	height: 100%;
+	text-align: center;
+	line-height: 80rpx;
+	position: relative;
+	color: #aaa;
 }
 
 .hmly-active:after {
-  content: '';
-  width: 40rpx;
-  height: 8rpx;
-  position: absolute;
-  bottom: 0rpx;
-  left: 70rpx;
-  border-radius: 15rpx;
-  background: #ff520f;
+	content: '';
+	width: 40rpx;
+	height: 8rpx;
+	position: absolute;
+	bottom: 0rpx;
+	left: 70rpx;
+	border-radius: 15rpx;
+	background: #ff520f;
 }
 
 .hmly-active {
-  font-size: 32rpx;
-  font-weight: 700;
-  transition: all 0.3s;
-  color: #333;
+	font-size: 32rpx;
+	font-weight: 700;
+	transition: all 0.3s;
+	color: #333;
 }
 
 .hmly-collection-content {
-  width: 90%;
-  margin: 0rpx auto;
-  margin-top: 10rpx;
+	width: 90%;
+	margin: 0rpx auto;
+	margin-top: 10rpx;
 }
-.hmly-collection-content{
-  width: 100%;
-  text-align: center;
-  position: absolute;
-  top: 300rpx;
-  color: #aaaaaa
+
+.hmly-collection-content {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	top: 300rpx;
+	color: #aaaaaa
 }
-swiper{
-  display: block;
-  width: 100%;
+
+swiper {
+	display: block;
+	width: 100%;
 }
-.hmly-swiper-box-item{
-  height: 400rpx;
+
+.hmly-swiper-box-item {
+	height: 400rpx;
 }
-.hmly-no-content{
-  width: 90%;
-  height: auto;
-  margin: 0rpx auto;
-  margin-top: 100rpx;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+
+.hmly-no-content {
+	width: 90%;
+	height: auto;
+	margin: 0rpx auto;
+	margin-top: 100rpx;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
 }
-.hmly-no-content image{
-  width: 400rpx;
-  height: 300rpx;
-  align-self: center;
+
+.hmly-no-content image {
+	width: 400rpx;
+	height: 300rpx;
+	align-self: center;
 }
-.hmly-but-box{
-  width: 80%;
-  margin: 0rpx auto;
-  margin-top: 40rpx;
-  text-align: center;
+
+.hmly-but-box {
+	width: 80%;
+	margin: 0rpx auto;
+	margin-top: 40rpx;
+	text-align: center;
 }
-.hmly-but{
-  width: 300rpx;
-  height: 80rpx;
-  font-size: 40rpx;
-  line-height: 80rpx;
-  margin-top: 10rpx;
+
+.hmly-but {
+	width: 300rpx;
+	height: 80rpx;
+	font-size: 40rpx;
+	line-height: 80rpx;
+	margin-top: 10rpx;
 }
