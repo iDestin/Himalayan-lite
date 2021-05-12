@@ -2,23 +2,20 @@
 <view class="hmly-search">
 	<view class="hmly-search-left">
 		<text class="icon-search"></text>
-		<input placeholder="搜索你想听的节目"></input>
+		<input placeholder="搜索你想听的节目" bindconfirm="search"></input>
 	</view>
-	<view class="hmly-search-right">取消</view>
+	<view class="hmly-search-right" bindtap="cancelSearch">取消</view>
 </view>
 <!-- 搜索历史 -->
-<view class="hmly-history">
+<view class="hmly-history" wx:if="{{searchHistory.length}}">
 	<!-- 提示标题 -->
 	<view class="hmly-title">
 		<view class="hmly-title-text">搜索历史</view>
-		<text class="icon-delete text-gray"></text>
+		<text class="icon-delete text-gray" bindtap="clearHistory"></text>
 	</view>
 	<!-- 内容 -->
 	<view class="hmly-history-content">
-		<view class="hmly-content-item bg-gray text-black">庆余年</view>
-		<view class="hmly-content-item bg-gray text-black">德云社</view>
-		<view class="hmly-content-item bg-gray text-black">评书</view>
-		<view class="hmly-content-item bg-gray text-black">英语</view>
+		<view class="hmly-content-item bg-gray text-black" wx:for="{{searchHistory}}" wx:key="index">{{item}}</view>
 	</view>
 </view>
 <!-- 热门搜索 -->

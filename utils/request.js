@@ -1,7 +1,10 @@
 // 定义全局常量baseUrl用来存储前缀
 const baseURL = 'http://mobile.ximalaya.com/mobile/discovery/v3/recommend/hotAndGuess?code=43_310000_3100&device=android&version=5.4.45';
 
-
+/**
+ * 使用Promise对wx.request api进行封装
+ * @param {*} params 
+ */
 function request(params = { method, url, data }) {
 	return new Promise(function (resolve, reject) {
 		let header = { 'content-type': 'application/json' }; // 定义请求头
@@ -25,7 +28,6 @@ function request(params = { method, url, data }) {
 		})
 	})
 }
-
 
 // 向外暴露接口
 module.exports = {

@@ -44,7 +44,7 @@
 	<!-- 这没有使用数据绑定，因为是练手而且数据比较少 -->
 	<view class="hmly-like-item-box">
 		<view class="hmly-like-item" bindtap="gotoDetails" data-coverImg="{{item.coverMiddle}}" data-title="{{item.intro}}"
-			wx:for="{{guess}}" wx:key="{{index}}">
+			wx:for="{{guess}}" wx:key="index">
 			<view class="hmly-like-img">
 				<image class="hmly-like-item-icon" src="{{item.coverMiddle}}" mode="widthFix"></image>
 				<view class="hmly-like-cover">
