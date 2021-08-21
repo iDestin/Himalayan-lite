@@ -2,9 +2,7 @@
 	<view class="hmly-content_">
 		<!-- 提示标语 -->
 		<view class="hmly-slogn">
-			<!-- <view class="left-line" style="width:20rpx"></view> -->
 			登录后即可收听你的收藏专辑哦
-			<!-- <view class="right-line" style="width:20rpx"></view> -->
 		</view>
 		<!-- 表单输入部分 -->
 		<view class="hmly-login">

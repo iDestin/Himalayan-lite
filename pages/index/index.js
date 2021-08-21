@@ -40,20 +40,19 @@ Page({
 		],
 		swiperCurrent: 0,
 	},
-	/**
-	 * 生命周期函数--监听页面加载
-	 */
 	onLoad: function (options) {
 		const that = this
 		myRequest.getData().then(res => {
+			const {guess,hotRecommends} = res.data
 			that.setData({
 				showitem: true,
-				guess: res.data.guess.list.slice(0, 3),
-				xiaoshuocontent: res.data.hotRecommends.list[0].list,
-				xiangshengcontent: res.data.hotRecommends.list[2].list,
-				tuokocontent: res.data.hotRecommends.list[4].list
+				guess: guess.list.slice(0, 3),
+				xiaoshuocontent: hotRecommends.list[0].list,
+				xiangshengcontent: hotRecommends.list[2].list,
+				tuokocontent: hotRecommends.list[4].list
 			})
 		}).catch(err => {
+			console.log('error :>> ', err);
 			that.setData({
 				showitem: false
 			})

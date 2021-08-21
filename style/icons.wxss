@@ -12,14 +12,7 @@
 	/* iOS 4.1- */
 }
 
-/* .iconfont {
-    font-family: "iconfont" !important;
-    font-size: 16px;
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  } */
-
+/* 小程序不推荐使用属性选择器 */
 [class*="icon-"] {
 	font-family: "iconfont" !important;
 	font-size: inherit;

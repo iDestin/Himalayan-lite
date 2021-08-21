@@ -1,16 +1,14 @@
-//Component Object
 Component({
   properties: {
-    myProperty: {
-		type: String,
-			value: '',
-			observer: function () { }
+    disabled: {
+			type: Boolean,
+			value: true
 		},
+		isshow : {
+			type: Boolean,
+			value: false
+		}
   },
-	data: {
-		disabled: true,
-		isshow: false,
-	},
 	methods: {
 		goToSearch() {
 			wx.navigateTo({

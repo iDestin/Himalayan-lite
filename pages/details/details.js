@@ -52,15 +52,11 @@ Page({
 			count: "5601.9万",
 			time: "34:36"
 		},
-		]
+		],
+		performanceInfo: [],
+		imgurl: ''
 	},
-
-	/**
-	 * 生命周期函数--监听页面加载
-	 */
-
-
-	onLoad: function (options) {
+	onLoad(options) {
 		this.setData({
 			performanceInfo: [{
 				imgurl: options.url + '=5&upload_type=album&device_type=ios&name=medium&magick=png',
