@@ -50,5 +50,4 @@ git clone https://github.com/iven35/Himalayan-lite.git
 欢迎您的建议或者是提出Bug
 
   * 提[issue](https://github.com/Notobey/Himalayan-lite/issues)
-  * mail: wenqiang35@qq.com
-  * wechat(微信): Taco035
+  * mail: itaco@qq.com
