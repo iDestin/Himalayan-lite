@@ -1,10 +1,7 @@
-<h1 align="center">Himalayan-lite</h1>
-<p align="center">
-  <img src="https://img.shields.io/badge/version-2.0-red.svg">
-  <img src="https://img.shields.io/badge/wechat-green.svg">
-</p>
+<h1>Himalayan-lite</h1>
+<img src="https://img.shields.io/badge/wechat-green.svg">
 
-这是一个模仿`喜马拉雅lite`的微信小程序`demo`,完全使用微信小程序原生开发。这是一个初级项目，非常的适合🤹‍♀️微信小程序开发新手🤹‍♀️，如果你有 `html` `css` `js` 前端基础那么你将很快上手
+这是一个模仿 `喜马拉雅lite` 的微信小程序 `demo`, 使用微信小程序原生开发。这是一个初级项目，非常的适合微信小程序开发新手🤹‍♀️，如果你有 `html` `css` `js` 前端基础那么你将很快上手
 
 ### 效果预览
 
@@ -15,14 +12,20 @@
 </p>
 
 <br/><br/>
+
 ### 完成度
 
-在实际的`喜马拉雅lite`小程序中存着很多的功能，比如播放，签到，以及页面之间的跳转都很多。因为这个项目的定位是一个0基础的学习项目所以并没有完全达到和实际小程序一样的功能体验，有些界面可能只是一个静态界面。目前该项目还在继续完善中，谢谢所有给了start的小伙伴的支持。
+在实际的 `喜马拉雅lite` 小程序中存着很多的功能，比如播放，签到，以及页面之间的跳转都很多。因为这个项目的定位是一个0基础的学习项目所以并没有完全达到和实际小程序一样的功能体验，有些界面可能只是一个静态界面。目前该项目还在继续完善中，谢谢所有给了start的小伙伴的支持。
 
 ### 运行
 
-* clone 代码带本地在微信开发者工具中导入项目即可
-* 下载本项目的zip包，解压之后在微信开发者工具中导入即可
+```shell
+# 1. clone 代码到本地
+git clone https://github.com/iven35/Himalayan-lite.git
+
+# 微信开发者工具中导入项目即可
+```
+> 如果你没有使用过git，可以下载本项目的zip包，解压之后在微信开发者工具中导入即可
 
 ### 注意
 
@@ -47,5 +50,4 @@
 欢迎您的建议或者是提出Bug
 
   * 提[issue](https://github.com/Notobey/Himalayan-lite/issues)
-  * mail: wenqiang35@qq.com
-  * wechat(微信): Taco035
+  * mail: itaco@qq.com
