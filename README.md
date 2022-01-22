@@ -19,11 +19,10 @@
 
 ### 运行
 
-```shell
-# 1. clone 代码到本地
-git clone https://github.com/iven35/Himalayan-lite.git
+将代码 clone 到本地, 微信开发者工具中导入项目即可
 
-# 微信开发者工具中导入项目即可
+```shell
+git clone https://github.com/iven35/Himalayan-lite.git
 ```
 > 如果你没有使用过git，可以下载本项目的zip包，解压之后在微信开发者工具中导入即可
 
@@ -49,5 +48,5 @@ git clone https://github.com/iven35/Himalayan-lite.git
 
 欢迎您的建议或者是提出Bug
 
-  * 提[issue](https://github.com/Notobey/Himalayan-lite/issues)
-  * mail: itaco@qq.com
+* 提[issue](https://github.com/Notobey/Himalayan-lite/issues)
+* mail: itaco@qq.com
