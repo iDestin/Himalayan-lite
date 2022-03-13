@@ -31,5 +31,5 @@ git clone https://github.com/iven35/Himalayan-lite.git
 
 ###  联系
 
-对于此项目如果有任何问题，请提 [issue](https://github.com/Notobey/Himalayan-lite/issues) 或者 [Email](itaco@qq.com)
+对于此项目如果有任何问题，请提 [issue](https://github.com/Notobey/Himalayan-lite/issues) 或者 Email <itaco@qq.com>
 
