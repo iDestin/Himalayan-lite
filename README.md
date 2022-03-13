@@ -23,7 +23,7 @@
 > 项目中使用的api数据在开发者工具上可以正常显示，但是在真机上无法显示，可能需要将API的域名加入白名单
 
 ```shell
-git clone https://github.com/iven35/Himalayan-lite.git
+git clone https://github.com/iDestin/Himalayan-lite.git
 ```
 
 > 如果你没有使用过git，可以下载本项目的zip包，解压之后在微信开发者工具中导入即可
@@ -31,5 +31,5 @@ git clone https://github.com/iven35/Himalayan-lite.git
 
 ###  联系
 
-对于此项目如果有任何问题，请提 [issue](https://github.com/Notobey/Himalayan-lite/issues) 或者 Email <itaco@qq.com>
+对于此项目如果有任何问题，请提 [issue](https://github.com/iDestin/Himalayan-lite/issues) 或者 Email <itaco@qq.com>
 
