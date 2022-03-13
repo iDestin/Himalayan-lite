@@ -7,5 +7,5 @@
 		<text class="icon-search"></text>
 		<input placeholder="搜索你想听的节目" disabled="{{disabled}}"></input>
 	</view>
-	<view class="search-right" wx:if="{{isshow}}">取消</view>
+	<view class="search-right" wx:if="{{isShow}}">取消</view>
 </view>

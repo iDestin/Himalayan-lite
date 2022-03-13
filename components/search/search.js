@@ -4,7 +4,7 @@ Component({
 			type: Boolean,
 			value: true
 		},
-		isshow: {
+		isShow: {
 			type: Boolean,
 			value: false
 		}

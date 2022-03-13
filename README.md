@@ -1,5 +1,4 @@
-<h1>Himalayan-lite</h1>
-<img src="https://img.shields.io/badge/wechat-green.svg">
+<h1>Himalayan-lite <img src="https://img.shields.io/badge/wechat-green.svg"> </h1>
 
 这是一个模仿 `喜马拉雅lite` 的微信小程序 `demo`, 使用微信小程序原生开发。这是一个初级项目，非常的适合微信小程序开发新手🤹‍♀️，如果你有 `html` `css` `js` 前端基础那么你将很快上手
 
