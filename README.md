@@ -26,8 +26,7 @@
 git clone https://github.com/iDestin/Himalayan-lite.git
 ```
 
-> 如果你没有使用过git，可以下载本项目的zip包，解压之后在微信开发者工具中导入即可
-
+如果你没有使用过git，可以下载本项目的zip包，解压之后在微信开发者工具中导入即可
 
 ###  联系
 
