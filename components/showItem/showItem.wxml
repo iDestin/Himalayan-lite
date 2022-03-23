@@ -1,0 +1,30 @@
+<view class="hmly-content-list">
+  <view class="hmly-bar-title">
+    <view class="hmly-title-left">{{title}}</view>
+    <view class="hmly-title-right">查看全部<text class="icon-right"></text></view>
+  </view>
+  <block wx:for="{{showList}}" wx:key="index">
+    <view 
+      class="hmly-content" 
+      bindtap="gotoDetails" 
+      data-coverImg="{{item.albumCoverUrl290}}"
+      data-title="{{item.title}}"
+    >
+      <view class="hmly-content-img">
+        <image src="{{item.albumCoverUrl290}}" mode="widthFix" lazy-load="false"></image>
+      </view>
+      <view class="hmly-content-right">
+        <view class="hmly-content-title">
+          <view class="hmly-title-text">{{item.title}}</view>
+          <view class="hmly-introduction">{{item.trackTitle}}</view>
+        </view>
+        <view class="hmly-count">
+          <view class="hmly-play-count">
+            126亿
+          </view>
+          <view class="hmly-ji-count">{{item.tracks}}集</view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

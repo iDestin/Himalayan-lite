@@ -28,11 +28,10 @@
 	</view>
 	<swiper class="hmly-swiper-box" style="min-height:{{height}}px" duration="300" current="{{currentIndex}}"
 		bindchange="changeTab">
-		<swiper-item class="hmly-swiper-box-item">
+		<swiper-item>
 			<block>
 				<view class="hmly-no-content">
 					<text class="icon-empty text-gray" style="font-size:400rpx"></text>
-					<!-- <image src="/image/noContent.png"></image> -->
 					<view class="hmly-but-box">
 						<text style="font-size:30rpx" class="text-gray">没有内容</text>
 						<button class="hmly-but">看看推荐</button>

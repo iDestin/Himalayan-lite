@@ -1,0 +1,94 @@
+.hmly-content-list {
+	width: 90%;
+	margin: 0rpx auto;
+	margin-top: 10rpx;
+}
+
+.hmly-content {
+	width: 100%;
+	height: auto;
+	padding: 20rpx 0rpx;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1rpx solid #f1f1f1;
+}
+
+.hmly-content-img {
+	width: 232rpx;
+	height: 232rpx;
+	border-radius: 15rpx;
+}
+
+.hmly-content-img>image {
+	width: 100%;
+	height: 100%;
+	border-radius: 15rpx;
+}
+
+.hmly-content-right {
+	width: 530rpx;
+	height: 100%;
+	margin-left: 20rpx;
+	display: flex;
+	flex-direction: column;
+}
+
+.hmly-content-title {
+	width: 100%;
+	height: 138rpx;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.hmly-title-text {
+	width: 100%;
+	font-size: 35rpx;
+	color: #333;
+	text-align: left;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	/*行数n*/
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.hmly-introduction {
+	width: 100%;
+	font-size: 28rpx;
+	color: #cdcdcd;
+	text-align: left;
+	padding: 15rpx 0rpx;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	/*行数n*/
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.hmly-count {
+	width: 100%;
+	height: 50rpx;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+
+.hmly-play-count {
+	font-size: 25rpx;
+	color: #cdcdcd;
+	margin-right: 30rpx;
+}
+
+.hmly-ji-count {
+	font-size: 25rpx;
+	color: #cdcdcd;
+}
+
+.hmly-title-right {
+	float: right;
+	font-size: 26rpx;
+	color: #aaa;
+}

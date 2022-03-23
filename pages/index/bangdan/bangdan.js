@@ -1,4 +1,3 @@
-const app = getApp();
 let myRequest = require('../../../api/index.js')
 // 定义一个全局变量保存从接口获取到的数据，以免重复请求接口
 let resut;

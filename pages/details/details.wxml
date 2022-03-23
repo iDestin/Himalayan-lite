@@ -1,11 +1,7 @@
-<!-- 
-  title和背景 
-  注：这部分的背景色还没有处理好
--->
+<!-- 这部分的背景色还没有处理好 -->
 <view class="hmly-top-title-bar">
 	<!-- 背景虚化层 -->
-	<view class="hmly-bg" style="background:url({{imgurl}}); background-size: 100% 100%; background-repeat: no-repeat;">
-	</view>
+	<view class="hmly-bg" style="background:url({{imgurl}}); background-size: 100% 100%; background-repeat: no-repeat;" />
 	<!-- 内容 -->
 	<view class="hmly-bar-item" wx:for="{{performanceInfo}}" wx:key="index">
 		<view class="hmly-bar-item-top">
@@ -13,8 +9,8 @@
 			<view class="hmly-theme-info">
 				<view class="hmly-theme-title">{{item.title}}</view>
 				<view class="hmly-theme-author">
-					<!-- <image class="" src="" mode="widthFix"></image> -->
-					{{item.author}} <text class="icon-right"></text>
+					{{item.author}} 
+					<text class="icon-right"></text>
 				</view>
 				<view class="hmly-view-info">
 					<view class="hmly-view-info-left">{{item.num1}}人收藏</view>
