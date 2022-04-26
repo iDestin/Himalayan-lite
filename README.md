@@ -30,5 +30,4 @@ git clone https://github.com/iDestin/Himalayan-lite.git
 
 ###  联系
 
-本项目是我学生时代的学习作品, 仅供学习交流使用。对于此项目如果有任何问题，请提 [issue](https://github.com/iDestin/Himalayan-lite/issues) 或者 Email <itaco@qq.com>
-
+本项目是我学生时代的学习作品, 仅供学习交流使用。对于此项目如果有任何问题，请提 [issue](https://github.com/iDestin/Himalayan-lite/issues)
